@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+      <record id="account_notice_supplier_tree" model="ir.ui.view">
+            <field name="name">account.notice.supplier.tree</field>
+            <field name="model">account.notice</field>
+            <field name="arch" type="xml">
+                <tree string="Notice" create="0">
+                    <field name="partner_id" groups="base.group_user" string="Vendor"/>
+                    <field name="date"/>
+                    <field name="name"/>
+                    <field name="reference"/>
+                    <field name="name" invisible="1"/>
+                    <field name="journal_id" invisible="1"/>
+                    <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}"/>
+                    <field name="origin"/>
+                    <field name="amount_total"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="company_currency_id" invisible="1"/>
+                    <field name="state"/>
+                    <field name="type" invisible="1" />
+                </tree>
+            </field>
+      </record>
+
+    <record id="account_notice_supplier_form" model="ir.ui.view">
+            <field name="name">account.notice.supplier.form</field>
+            <field name="model">account.notice</field>
+            <field name="arch" type="xml">
+                <form string="Vendor Account Notice" create="0">
+                    <header>
+                        <button name="action_confirm" states="draft" string="Confirm" class="oe_highlight" type="object"/>
+                        <button name="action_cancel" states="confirm" string="Cancel" type="object"/>
+                        <button name="action_cancel_draft" states="cancel" string="Set to Draft" type="object"/>
+                        <field name="state" widget="statusbar" />
+                    </header>
+                    <sheet string="Vendor Account Notice">
+                        <div name="button_box" class="oe_button_box">
+                        </div>
+                        <div>
+                            <h1 class="mt0">
+                                <field name="name" class="oe_inline"  attrs="{'invisible': [('state', '=', 'draft')]}" readonly="1"/>
+                            </h1>
+                        </div>
+                        <field name="type" invisible="1"/>
+                        <group>
+                            <group>
+                                <div class="o_td_label">
+                                    <label for="partner_id" string="Vendor" />
+                                </div>
+                                <field nolabel="1" name="partner_id" domain="[('supplier_rank', '>', 0)]" widget="res_partner_many2one"
+                                            context="{ 'show_address': 1, 'show_vat': True, 'res_partner_search_mode': 'supplier',}" />
+                                <field name="reference" string="Vendor Reference"/>
+                                <field name="address_delivery_id" />
+                            </group>
+                            <group>
+                                <field name="origin"  />
+                                <field name="date"/>
+                                <label for="currency_id" />
+                                <div>
+                                    <field name="currency_id" options="{'no_create': True, 'no_open': True}" groups="base.group_multi_currency" />
+                                    <button name="%(account_notice.action_notice_change_currency)d" type="action"
+                                             icon="fa-pencil-square-o" class="oe_link oe_read_only"
+                                            attrs="{'invisible':[('state','!=','draft')]}" title="Change Currency" aria-label="Change Currency" />
+                                </div>
+                                <field name="company_currency_id" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Lines" name="lines">
+                                <field name="notice_line_ids">
+                                    <tree string="Notice lines" editable="bottom">
+                                        <field name="product_id" />
+                                        <field name="name"/>
+                                        <field name="account_id" groups="account.group_account_user" options="{'no_create': True}"/>
+                                        <field name="quantity"/>
+                                        <field name="uom_id" groups="uom.group_uom"/>
+                                        <field name="price_unit"/>
+                                        <field name="price_subtotal"/>
+                                        <field name="currency_id" invisible="1"/>
+                                    </tree>
+                                </field>
+                                <group>
+                                    <group class="oe_subtotal_footer oe_right">
+                                        <field name="amount_total" />
+                                    </group>
+                                </group>
+                                <div>
+                                    <field name="comment" placeholder="Additional notes..."/>
+                                </div>
+                            </page>
+                            <page string="Other Info" name="other_info">
+                                <group>
+                                    <group>
+                                        <field name="journal_id" groups="account.group_account_user" options="{'no_create': True}"/>
+                                        <field name="account_move_id" groups="account.group_account_user" readonly="1"/>
+                                        <field name="account_id" groups="account.group_account_user" options="{'no_create': True}"/>
+                                        <field name="name" invisible="1"/>
+                                    </group>
+                                    <group>
+                                        <field name="rate" />
+                                        <field name="location_id" required="1"/>
+                                        <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                                        <field name="fiscal_position_id"/>
+                                    </group>
+                                </group>
+                            </page>
+                                <page name="notice_print_configuration" string="Print Configuration">
+                                    <group name="main_group">
+                                        <field name="print_with_values" />
+                                    </group>
+                                </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" groups="base.group_user"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+    <record id="account_notice_search" model="ir.ui.view">
+        <field name="name">account.notice.search</field>
+        <field name="model">account.notice</field>
+        <field name="arch" type="xml">
+            <search string="Notice">
+                <field name="partner_id" string="Search Partner"/>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_notice_supplier_tree" model="ir.actions.act_window">
+        <field name="name">Notices</field>
+        <field name="res_model">account.notice</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('account_notice_supplier_tree')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('account_notice_supplier_form')})]"/>
+        <field name="domain">[('type','=','in_notice')]</field>
+        <field name="context">{'default_type':'in_notice', 'type':'in_notice'}</field>
+        <field name="search_view_id" ref="account_notice_search"/>
+    </record>
+
+    <record id="account_notice_customer_tree" model="ir.ui.view">
+            <field name="name">account.notice.customer.tree</field>
+            <field name="model">account.notice</field>
+            <field name="arch" type="xml">
+                <tree string="Notice" create="0">
+                    <field name="partner_id" groups="base.group_user" string="Customer"/>
+                    <field name="date"/>
+                    <field name="name"/>
+                    <field name="reference"/>
+                    <field name="name" invisible="1"/>
+                    <field name="journal_id" invisible="1"/>
+                    <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}"/>
+                    <field name="origin"/>
+                    <field name="amount_total"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="company_currency_id" invisible="1"/>
+                    <field name="state"/>
+                    <field name="type" invisible="1" />
+                </tree>
+            </field>
+      </record>
+
+    <record id="account_notice_customer_form" model="ir.ui.view">
+            <field name="name">account.notice.customer.form</field>
+            <field name="model">account.notice</field>
+            <field name="arch" type="xml">
+                <form string="Customer Account Notice" create="0">
+                    <header>
+                        <button name="action_confirm" states="draft" string="Confirm" class="oe_highlight" type="object"/>
+                        <button name="action_cancel" states="confirm" string="Cancel" type="object"/>
+                        <button name="action_cancel_draft" states="cancel" string="Set to Draft" type="object"/>
+                        <field name="state" widget="statusbar" />
+                    </header>
+                    <sheet string="Customer Account Notice">
+                        <div name="button_box" class="oe_button_box">
+                            <button type="object"
+                                name="action_view_pickings"
+                                class="oe_stat_button"
+                                icon="fa-truck" string="Delivery" />
+                        </div>
+                        <div>
+                            <h1 class="mt0">
+                                <field name="name" class="oe_inline"  attrs="{'invisible': [('state', '=', 'draft')]}" readonly="1"/>
+                            </h1>
+                        </div>
+                        <field name="type" invisible="1"/>
+                        <group>
+                            <group>
+                                <div class="o_td_label">
+                                    <label for="partner_id" string="Customer" />
+                                </div>
+                                <field nolabel="1" name="partner_id" domain="[('customer_rank', '>', 0)]" context="{'show_address': 1, 'show_vat': True, 'res_partner_search_mode': 'customer',}" widget="res_partner_many2one" />
+                                <field name="reference" string="Customer Reference"/>
+                                <field name="address_warehouse_id" />
+                                <field name="address_delivery_id" />
+                            </group>
+                            <group>
+                                <field name="origin"  />
+                                <field name="date"/>
+                                <label for="currency_id" />
+                                <div>
+                                    <field name="currency_id" options="{'no_create': True, 'no_open': True}" groups="base.group_multi_currency" />
+                                    <button name="%(account_notice.action_notice_change_currency)d" type="action"
+                                             icon="fa-pencil-square-o" class="oe_link oe_read_only"
+                                            attrs="{'invisible':[('state','!=','draft')]}" title="Change Currency" aria-label="Change Currency" />
+                                </div>
+                                <field name="company_currency_id" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Lines" name="lines">
+                                <field name="notice_line_ids">
+                                    <tree string="Notice lines" editable="bottom">
+                                        <field name="product_id" />
+                                        <field name="name"/>
+                                        <field name="account_id" groups="account.group_account_user" options="{'no_create': True}"/>
+                                        <field name="quantity"/>
+                                        <field name="uom_id" groups="uom.group_uom"/>
+                                        <field name="price_unit"/>
+                                        <field name="discount" invisible="1"/>
+                                        <field name="price_subtotal"/>
+                                        <field name="currency_id" invisible="1"/>
+                                    </tree>
+                                </field>
+                                <group>
+                                    <group class="oe_subtotal_footer oe_right">
+                                        <field name="amount_total" />
+                                    </group>
+                                </group>
+                                <div>
+                                    <field name="comment" placeholder="Additional notes..."/>
+                                </div>
+                            </page>
+                            <page string="Other Info" name="other_info">
+                                <group>
+                                    <group>
+                                        <field name="journal_id" groups="account.group_account_user,stock.group_stock_user" options="{'no_create': True}"/>
+                                        <field name="account_move_id" groups="account.group_account_user" readonly="1"/>
+                                        <field name="account_id" groups="account.group_account_user" options="{'no_create': True}"/>
+                                    </group>
+                                    <group>
+                                        <field name="rate" />
+                                        <field name="location_id" required="1"/>
+                                        <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                                        <field name="fiscal_position_id"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="notice_print_configuration" string="Print Configuration">
+                                    <group name="main_group">
+                                        <field name="print_with_values" />
+                                    </group>
+                                </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" groups="base.group_user"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+    <record id="action_notice_customer_tree" model="ir.actions.act_window">
+        <field name="name">Notices</field>
+        <field name="res_model">account.notice</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('account_notice_customer_tree')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('account_notice_customer_form')})]"/>
+        <field name="domain">[('type','=','out_notice')]</field>
+        <field name="context">{'default_type':'out_notice', 'type':'out_notice'}</field>
+        <field name="search_view_id" ref="account_notice_search"/>
+    </record>
+
+    <record id="action_notice_internal_tree" model="ir.actions.act_window">
+        <field name="name">Notices</field>
+        <field name="res_model">account.notice</field>
+        <field name="view_mode">tree,form</field>
+        <field eval="False" name="view_id"/>
+        <field name="domain">[('type','=','internal')]</field>
+        <field name="context">{'default_type':'internal', 'type':'internal'}</field>
+        <field name="search_view_id" ref="account_notice_search"/>
+    </record>
+
+
+
+    <menuitem id="menu_stock_notice" name="Notice" parent="stock.menu_stock_root" sequence="3" groups="account_notice.group_vendor_notice_manager,account_notice.group_customer_notice_manager,account_notice.group_internal_notice_manager"/>
+        <menuitem action="action_notice_supplier_tree" id="menu_stock_notice_supplier" parent="account_notice.menu_stock_notice" name="Vendor Notice" groups="account_notice.group_vendor_notice_manager"/>
+        <menuitem action="action_notice_customer_tree" id="menu_stock_notice_customer" parent="account_notice.menu_stock_notice" name="Customer Notice" groups="account_notice.group_customer_notice_manager"/>
+        <menuitem action="action_notice_internal_tree" id="menu_stock_notice_internal" parent="account_notice.menu_stock_notice" name="Internal Notice" groups="account_notice.group_internal_notice_manager"/>
+
+    <menuitem id="menu_account_notice" name="Notice" parent="account_accountant.menu_accounting" sequence="5" groups="account_notice.group_vendor_notice_manager,account_notice.group_customer_notice_manager,account_notice.group_internal_notice_manager" />
+
+        <menuitem action="action_notice_supplier_tree" id="menu_account_notice_supplier" parent="account_notice.menu_account_notice" name="Vendor Notice" groups="account_notice.group_vendor_notice_manager"/>
+        <menuitem action="action_notice_customer_tree" id="menu_account_notice_customer" parent="account_notice.menu_account_notice" name="Customer Notice" groups="account_notice.group_customer_notice_manager"/>
+        <menuitem action="action_notice_internal_tree" id="menu_account_notice_internal" parent="account_notice.menu_account_notice" name="Internal Notice" groups="account_notice.group_internal_notice_manager"/>
+
+</odoo>

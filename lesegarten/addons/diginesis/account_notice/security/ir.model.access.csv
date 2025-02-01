@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vendor_notice_manager,access.vendor.notice.manager,model_account_notice,account_notice.group_vendor_notice_manager,1,1,1,1
+
+access_customer_notice_manager,access.customer.notice.manager,model_account_notice,account_notice.group_customer_notice_manager,1,1,1,1
+
+access_internal_notice_manager,access.internal.notice.manager,model_account_notice,account_notice.group_internal_notice_manager,1,1,1,1
+
+access_internal_notice_line_manager,access.internal.notice.line.manager,model_account_notice_line,,1,1,1,1
+access_internal_notice_change_currency_manager,access.internal.notice.change.currency.manager,model_notice_change_currency,,1,1,1,1

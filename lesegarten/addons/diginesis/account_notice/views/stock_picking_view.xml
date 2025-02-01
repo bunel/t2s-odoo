@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="an_view_picking_form" model="ir.ui.view">
+        <field name="name">an.view_picking_form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='extra']//field[@name='group_id']" position="after">
+                <field name="notice_id" readonly="1" attrs="{'invisible': [('picking_type_code', '!=', 'incoming')]}" context="{'form_view_ref':'account_notice.account_notice_supplier_form'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

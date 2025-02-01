@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_notice_change_currency" model="ir.ui.view">
+            <field name="name">Change Currency</field>
+            <field name="model">notice.change.currency</field>
+            <field name="arch" type="xml">
+                <form string="Change Currency">
+                	<p class="oe_grey">This wizard will change the currency of the invoice</p>
+                    <group>
+                    	<group>                    	
+                        	<field name="currency_id" options="{'no_create': true}"/>
+                            <field name="notice_ids" invisible="1" />
+                        </group>
+                        <group>
+                            <field name="specify_rate" />
+                            <field name="custom_rate" attrs="{'invisible': [('specify_rate', '=', False)]}" />
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="change_currency" string="Change Currency" type="object" class="oe_highlight"/>
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_notice_change_currency" model="ir.actions.act_window">
+            <field name="name">Change Currency</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">notice.change.currency</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_notice_change_currency"/>
+            <field name="context">{}</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

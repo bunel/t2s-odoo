@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="notice_config_settings_view_form" model="ir.ui.view">
+        <field name="name">config.settings.view.form.inherit.notice</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <div id="print_vendor_checks_setting_container" position="after">
+                <h2>Notices</h2>
+                <div class="row mt16 o_settings_container" id="notice_setting_container">
+                    <div class="col-12 col-lg-6 o_setting_box" id="custom_notice_reference">
+                        <div class="o_setting_left_pane">
+                            <field name="print_notice_custom_reference" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="print_notice_custom_reference" string="Print Only Order Reference"/>
+                            <div class="text-muted">
+                                Print only order reference (do not include picking reference) in Order Ref. section
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Vendor Notices</h2>
+                <div class="row mt16 o_settings_container" id="vendor_notice_setting_container">
+                    <div class="col-12 col-lg-6 o_setting_box" id="vendor_notice_journal">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                            <span class="o_form_label">Journal</span>
+                            <div class="text-muted">
+                                Default journal for vendor notice
+                            </div>
+                             <div class="content-group">
+                                <field name="vendor_notice_journal_id" class="o_light_label mt16" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box" id="vendor_notice_account">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                            <span class="o_form_label">Account</span>
+                            <div class="text-muted">
+                                Default account for vendor notice
+                            </div>
+                             <div class="content-group">
+                                <field name="vendor_notice_account_id" class="o_light_label mt16" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pay_invoice_online_setting_container" position="after">
+                <h2>Customer Notices</h2>
+                <div class="row mt16 o_settings_container" id="customer_notice_setting_container">
+                    <div class="col-12 col-lg-6 o_setting_box" id="customer_notice_journal">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                            <span class="o_form_label">Journal</span>
+                            <div class="text-muted">
+                                Default journal for customer notice
+                            </div>
+                             <div class="content-group">
+                                <field name="customer_notice_journal_id" class="o_light_label mt16" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box" id="customer_notice_account">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                            <span class="o_form_label">Account</span>
+                            <div class="text-muted">
+                                Default account for customer notice
+                            </div>
+                             <div class="content-group">
+                                <field name="customer_notice_account_id" class="o_light_label mt16" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box" id="customer_notice_account_entries">
+                        <div class="o_setting_left_pane">
+                            <field name="do_account_entries_for_customer_notice" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="do_account_entries_for_customer_notice"/>
+                            <div class="text-muted">
+                                Create account entries for customer notices
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+	<template id="report_deliverynote_supplier_information">
+		<!-- IN_NOTICE
+		     o.partner_id=PO.partner_id
+		     o.company_id=PO.company
+             o.address_warehouse_id=NULL
+
+             OUT_NOTICE
+		     o.partner_id=OUT.partner_id.commercial_partner_id
+		     o.company_id=OUT.company
+             o.address_warehouse_id=OUT.location_id.warehouse_id.partner_id
+		-->
+		<t t-if="o.type in ['in_notice', 'out_refund']">
+			<t t-set="supplier" t-value="o.partner_id" />
+			<t t-set="supplier_warehouse" t-value="o.address_warehouse_id" />
+		</t>
+		<t t-else="">
+			<t t-set="supplier" t-value="o.company_id.partner_id" />
+			<t t-set="supplier_warehouse" t-value="o.address_warehouse_id" />
+		</t>
+
+		<table name="supplier_information_table">
+			<tr>
+				<td class="text-right">Furnizor:&amp;nbsp;&amp;nbsp;&amp;nbsp;</td>
+				<td class="text-left"><strong><span t-field="supplier.name" /></strong></td>
+			</tr>
+			<tr t-if="supplier.nrc">
+				<td class="text-right">Reg.&amp;nbsp;Com:&amp;nbsp;&amp;nbsp;&amp;nbsp;</td>
+				<td class="text-left"><span t-field="supplier.nrc" /></td>
+			</tr>
+			<tr t-if="supplier.vat">
+				<td class="text-right">CIF:&amp;nbsp;&amp;nbsp;&amp;nbsp;</td>
+				<td class="text-left"><span t-field="supplier.vat" /></td>
+			</tr>
+			<tr t-if="supplier_warehouse and supplier.id != supplier_warehouse.id">
+				<td class="text-right">Punct&amp;nbsp;lucru:&amp;nbsp;&amp;nbsp;&amp;nbsp;</td>
+				<td class="text-left">
+					<t t-set="put_comma" t-value="0"/>
+					<t t-if="supplier_warehouse.street">
+						<t t-if="put_comma">, </t>
+						<t t-set="put_comma" t-value="1"/>
+						<span t-field="supplier_warehouse.street" />
+					</t>
+					<t t-if="supplier_warehouse.street2">
+						<t t-if="put_comma">, </t>
+						<t t-set="put_comma" t-value="1"/>
+						<span t-field="supplier_warehouse.street2" />
+					</t>
+					<t t-if="supplier_warehouse.zip">
+						<t t-if="put_comma">, </t>
+						<t t-set="put_comma" t-value="1"/>
+						<span t-field="supplier_warehouse.zip" />
+					</t>
+					<t t-if="supplier_warehouse.city">
+						<t t-if="put_comma">, </t>
+						<t t-set="put_comma" t-value="1"/>
+						<span t-field="supplier_warehouse.city" />
+					</t>
+					<t t-if="supplier_warehouse.state_id">
+						<t t-if="put_comma">, </t>
+						<t t-set="put_comma" t-value="1"/>
+						Judetul:&amp;nbsp;&amp;nbsp; <span t-field="supplier_warehouse.state_id" />
+					</t>
+				</td>
+			</tr>
+		</table>
+	</template>
+
+	<template id="report_deliverynote_customer_information">
+		<!-- IN_NOTICE
+		     o.partner_id=PO.partner_id
+		     o.company_id=PO.company
+             o.address_delivery_id=PO.picking_type.warehouse.partner_id
+
+             OUT_NOTICE
+		     o.partner_id=OUT.partner_id.commercial_partner_id
+		     o.company_id=OUT.company
+             o.address_delivery_id=OUT.partner_id
+		-->
+		<t t-if="o.type in ['in_notice', 'out_refund']">
+			<t t-set="customer" t-value="o.company_id.partner_id" />
+			<t t-set="delivery_address" t-value="o.address_delivery_id" />
+		</t>
+		<t t-else="">
+			<t t-set="customer" t-value="o.partner_id" />
+			<t t-set="delivery_address" t-value="o.address_delivery_id" />
+		</t>
+
+		<table name="customer_information_table">
+			<tr>
+				<td class="text-right">Beneficiar:&amp;nbsp;&amp;nbsp;&amp;nbsp;</td>
+				<td class="text-left"><span t-field="customer.name" /></td>
+			</tr>
+			<tr t-if="customer.nrc">
+				<td class="text-right">Reg.&amp;nbsp;Com/CNP:&amp;nbsp;&amp;nbsp;&amp;nbsp;</td>
+				<td class="text-left"><span t-field="customer.nrc" /></td>
+			</tr>
+			<tr t-if="customer.vat">
+				<td class="text-right">CIF:&amp;nbsp;&amp;nbsp;&amp;nbsp;</td>
+				<td class="text-left"><span t-field="customer.vat" /></td>
+			</tr>
+			<tr t-if="delivery_address">
+				<td class="text-right">Livrare&amp;nbsp;la:&amp;nbsp;&amp;nbsp;&amp;nbsp;</td>
+				<td class="text-left">
+					<t t-set="put_comma" t-value="0" />
+					<t t-if="delivery_address.street">
+						<t t-if="put_comma">,</t>
+						<t t-set="put_comma" t-value="1" />
+						<span t-field="delivery_address.street" />
+					</t>
+					<t t-if="delivery_address.street2">
+						<t t-if="put_comma">,</t>
+						<t t-set="put_comma" t-value="1" />
+						<span t-field="delivery_address.street2" />
+					</t>
+					<t t-if="delivery_address.zip">
+						<t t-if="put_comma">,</t>
+						<t t-set="put_comma" t-value="1" />
+						<span t-field="delivery_address.zip" />
+					</t>
+					<t t-if="delivery_address.city">
+						<t t-if="put_comma">,</t>
+						<t t-set="put_comma" t-value="1" />
+						<span t-field="delivery_address.city" />
+					</t>
+					<t t-if="delivery_address.state_id">
+						<t t-if="put_comma">,</t>
+						<t t-set="put_comma" t-value="1" />
+						Judetul:&amp;nbsp;&amp;nbsp; <span t-field="delivery_address.state_id" />
+					</t>
+				</td>
+			</tr>
+		</table>
+	</template>
+
+	<template id="report_deliverynote_document">
+		<t t-call="web.external_layout">
+		<t t-set="o" t-value="o.with_context({'lang':o.partner_id.lang})" />
+		<div class="page">
+			<div class="row" style="margin-bottom: 5px">
+				<div class="col-6">
+					<t t-call="account_notice.report_deliverynote_supplier_information" />
+				</div>
+				<div class="col-6">
+					<t t-call="account_notice.report_deliverynote_customer_information" />
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 25px">
+				<div class="col-12">
+					<div style="border-bottom: 1px solid black;" />
+				</div>
+			</div>
+
+			<h2 class="text-center">AVIZ DE ÎNSOȚIRE A MĂRFII</h2>
+
+			<div style="margin-bottom: 25px; margin-top: 25px">
+				<table class="table borderless">
+					<tbody>
+						<tr>
+							<td width="25%" style="border-top: 0px !important;">Numarul: <br /><span
+									t-field="o.name" /></td>
+							<td width="25%" style="border-top: 0px !important;">Data: <br /><span t-field="o.date" /></td>
+							<td width="25%" style="border-top: 0px !important;">Ref. Comanda: <br/><span t-esc="o.get_order_reference()"/></td>
+							<td t-if="o.date" width="25%" style="border-top: 0px !important;">Data livrarii: <br /><span t-esc="o.date" options="{'widget': 'date'}" /></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<table class="table table_content" style="margin-bottom: 10px !important;">
+				<thead>
+					<tr>
+						<th name="nrcrt" style="width:35pt; vertical-align: middle">Nr. crt.</th>
+						<th name="desc" style="width:305pt; vertical-align: middle">Descriere bunuri<br/><span t-field="o.name"/></th>
+						<th name="uom" style="width:40pt; vertical-align: middle">U.M.</th>
+						<th name="qty" class="text-center" style="vertical-align: middle">Cantitate</th>
+						<th name="pu" class="text-center" style="vertical-align: middle">Pret Unitar</th>
+						<th name="value" class="text-center" style="vertical-align: middle">Valoare</th>
+					</tr>
+				</thead>
+				<tbody class="invoice_tbody">
+					<t t-set="counter" t-value="1" />
+					<tr t-foreach="o.notice_line_ids.sorted(key=lambda r: r.product_id and r.product_id.name or r.name)" t-as="l">
+						<td name="nrcrt"><span t-esc="counter" /><t t-set="counter" t-value="counter+1" /></td>
+						<td name="desc"><span t-field="l.name"/></td>
+						<td name="uom"><span t-field="l.uom_id" /></td>
+						<td name="qty" class="text-right"><span t-field="l.quantity" /></td>
+						<td name="pu" class="text-right"><span t-field="l.price_unit" /></td>
+						<td name="value" class="text-right"><span t-field="l.price_subtotal" /></td>
+					</tr>
+					<tr>
+						<td name="total_text" colspan="6" class="text-right"><strong>TOTAL</strong></td>
+						<td name="total_value" class="text-right"><strong><span t-field="o.amount_total" /></strong></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<t t-if="o.comment">
+			<p><span t-raw="o.comment.replace('\n','&lt;br/&gt;').replace('\r\n', '&lt;br/&gt;')" /></p>
+		</t>
+		<div class="footer o_standard_footer">
+			<div class="row zero_min_height" style="line-height:1.2">
+				<table class="table table-bordered" style="margin-bottom: 10px !important;" id="footer_shipment_table">
+					<tbody>
+						<tr>
+							<td width="10%" class="text-center" name="signature_stamp">
+								<p style="font-size: 7pt;">Semnatura si stampila furnizorului</p>
+							</td>
+							<td width="30%" class="text-left" name="shipment_date">
+								<p style="font-size: 9pt;">Expedierea s-a efectuat in prezenta noastra<br />
+									la Data de __________________ Ora __________<br />
+									Semnaturile:
+								</p>
+							</td>
+							<td width="30%" class="text-left" style="border-left: 0px !important;" name="misc">
+								<p style="font-size: 8pt;">Mentiuni: Am primit marfa conform aviz, intacta si in bune
+									conditii.<br />
+									Semnatura primire:
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="text-center" style="border-top: 1px solid black;">
+				<div class="text-muted">
+					Page: <span class="page" /> / <span class="topage" />
+				</div>
+			</div>
+		</div>
+		</t>
+	</template>
+
+	<template id="report_deliverynote">
+		<t t-call="web.html_container">
+		  <t t-foreach="docs" t-as="o">
+				<t t-set="lang" t-value="o.partner_id.lang" />
+				<t t-call="account_notice.report_deliverynote_document" />
+				<p style="page-break-before:always;"> </p>
+			</t>
+		</t>
+	</template>
+
+</data>
+</openerp>
