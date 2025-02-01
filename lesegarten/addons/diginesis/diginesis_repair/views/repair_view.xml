@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="diginesis_mrp_repair_repair_order_form" model="ir.ui.view">
+            <field name="name">diginesis.mrp.repair.repair.order.form</field>
+            <field name="model">repair.order</field>
+            <field name="inherit_id" ref="repair.view_repair_order_form"/>
+            <field name="arch" type="xml">              
+                
+                <field name="location_id" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+                <field name="location_id" position="after">
+                    <field name="management_id" />
+                </field>
+                <field name="guarantee_limit" position="after">                    
+                    <field name="client_ref"/>
+                    <field name="to_deliver"/>
+                </field>
+                                         
+                <xpath expr="//page[@name='parts']/field[@name='operations']/tree/field[@name='type']" position="before">
+                    <field name="sequence" widget="handle"/>
+                </xpath>
+                <xpath expr="//page[@name='parts']/field[@name='operations']/tree/field[@name='tax_id']" position="after">
+                    <field name="to_invoice" />
+                </xpath>                
+                <xpath expr="//page[@name='parts']/field[@name='operations']/form//field[@name='tax_id']" position="before">
+                    <field name="to_invoice" />
+                </xpath>
+                <xpath expr="//page[@name='parts']//field[@name='amount_total']" position="attributes">
+                    <attribute name="widget">monetary</attribute>
+                </xpath>
+                
+                <xpath expr="//page[@name='operations']/field[@name='fees_lines']/form//field[@name='price_unit']" position="before">
+                    <field name="to_invoice" />
+                </xpath>
+                <xpath expr="//page[@name='operations']/field[@name='fees_lines']/tree/field[@name='tax_id']" position="after">
+                    <field name="to_invoice" />
+                </xpath>
+                
+                <xpath expr="//field[@name='internal_notes']/ancestor::page" position="attributes">
+                	<attribute name="string">Reported Faults</attribute>
+                </xpath>
+                
+                <xpath expr="//notebook" position="inside">
+                	<page string="Repair Notes" name="repair_notes">
+                		<field name="repair_notes" placeholder="Add repair notes."/>
+                	</page>
+                </xpath>
+
+                <xpath expr="//button[@name='action_repair_cancel'][1]" position="attributes">
+                    <attribute name="attrs">{'invisible':['|', ('state', 'in', ['done', 'cancel']), '&amp;', ('state', '=', '2binvoiced'), ('invoice_method', '=', 'after_repair')]}</attribute>
+                </xpath>
+                <xpath expr="//button[@name='action_repair_cancel'][2]" position="attributes">
+                    <attribute name="attrs">{'invisible': [(1, '=', 1)]}</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

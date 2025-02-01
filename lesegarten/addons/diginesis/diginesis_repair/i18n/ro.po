@@ -1,0 +1,182 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * diginesis_repair
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20211105\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-06 19:21+0000\n"
+"PO-Revision-Date: 2022-03-06 21:43+0200\n"
+"Last-Translator: \n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#. module: diginesis_repair
+#: model_terms:ir.ui.view,arch_db:diginesis_repair.report_repairorder
+msgid "<strong>Quotation Notes</strong><br/>"
+msgstr "<strong>Note Oferte</strong><br/>"
+
+#. module: diginesis_repair
+#: model_terms:ir.ui.view,arch_db:diginesis_repair.report_repairorder
+msgid "<strong>Repair Notes</strong><br/>"
+msgstr "<strong>Note de reparație</strong><br/>"
+
+#. module: diginesis_repair
+#: model_terms:ir.ui.view,arch_db:diginesis_repair.report_repairorder
+msgid "<strong>Reported Faults</strong><br/>"
+msgstr "<strong>Defecte raportate</strong><br/>"
+
+#. module: diginesis_repair
+#: model_terms:ir.ui.view,arch_db:diginesis_repair.diginesis_mrp_repair_repair_order_form
+msgid "Add repair notes."
+msgstr "Adăugați note de reparație."
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_order__client_ref
+msgid "Client Reference"
+msgstr "Referință client"
+
+#. module: diginesis_repair
+#: model:ir.model,name:diginesis_repair.model_res_company
+msgid "Companies"
+msgstr "Companii"
+
+#. module: diginesis_repair
+#: model:ir.model,name:diginesis_repair.model_res_config_settings
+msgid "Config Settings"
+msgstr "Setări de configurare"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_order__to_deliver
+msgid "Deliver"
+msgstr "Livrează"
+
+#. module: diginesis_repair
+#: model_terms:ir.ui.view,arch_db:diginesis_repair.res_config_settings_view_form_repair
+msgid "Deliveries"
+msgstr "Livrări"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,help:diginesis_repair.field_repair_line__sequence
+msgid "Gives the sequence of this line when displaying the repair estimate."
+msgstr "Se dă secvența acestei linii atunci când se afișează estimarea reparației."
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_order__invoice_method
+msgid "Invoice Method"
+msgstr "Metoda de facturare"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_order__management_id
+msgid "Management"
+msgstr "Management"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_order__picking_id
+msgid "Picking"
+msgstr "Picking"
+
+#. module: diginesis_repair
+#: code:addons/diginesis_repair/models/repair.py:0
+#, python-format
+msgid "Please configure Repair Delivery Operation"
+msgstr "Vă rugăm să configurați operația de livrare a reparațiilor"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,help:diginesis_repair.field_repair_order__client_ref
+msgid "Please fill client reference"
+msgstr "Vă rugăm să completați referința clientului"
+
+#. module: diginesis_repair
+#: model_terms:ir.ui.view,arch_db:diginesis_repair.res_config_settings_view_form_repair
+msgid "Repair"
+msgstr "Reparație"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_res_company__repair_delivery_picking_type
+#: model:ir.model.fields,field_description:diginesis_repair.field_res_config_settings__repair_delivery_picking_type
+msgid "Repair Delivery Operation"
+msgstr "Operație de livrare reparații"
+
+#. module: diginesis_repair
+#: model:ir.model,name:diginesis_repair.model_repair_fee
+msgid "Repair Fees"
+msgstr "Taxe Reparare"
+
+#. module: diginesis_repair
+#: model:ir.model,name:diginesis_repair.model_repair_line
+msgid "Repair Line (parts)"
+msgstr "Linie de reparații (piese)"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_order__repair_notes
+#: model_terms:ir.ui.view,arch_db:diginesis_repair.diginesis_mrp_repair_repair_order_form
+msgid "Repair Notes"
+msgstr "Repair Notes"
+
+#. module: diginesis_repair
+#: model:ir.model,name:diginesis_repair.model_repair_order
+msgid "Repair Order"
+msgstr "Comanda de reparatie"
+
+#. module: diginesis_repair
+#: code:addons/diginesis_repair/models/repair.py:0
+#, python-format
+msgid "Repair cannot be ended - transfer move [{0}] for product {1}."
+msgstr "Reparația nu poate fi încheiată - mutarea transferului [{0}] pentru produsul {1}."
+
+#. module: diginesis_repair
+#: code:addons/diginesis_repair/models/repair.py:0
+#, python-format
+msgid "Repair must be repaired in order to make the product moves."
+msgstr "Reparația trebuie reparată pentru a face mișcările de produs."
+
+#. module: diginesis_repair
+#: model_terms:ir.ui.view,arch_db:diginesis_repair.diginesis_mrp_repair_repair_order_form
+msgid "Reported Faults"
+msgstr "Defecte raportate"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_order__schedule_date
+msgid "Scheduled Date"
+msgstr "Dată planificată"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,help:diginesis_repair.field_repair_order__invoice_method
+msgid ""
+"Selecting 'Before Repair' or 'After Repair' will allow you to generate "
+"invoice before or after the repair is done respectively. 'No invoice' means "
+"you don't want to generate invoice for this repair order."
+msgstr ""
+"Selectand 'Inainte de Reparatie' sau 'Dupa Reparatie' va va permite sa "
+"generati factura inainte de sau dupa reparatie. 'Fara Factura' inseamna ca "
+"nu doriti sa generati nici o factura pentru acest ordin de reparatii."
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_line__sequence
+msgid "Sequence"
+msgstr "Secvenţă"
+
+#. module: diginesis_repair
+#: model:ir.actions.act_window,name:diginesis_repair.action_repair_configuration
+#: model:ir.ui.menu,name:diginesis_repair.menu_repair_general_settings
+msgid "Settings"
+msgstr "Setări"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_fee__to_invoice
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_line__to_invoice
+msgid "To Invoice"
+msgstr "De facturat"
+
+#. module: diginesis_repair
+#: model:ir.model,name:diginesis_repair.model_stock_picking
+msgid "Transfer"
+msgstr "Transfer"
+
+#. module: diginesis_repair
+#: model:ir.model.fields,field_description:diginesis_repair.field_repair_line__type
+msgid "Type"
+msgstr "Tip"

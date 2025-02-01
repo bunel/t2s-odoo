@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+<template id="report_repairorder" inherit_id="repair.report_repairorder">
+     <xpath expr="//p[@t-field='o.quotation_notes']" position="after">
+         <strong>Repair Notes</strong><br/>
+         <p t-field="o.repair_notes"/>
+     </xpath>
+    <xpath expr="//p[@t-field='o.quotation_notes']" position="before">
+            <strong>Reported Faults</strong><br/>
+            <p t-field="o.internal_notes"/>
+            <strong>Quotation Notes</strong><br/>
+     </xpath>
+
+</template>
+
+<template id="report_repairorder2">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+            <t t-call="diginesis_repair.report_repairorder" t-lang="doc.partner_id.lang"/>
+        </t>
+    </t>
+</template>
+</data>
+</odoo>
