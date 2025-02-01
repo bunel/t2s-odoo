@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+			   
+		<record id="diginesis_carrier_rule_tree" model="ir.ui.view">
+            <field name="name">diginesis.carrier.rule.tree</field>
+            <field name="model">diginesis.delivery.carrier.rule</field>
+            <field name="arch" type="xml">
+                <tree string="Carrier rule">
+                    <field name="sequence" />
+                    <field name="type" />
+                    <field name="value" />
+                    <field name="carrier_id" />
+                    <!-- <field name="destination_field" /> -->
+                    <field name="destination_value" />
+                </tree>
+            </field>
+        </record>
+        
+        <record id="diginesis_carrier_rule_form" model="ir.ui.view">
+          <field name="name">diginesis.carrier.rule.form</field>
+          <field name="model">diginesis.delivery.carrier.rule</field>
+          <field name="arch" type="xml">
+          	<form string="Carrier rule" version="7.0">	          	
+				<sheet name="carrier_rule">					
+					<group name="meta">				
+						<group>	
+							<field name="sequence" />
+							<field name="type" />
+							<field name="value"/>
+							
+						</group>
+						<group>		
+							<field name="carrier_id" />
+						<!--	<field name="destination_field" /> -->
+							<field name="destination_value" />
+						</group>
+					</group>				
+				</sheet>
+              </form>
+          </field>
+       </record>
+        
+        <record id="diginesis_carrier_rule_filter" model="ir.ui.view">
+            <field name="name">diginesis.carrier.rule.select</field>
+            <field name="model">diginesis.delivery.carrier.rule</field>
+            <field name="arch" type="xml">
+            	<search string="Search rule">
+            		<field name="type" />
+            		<field name="carrier_id" />
+            	</search>
+            </field>
+        </record>
+        
+         <record id="act_open_diginesis_carrier_rule_view" model="ir.actions.act_window">
+            <field name="name">Default Courier Rules</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">diginesis.delivery.carrier.rule</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="diginesis_carrier_rule_filter"/>            
+            <field name="view_id" ref="diginesis_carrier_rule_tree"/>            
+        </record>
+        
+        <menuitem id="menu_carrier_rule_view" name="Default Courier Rules" parent="sale.menu_sale_config" action="act_open_diginesis_carrier_rule_view"/>     
+        
+        
+	</data>
+</odoo>

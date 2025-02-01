@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="diginesis_delivery_view_picking_form" model="ir.ui.view">
+            <field name="name">diginesis.delivery.stock.picking.form</field>
+            <field name="model">stock.picking</field>           
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+            
+                <xpath expr="/form/header//button[@name='action_cancel']" position="after">
+                    <button name="button_delivery" string="AWB Delivery" type="object" attrs="{'invisible': ['|',('state', 'in', ['draft']), ('picking_type_code', '!=', 'outgoing')]}" groups="diginesis_delivery.group_delivery_user" />
+                </xpath>
+                
+                <field name="picking_type_id" position="after">
+                	<field name="courier_id" />
+                </field>
+                
+            </field>
+        </record>
+    </data>
+</odoo>

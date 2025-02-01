@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+			   
+		<record id="diginesis_delivery_closed_days_tree" model="ir.ui.view">
+            <field name="name">diginesis.delivery.closed.days.tree</field>
+            <field name="model">diginesis.delivery.day.close</field>
+            <field name="arch" type="xml">
+                <tree string="Closed days">
+                    <field name="awb_date"/>
+                    <field name="carrier_name" />
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+        
+        <record id="diginesis_delivery_closed_days_form" model="ir.ui.view">
+          <field name="name">diginesis.delivery.closed.days.form</field>
+          <field name="model">diginesis.delivery.day.close</field>
+          <field name="arch" type="xml">
+          	<form string="Closed days" version="7.0">
+	          	<header>								
+					<button name="action_close" type="object" states="draft" string="Close day" class="oe_highlight"/>				
+					<button name="action_print" type="object" states="closed" string="Attach manifest" class="oe_highlight"/>				
+					<field name="state" widget="statusbar" statusbar_visible="draft,closed,with_manifest" statusbar_colors='{"with_manifest":"blue"}'/>
+				</header>
+				<sheet name="dpd_delivery">
+					<div class="oe_title">
+						<h1>							
+							<field name="name" />
+						</h1>
+					</div>
+					<group name="meta">				
+						<group colspan="4">	
+							<field name="awb_date" />
+							<field name="carrier_id" />
+						</group>
+						<group>		
+							<field name="message" />
+							<field name="awbs"/>
+						</group>
+					</group>				
+				</sheet>
+              </form>
+          </field>
+       </record>
+        
+        <record id="diginesis_delivery_closed_days_filter" model="ir.ui.view">
+            <field name="name">diginesis.delivery.closed.days.select</field>
+            <field name="model">diginesis.delivery.day.close</field>            
+            <field name="arch" type="xml">
+            	<search string="Search closed days">
+            		<field name="awb_date" />
+            		<field name="carrier_name" />
+            	</search>
+            </field>
+        </record>
+        
+         <record id="diginesis_delivery_closed_days" model="ir.actions.act_window">
+            <field name="name">Close delivery day</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">diginesis.delivery.day.close</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="diginesis_delivery_closed_days_filter"/>            
+            <field name="view_id" ref="diginesis_delivery_closed_days_tree"/>            
+        </record>
+        
+        <menuitem id="menu_delivery_day_close" name="Close delivery day" parent="stock.menu_stock_inventory_control" action="diginesis_delivery_closed_days"/>       
+        
+	</data>
+</odoo>

@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_diginesis_delivery_manager_carrier,diginesis.delivery.carrier.manager,model_diginesis_delivery_carrier,diginesis_delivery.group_delivery_manager,1,1,1,1
+access_diginesis_delivery_user_carrier,diginesis.delivery.carrier.user,model_diginesis_delivery_carrier,diginesis_delivery.group_delivery_user,1,0,0,0
+
+access_diginesis_delivery_manager_delivery,diginesis.delivery.delivery.manager,model_diginesis_delivery,diginesis_delivery.group_delivery_manager,1,1,1,1
+access_diginesis_delivery_user_delivery,diginesis.delivery.delivery.user,model_diginesis_delivery,diginesis_delivery.group_delivery_user,1,1,1,0
+
+access_diginesis_delivery_user_day_close,diginesis.delivery.day.close.user,model_diginesis_delivery_day_close,diginesis_delivery.group_delivery_user,1,1,1,0
+access_diginesis_delivery_carrier_rule,diginesis.delivery.carrier.rule.user,model_diginesis_delivery_carrier_rule,diginesis_delivery.group_delivery_user,1,1,1,0
+access_diginesis_delivery_carrier_rule_all,diginesis.delivery.carrier.rule.all,model_diginesis_delivery_carrier_rule,,1,0,0,0

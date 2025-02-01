@@ -1,0 +1,270 @@
+﻿# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* diginesis_delivery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-09-20 15:54+0000\n"
+"PO-Revision-Date: 2011-09-20 15:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-12-24 05:28+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#. module: diginesis_delivery
+#: model:ir.module.module,description
+msgid "Adds Delivery Integration Support"
+msgstr "Adauga Suport pentru Integrare Curieri"
+
+#. module: diginesis_delivery
+#: code:addons/diginesis_delivery/stock.py:51
+#, python-format
+msgid "Delivery cannot be created!"
+msgstr "Livrarea nu poate fi creată!"
+
+#. module: diginesis_delivery
+#: code:addons/diginesis_delivery/stock.py:51
+#, python-format
+msgid "Invalid carrier %s"
+msgstr "%s Curier invalid"
+
+#. module: diginesis_delivery
+#: code:addons/diginesis_delivery/stock.py:51
+#, python-format
+msgid "Error!"
+msgstr "Eroare!"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_api_endpoint_endpoint_line_name
+msgid "Name"
+msgstr "Nume"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_carrier_code
+msgid "Code"
+msgstr "Cod"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_create_date
+msgid "Create Date"
+msgstr "Data Creării"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_res_model
+msgid "Related Delivery Model"
+msgstr "Modul Livrare Asociat"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_res_id
+msgid "Related Delivery ID"
+msgstr "ID Livrare Asociată"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_stock_picking_id
+msgid "Delivery"
+msgstr "Livrare"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_awb
+msgid "AWB"
+msgstr "AWB"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_carrier_name
+#: model:ir.model.fields,field_description:field_diginesis_delivery_day_close_carrier_id
+#: model:ir.model.fields,field_description:field_diginesis_delivery_day_close_carrier_name
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_form
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_tree
+msgid "Carrier"
+msgstr "Curier"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_state
+msgid "State"
+msgstr "Status"
+
+#. module: diginesis_delivery
+#: view:delivery.note:0
+msgid "AWB Delivery"
+msgstr "Livrare AWB"
+
+#. module: diginesis_delivery
+#: model:ir.actions.act_window,name:diginesis_delivery.diginesis_delivery_action_deliveries
+#: model:ir.ui.menu,name:diginesis_delivery.diginesis_delivery_menu_deliveries
+msgid "Deliveries"
+msgstr "Livrări"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_api_endpoint_username
+msgid "Username"
+msgstr "Nume utilizator"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_api_endpoint_password
+msgid "Password"
+msgstr "Parolă"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_api_endpoint_clientid
+msgid "ClientId"
+msgstr "IdClient"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_api_endpoint_endpoint
+#: model:ir.model.fields,field_description:field_diginesis_api_endpoint_endpoint_line_endpoint
+msgid "Endpoint"
+msgstr "Punct acces"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_api_endpoint_endpoint_lines
+msgid "Endpoints"
+msgstr "Puncte acces"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_api_endpoint_endpoint_credentials_id
+msgid "Endpoint Credentials"
+msgstr "Date Punct acces"
+
+#. module: diginesis_delivery
+#: view:product.product:diginesis_delivery.diginesis_delivery_view_picking_form
+#: model:ir.ui.view,arch_db:diginesis_delivery.diginesis_delivery_view_picking_form
+#: model:ir.model.fields,field_description:diginesis_delivery.field_diginesis_delivery_stock_picking_courier_id
+#: field:diginesis_delivery.stock.picking,courier_id:0
+msgid "Courier"
+msgstr "Curier"
+
+#. module: diginesis_delivery
+#: model:ir.actions.act_window,name:diginesis_delivery.diginesis_delivery_closed_days
+#: model:ir.ui.menu,name:diginesis_delivery.menu_delivery_day_close
+msgid "Close delivery day"
+msgstr "Închidere Zi Livrare"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_day_close_awb_date
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_form
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_tree
+msgid "AWB Date"
+msgstr "Dată AWB"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_day_close_message
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_form
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_tree
+msgid "Message"
+msgstr "Mesaj"
+
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_day_awbs
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_form
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_tree
+msgid "Related Deliveries"
+msgstr "Livrări"
+
+#. module: diginesis_delivery
+#: model:ir.model.fields,field_description:field_diginesis_delivery_day_state
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_form
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_tree
+msgid "State"
+msgstr "Stare"
+
+#. module: diginesis_delivery
+#: selection:diginesis.delivery.close.day,state:0
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_form
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_tree
+msgid "Draft"
+msgstr "Ciornă"
+
+#. module: diginesis_delivery
+#: selection:diginesis.delivery.close.day,state:0
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_form
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_tree
+msgid "Closed"
+msgstr "Închis"
+
+#. module: diginesis_delivery
+#: selection:diginesis.delivery.close.day,state:0
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_form
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_tree
+msgid "With Manifest"
+msgstr "Cu Manifest"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_form
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_tree
+msgid "Close day"
+msgstr "Închide ziua"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_form
+#: view:diginesis.delivery.close.day:diginesis_delivery.diginesis_delivery_closed_days_tree
+msgid "Attach manifest"
+msgstr "Atașează manifest"
+
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_form
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_tree
+#: model:ir.model.fields,field_description:field_diginesis_delivery_carrier_rule_sequence
+msgid "Sequence"
+msgstr "Secvență"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_form
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_tree
+#: model:ir.model.fields,field_description:field_diginesis_delivery_carrier_rule_value
+msgid "Value"
+msgstr "Valoare"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_form
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_tree
+#: model:ir.model.fields,field_description:field_diginesis_delivery_carrier_rule_carrier_id
+msgid "Courier"
+msgstr "Curier"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_form
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_tree
+#: model:ir.model.fields,field_description:field_diginesis_delivery_carrier_rule_type
+msgid "Type"
+msgstr "Tip"
+
+#. module: diginesis_delivery
+#: selection:diginesis.delivery.carrier.rule,type:0
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_form
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_tree
+msgid "State"
+msgstr "Județ"
+
+#. module: diginesis_delivery
+#: selection:diginesis.delivery.carrier.rule,type:0
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_form
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_tree
+msgid "City"
+msgstr "Localitate"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_form
+#: view:diginesis.delivery.carrier.rule:diginesis_delivery.diginesis_carrier_rule_tree
+#: model:ir.model.fields,field_description:field_diginesis_delivery_carrier_rule_destination_value
+msgid "Zip"
+msgstr "Cod Poștal"
+
+#. module: diginesis_delivery
+#: model:ir.actions.act_window,name:diginesis_delivery.act_open_diginesis_carrier_rule_view
+#: model:ir.ui.menu,name:diginesis_delivery.menu_carrier_rule_view
+msgid "Default Courier Rules"
+msgstr "Reguli Curier Implicit"
+
+
+#. module: diginesis_delivery
+#: model:ir.actions.act_window,name:diginesis_delivery.act_open_diginesis_api_credentials_view
+#: model:ir.ui.menu,name:diginesis_delivery.menu_api_endpoint_credentials_view
+msgid "Api Credentials"
+msgstr "Autentificare Api"

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+			   
+		<record id="diginesis_delivery_view_deliveries_tree" model="ir.ui.view">
+            <field name="name">diginesis.delivery.view.deliveries.tree</field>
+            <field name="model">diginesis.delivery</field>
+            <field name="arch" type="xml">
+                <tree string="Deliveries">
+                    <field name="create_date"/>
+                    <field name="stock_picking_id"/>
+                    <field name="awb" />
+                    <field name="carrier_name" />
+                    <field name="state" />
+                    <field name="res_id" invisible="1"/>
+                    <field name="res_model" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="diginesis_delivery_view_deliveries_filter" model="ir.ui.view">
+            <field name="name">diginesis.delivery.deliveries.select</field>
+            <field name="model">diginesis.delivery</field>            
+            <field name="arch" type="xml">
+            	<search string="Search Deliveries">
+            		<field name="stock_picking_id" />
+            		<!-- <field name="carrier_name" />
+            		<field name="awb" /> -->
+            	</search>
+            </field>
+        </record>
+        
+         <record id="diginesis_delivery_action_deliveries" model="ir.actions.act_window">
+            <field name="name">Deliveries</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">diginesis.delivery</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="diginesis_delivery_view_deliveries_filter"/>            
+            <field name="view_id" ref="diginesis_delivery_view_deliveries_tree"/>            
+        </record>        
+        
+		<record id="diginesis_delivery_carrier_view_tree" model="ir.ui.view">
+            <field name="name">diginesis.delivery.carrier.tree</field>
+            <field name="model">diginesis.delivery.carrier</field>
+            <field name="arch" type="xml">
+                <tree string="Delivery Carrier">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="diginesis_delivery_carrier_view_form" model="ir.ui.view">
+          <field name="name">diginesis.delivery.carrier.form</field>
+          <field name="model">diginesis.delivery.carrier</field>
+          <field name="arch" type="xml">
+          	<form string="Delivery Carrier" version="7.0">
+				<sheet name="delivery_carrier">
+					<div class="oe_title">
+						<h1>
+							<field name="name" />
+						</h1>
+					</div>
+					<group name="meta" col="4">
+						<field name="code" readonly="1"/>
+					</group>	
+				</sheet>		
+            </form>
+          </field>
+       </record>
+       
+       <record id="diginesis_delivery_action_carriers" model="ir.actions.act_window">
+            <field name="name">Delivery Carrier</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">diginesis.delivery.carrier</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="diginesis_delivery_carrier_view_tree"/>            
+        </record>
+        
+        <menuitem id="diginesis_delivery_menu_deliveries" parent="sale.sale_order_menu" action="diginesis_delivery_action_deliveries"/>
+        
+        <menuitem id="diginesis_delivery_menu_carriers" name="Delivery Carrier" parent="sale.menu_sale_config" action="diginesis_delivery_action_carriers"/> 
+	</data>
+</odoo>

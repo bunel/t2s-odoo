@@ -1,0 +1,25 @@
+{
+    "name" : "Diginesis Delivery",
+    "version" : "0",
+    "author" : "SC Diginesis SRL",
+    "website" : "http://www.diginesis.com",
+    "category" : "Generic Modules/Company",
+    "description": """
+Adds Delivery Integration Support
+""",
+    "depends" : ["base", "account", "stock", "sale"],
+    "init_xml" : [],
+    "data" : ["security/security.xml", 
+			 	"security/ir.model.access.csv",
+			 	"views/delivery_view.xml", 
+			 	"views/stock_view.xml", 
+			 	"views/delivery_day_close_view.xml", 
+			 	"views/delivery_carrier_rule_view.xml",
+			 	"views/res_config_settings_views.xml",
+			 ],
+    "demo_xml" : [],
+    "active": False,
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}
