@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="report_warrantycertificate_document">
+    <t t-call="web.external_layout">
+        <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)" />
+       
+        <div class="page">
+            <div class="oe_structure"/>
+			
+			<h2 name="title" class="mb-4 text-center">Warrany Certificate</h2>
+			
+			<p name="body1">
+				The warranty is valid for a period of <span t-field="line.warranty"/> month(s) from the date of receipt by the customer for equipment that does not 
+				require installation or the date of installation for machines and equipment. 
+				Installation means the commissioning operations performed by the specialized personnel of the supplier. 
+				The warranty loses its validity if unauthorized intervention is found on the equipment. 
+				Parts identified by defective material or workmanship will be replaced free of charge by the supplier during the warranty period. manufacturing. 
+				It will also fix any mounting defects. Defective spare parts replaced with functional ones will be returned to the supplier.
+			</p>
+			<p name="body2">
+				Spare parts are provided for normal operation of the machine and not for defects that may occur in the following cases:<br/>
+				<ul>
+					<li>the instructions and instructions for use in the car manual are not followed or the machine is given another utility</li>
+					<li>incorrect connection to the power supply</li>
+					<li>in case of unauthorized repairs or modifications</li>
+				</ul>
+			</p>
+			<p name="body3">
+				Maintenance and service:<br/>
+				All interventions on the equipment must be performed by specialized personnel <span t-field="doc.company_id.name"/>. Requests for repair services are made on the basis of a 
+				written order sent to <span t-field="doc.company_id.partner_id.email"/>. The staff of the supplier will establish together with the client how to solve the 
+				situation. 
+				Depending on the working frequency of the machine, it is recommended to perform an overhaul no later than 12 months after purchase. 
+				For cars that work in 2 or 3 shifts, the revisions must be made every 6 months.
+			</p>
+			<p name="body4" class="nb16">
+				This certificate has been issued for invoice: <span t-field="doc.name"/> / <span t-field="doc.invoice_date"/>
+			</p>
+			<p name="body5" class="nb16">
+				This document is certified for the product <span t-field="line.product_id.display_name"/>, serial: <span t-field="line.serial_number_id"/>
+			</p>
+        </div>
+    </t>
+</template>
+
+
+<template id="report_warrantycertificate">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+            <t t-foreach="doc.invoice_line_ids" t-as="line">
+            	<t t-if="line.serial_number_id and line.product_id and line.product_id.type != 'service'">
+            		<t t-call="diginesis_warranty.report_warrantycertificate_document" t-lang="doc.partner_id.lang"/>
+            	</t>
+            </t>
+        </t>
+    </t>
+</template>
+
+</odoo>

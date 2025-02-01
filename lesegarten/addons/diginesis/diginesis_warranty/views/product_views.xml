@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+	    
+	    <record id="dw_product_template_form_view" model="ir.ui.view">
+	        <field name="name">dw.product.template.common.form</field>
+	        <field name="model">product.template</field>
+	        <field name="inherit_id" ref="product.product_template_form_view"/>
+	        <field name="arch" type="xml">
+	        	<xpath expr="//page[@name='sales']/group[@name='sale']" position="inside">
+	        		<group name="sale_condition" string="Sale Conditions">
+	                    <label for="warranty"/>
+	                    <div>
+	                        <field name="warranty" class="oe_inline"/> months
+	                    </div>
+	                </group>
+	        	</xpath>
+	        </field>
+	    </record>
+
+    </data>
+</odoo>

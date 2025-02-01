@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+<template id="report_repairorder" inherit_id="repair.report_repairorder">
+     <xpath expr="//t[@t-if='o.lot_id']" position="replace">
+		<t t-if="o.serial_number_id">
+			<span t-field="o.serial_number_id"/>
+        </t>
+	 </xpath>
+	 
+</template>
+
+
+</data>
+</odoo>

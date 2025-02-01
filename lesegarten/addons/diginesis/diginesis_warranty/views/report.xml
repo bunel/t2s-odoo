@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- QWeb Reports -->
+        <record id="dw_warrany_certificate" model="ir.actions.report">
+            <field name="name">Warranty Certificate</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">diginesis_warranty.report_warrantycertificate</field>
+            <field name="report_file">diginesis_warranty.report_warrantycertificate</field>
+            <field name="print_report_name">'WarrantyCertificate.pdf'</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

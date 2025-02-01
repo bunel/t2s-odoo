@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="dwr_serial_number_tree_form_view" model="ir.ui.view">
+            <field name="name">dwr.serial.number.form.view</field>
+            <field name="model">serial.number</field>
+            <field name="inherit_id" ref="diginesis_warranty.diginesis_serial_number_tree_form_view"/>
+            <field name="arch" type="xml">
+                <div name="button_box" position="inside">     
+                	<button name="action_view_repairs" type="object" class="oe_stat_button" string="Repairs" icon="fa-wrench" />
+                </div>                
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="diginesis_serial_number_tree_view" model="ir.ui.view">
+            <field name="name">diginesis.serial.number.tree.view</field>
+            <field name="model">serial.number</field>
+            <field name="arch" type="xml">
+                <tree string="Serial Numbers">
+                    <field name="partner_id"/>      
+                    <field name="name"/>
+                    <field name="product_id"/>
+                    <field name="warranty"/>
+                    <field name="warranty_expiration_date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="diginesis_serial_number_tree_form_view" model="ir.ui.view">
+            <field name="name">diginesis.serial.number.form.view</field>
+            <field name="model">serial.number</field>
+            <field name="arch" type="xml">
+                <form string="Serial Numbers">
+                <header>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet string="Serial Numbers">
+                	<div class="oe_button_box" name="button_box">                        
+                    </div>
+                	<group>
+	                    <group>
+	                        <field name="name"/>	                        
+	                        <field name="product_id"/>
+	                        <field name="partner_id" domain="[('customer_rank', '>', 0)]"/>
+	                        <field name="note"/>
+	                     </group>
+	                     <group>	                     	
+	                        <field name="invoice_date"/>
+	                        <field name="warranty"/>
+	                        <field name="warranty_expiration_date"/>
+	                    </group>
+	                </group>
+                </sheet>
+                <!-- Chatter -->
+	            <div class="oe_chatter">
+	                <field name="message_follower_ids" groups="base.group_user"/>
+	                <field name="message_ids"/>
+	            </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="diginesis_serial_number_tree_action" model="ir.actions.act_window">
+            <field name="name">Serial Numbers</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">serial.number</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="diginesis_serial_number_tree_view"/>
+        </record>
+
+         <menuitem parent="sale.menu_sale_config" id="menu_diginesis_serial_number_tree_action" action="diginesis_serial_number_tree_action" />
+    </data>
+</odoo>

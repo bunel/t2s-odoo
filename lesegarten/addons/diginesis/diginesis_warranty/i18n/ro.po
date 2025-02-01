@@ -1,0 +1,396 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * diginesis_warranty
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20211105\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-06 18:56+0000\n"
+"PO-Revision-Date: 2022-03-06 21:12+0200\n"
+"Last-Translator: \n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+
+#. module: diginesis_warranty
+#: model:ir.actions.report,print_report_name:diginesis_warranty.dw_warrany_certificate
+msgid "'WarrantyCertificate.pdf'"
+msgstr "'CertificatGarantie.pdf'"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid ", serial:"
+msgstr ", serial:"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid ""
+". Requests for repair services are made on the basis of a \n"
+"\t\t\t\twritten order sent to"
+msgstr ""
+". Solicitările de servicii de reparații se fac pe baza \n"
+"\t\t\t\tcomenzii scrise trimisa catre"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid ""
+". The staff of the supplier will establish together with the client how to solve the \n"
+"\t\t\t\tsituation. \n"
+"\t\t\t\tDepending on the working frequency of the machine, it is recommended to perform an overhaul no later than 12 months after purchase. \n"
+"\t\t\t\tFor cars that work in 2 or 3 shifts, the revisions must be made every 6 months."
+msgstr ""
+". Personalul furnizorului va stabili împreună cu clientul modul de rezolvare "
+"a \n"
+"\t\t\t\tsituației. \n"
+"\t\t\t\tÎn funcție de frecvența de lucru a mașinii, se recomandă "
+"efectuarea unei revizii în cel mult 12 luni de la cumpărare. \n"
+"\t\t\t\tPentru mașinile care lucrează în 2 sau 3 schimburi, reviziile "
+"trebuie făcute la fiecare 6 luni."
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_needaction
+msgid "Action Needed"
+msgstr "Acțiune necesară"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_attachment_count
+msgid "Attachment Count"
+msgstr "Număr de atașamente"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields.selection,name:diginesis_warranty.selection__serial_number__state__available
+msgid "Available"
+msgstr "Disponibil"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__partner_id
+msgid "Client"
+msgstr "Client"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__create_uid
+msgid "Created by"
+msgstr "Creat de"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__create_date
+msgid "Created on"
+msgstr "Creat in"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_follower_ids
+msgid "Followers"
+msgstr "Urmaritori"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Urmaritori (Parteneri)"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__has_message
+msgid "Has Message"
+msgstr "Are mesaj"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__id
+msgid "ID"
+msgstr "ID"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,help:diginesis_warranty.field_serial_number__message_needaction
+#: model:ir.model.fields,help:diginesis_warranty.field_serial_number__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Dacă sunt bifate, mesajele noi necesită atenția dvs."
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,help:diginesis_warranty.field_serial_number__message_has_error
+#: model:ir.model.fields,help:diginesis_warranty.field_serial_number__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Dacă sunt bifate, unele mesaje au o eroare de livrare."
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__invoice_date
+msgid "Invoice Date"
+msgstr "Data facturii"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_is_follower
+msgid "Is Follower"
+msgstr "Este urmaritor"
+
+#. module: diginesis_warranty
+#: model:ir.model,name:diginesis_warranty.model_account_move
+msgid "Journal Entry"
+msgstr "Notă contabilă"
+
+#. module: diginesis_warranty
+#: model:ir.model,name:diginesis_warranty.model_account_move_line
+msgid "Journal Item"
+msgstr "Element jurnal"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificare pe"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualizare de către"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualizare pe"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Atașamentul principal"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid ""
+"Maintenance and service:<br/>\n"
+"\t\t\t\tAll interventions on the equipment must be performed by specialized personnel"
+msgstr ""
+"Întreținere și service:<br/>\n"
+"\t\t\t\tToate interventiile asupra echipamentului trebuie efectuate de "
+"personal specializare"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_has_error
+msgid "Message Delivery error"
+msgstr "Eroare de livrare a mesajului"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_ids
+msgid "Messages"
+msgstr "Mesaje"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__name
+msgid "Name"
+msgstr "Nume"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__note
+msgid "Note"
+msgstr "Note"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numărul de acțiuni"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_has_error_counter
+msgid "Number of errors"
+msgstr "Numărul de erori"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,help:diginesis_warranty.field_serial_number__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Numărul de mesaje care necesită o acțiune"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,help:diginesis_warranty.field_serial_number__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numărul de mesaje cu eroare de livrare"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,help:diginesis_warranty.field_serial_number__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Numărul de mesaje necitite"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__product_id
+msgid "Product"
+msgstr "Produs"
+
+#. module: diginesis_warranty
+#: model:ir.model,name:diginesis_warranty.model_product_template
+msgid "Product Template"
+msgstr "Șablon produs"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Eroare de livrare prin SMS"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.dw_product_template_form_view
+msgid "Sale Conditions"
+msgstr "Conditii de vanzare"
+
+#. module: diginesis_warranty
+#: model:ir.model,name:diginesis_warranty.model_serial_number
+#: model:ir.model.fields,field_description:diginesis_warranty.field_account_move_line__serial_number_id
+msgid "Serial Number"
+msgstr "Număr de serie"
+
+#. module: diginesis_warranty
+#: model:ir.model.constraint,message:diginesis_warranty.constraint_serial_number_nameprod_uniq
+msgid "Serial Number must be unique per Product!"
+msgstr "Numărul de serie trebuie să fie unic pentru fiecare produs!"
+
+#. module: diginesis_warranty
+#: model:ir.actions.act_window,name:diginesis_warranty.diginesis_serial_number_tree_action
+#: model:ir.ui.menu,name:diginesis_warranty.menu_diginesis_serial_number_tree_action
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.diginesis_serial_number_tree_form_view
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.diginesis_serial_number_tree_view
+msgid "Serial Numbers"
+msgstr "Numere de serie"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields.selection,name:diginesis_warranty.selection__serial_number__state__sold
+msgid "Sold"
+msgstr "Vândut"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid ""
+"Spare parts are provided for normal operation of the machine and not for "
+"defects that may occur in the following cases:<br/>"
+msgstr ""
+"Piesele de schimb sunt furnizate pentru funcționarea normală a mașinii și nu "
+"pentru defecte care pot apărea în următoarele cazuri:<br/>"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__state
+msgid "Status"
+msgstr "Status"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid "The warranty is valid for a period of"
+msgstr "Garantia este valabila pentru o perioada de"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid "This certificate has been issued for invoice:"
+msgstr "Acest certificat a fost emis pentru factura:"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid "This document is certified for the product"
+msgstr "Acest document este certificat pentru produs"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_unread
+msgid "Unread Messages"
+msgstr "Mesaje necitite"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contor de mesaje necitite"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_product_product__warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_product_template__warranty
+msgid "Warranty"
+msgstr "Garanție"
+
+#. module: diginesis_warranty
+#: model:ir.actions.report,name:diginesis_warranty.dw_warrany_certificate
+msgid "Warranty Certificate"
+msgstr "Certificat de garanție"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__warranty_expiration_date
+msgid "Warranty Expiration Date"
+msgstr "Data de expirare a garanției"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_account_move_line__warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__warranty
+msgid "Warranty Period"
+msgstr "Perioada de garantie"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.dw_view_move_line_form
+msgid "Warranty Period (months)"
+msgstr "Perioada de garanție (luni)"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,help:diginesis_warranty.field_product_product__warranty
+#: model:ir.model.fields,help:diginesis_warranty.field_product_template__warranty
+msgid "Warranty in months"
+msgstr "Garantie in luni"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,help:diginesis_warranty.field_account_move_line__warranty
+#: model:ir.model.fields,help:diginesis_warranty.field_serial_number__warranty
+msgid "Warranty period in months"
+msgstr "Perioada de garantie in luni"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid "Warrany Certificate"
+msgstr "Certificat de garanție"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,field_description:diginesis_warranty.field_serial_number__website_message_ids
+msgid "Website Messages"
+msgstr "Mesaje pe site"
+
+#. module: diginesis_warranty
+#: model:ir.model.fields,help:diginesis_warranty.field_serial_number__website_message_ids
+msgid "Website communication history"
+msgstr "Istoricul comunicării site-ului"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid "in case of unauthorized repairs or modifications"
+msgstr "în cazul reparaţiilor sau modificărilor neautorizate"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid "incorrect connection to the power supply"
+msgstr "conectare incorectă la sursa de alimentare"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid ""
+"month(s) from the date of receipt by the customer for equipment that does not \n"
+"\t\t\t\trequire installation or the date of installation for machines and equipment. \n"
+"\t\t\t\tInstallation means the commissioning operations performed by the specialized personnel of the supplier. \n"
+"\t\t\t\tThe warranty loses its validity if unauthorized intervention is found on the equipment. \n"
+"\t\t\t\tParts identified by defective material or workmanship will be replaced free of charge by the supplier during the warranty period. manufacturing. \n"
+"\t\t\t\tIt will also fix any mounting defects. Defective spare parts replaced with functional ones will be returned to the supplier."
+msgstr ""
+"lună(lunile) de la data primirii de către client pentru echipamente care nu \n"
+"\t\t\t\tnecesita instalarea sau data instalării pentru mașini și "
+"echipamente. \n"
+"\t\t\t\tInstalare înseamnă operațiunile de punere în funcțiune efectuate "
+"de personalul de specialitate al furnizorului. \n"
+"\t\t\t\tGaranția își pierde valabilitatea dacă se constată intervenție "
+"neautorizată asupra echipamentului. \n"
+"\t\t\t\tPiesele identificate prin defecte de material sau de manoperă "
+"vor fi înlocuite gratuit de furnizor în perioada de garanție. de fabricație. "
+"\n"
+"\t\t\t\tDe asemenea, va remedia orice defecte de montare. Piesele de "
+"schimb defecte înlocuite cu altele funcționale vor fi returnate furnizorului."
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.dw_product_template_form_view
+msgid "months"
+msgstr "luni"
+
+#. module: diginesis_warranty
+#: model_terms:ir.ui.view,arch_db:diginesis_warranty.report_warrantycertificate_document
+msgid ""
+"the instructions and instructions for use in the car manual are not followed"
+" or the machine is given another utility"
+msgstr ""
+"instrucțiunile și instrucțiunile de utilizare din manualul mașinii nu sunt "
+"respectate sau mașinii i se dă o altă utilitate"

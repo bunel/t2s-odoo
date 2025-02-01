@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="dwr_view_repair_order_tree" model="ir.ui.view">
+            <field name="name">dwr.repair.tree</field>
+            <field name="model">repair.order</field>
+            <field name="inherit_id" ref="repair.view_repair_order_tree"/>
+            <field name="arch" type="xml">
+                <field name="product_id" position="after">
+                    <field name="serial_number_id" />
+                </field>
+            </field>
+        </record>
+
+        <record id="dwr_view_repair_order_form" model="ir.ui.view">
+            <field name="name">dwr.repair.form</field>
+            <field name="model">repair.order</field>
+            <field name="inherit_id" ref="repair.view_repair_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_id']" position="after">
+                    <field name="serial_number_id" domain="[('product_id','=', product_id)]" options="{'no_create': true}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="dwr_view_repair_order_form_filter" model="ir.ui.view">
+            <field name="name">dwr.repair.select</field>
+            <field name="model">repair.order</field>
+            <field name="inherit_id" ref="repair.view_repair_order_form_filter"/>
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                    <field name="serial_number_id"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>
