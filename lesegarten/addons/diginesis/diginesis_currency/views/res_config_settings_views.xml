@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="dcru_res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">dcru.res.config.settings.view.form.inherit</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@data-key='account']" position="inside">
+                <h2>Currency Rate Update</h2>
+                <div class="row mt16 o_settings_container" name="currency_rate_update_settings_container">
+                    <div class="col-12 o_setting_box">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                        	<label for="currency_update_main_currency_name" />
+                            <div class="text-muted">
+                                Currency name as it appears in data to be imported
+                            </div>
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <field name="currency_update_main_currency_name" />
+                                </div>                                
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-12 o_setting_box">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                        	<label for="currency_update_endpoint" />
+                            <div class="text-muted">
+                                Url to data to be imported (eg. http://www.bnr.ro/nbrfxrates.xml)
+                            </div>
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <field name="currency_update_endpoint" />
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

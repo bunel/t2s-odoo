@@ -1,0 +1,44 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="currency_auto_comp">
+            <field name="name">res.company.form.inherit</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Currency Rate Update" name="currency_rate_update">
+						<group>
+							<group>
+								<field name="auto_update_currencies" string="Automatic Update"/>
+								<field name="start_date" attrs="{'readonly':[('auto_update_currencies','=',False)], 'required':[('auto_update_currencies','=',True)]}"/>								
+							</group>
+							<group>
+								<field name="interval_number" attrs="{'readonly':[('auto_update_currencies','=',False)], 'required':[('auto_update_currencies','=',True)]}"/>
+								<field name="interval_type" attrs="{'readonly':[('auto_update_currencies','=',False)], 'required':[('auto_update_currencies','=',True)]}"/>
+							</group>
+							<separator string="Currencies to update" colspan="4"/>
+							<field name="update_currency_ids" colspan="4" nolabel="1">
+								<tree limit="10">
+                                    <field name="name"/>                                   
+                                    <field name="rate" digits="[12,12]"/>
+                                    <field name="inverse_rate" digits="[12,12]"/>
+                                    <field name="date" />
+                                </tree>
+							</field>
+							<separator string="Currency update log" colspan="4"/>
+							<field name="currency_update_log_ids" colspan="4" nolabel="1">
+								<tree string="Currency update log">
+									<field name="date"/>
+									<field name="name"/>
+								</tree>
+							</field>
+							<button name="action_refresh_currencies" string="Refresh" type="object"/>
+						</group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>
+
