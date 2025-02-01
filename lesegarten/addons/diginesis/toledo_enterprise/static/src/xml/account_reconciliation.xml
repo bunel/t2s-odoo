@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+
+<t t-name="reconciliation.line" t-extend="reconciliation.line">
+    <t t-jquery="table.accounting_view thead td.cell_label" t-operation="append">
+       <t t-if="state.st_line.note" t-out="state.st_line.note"/>
+    </t>
+</t>
+
+
+<t t-name="reconciliation.line.mv_line" t-extend="reconciliation.line.mv_line">
+    <t t-jquery="td.cell_label " t-operation="append">
+        <t t-if="line.note" t-out="line.note"/>
+    </t>
+</t>
+
+</templates>
