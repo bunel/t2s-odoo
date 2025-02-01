@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+       <record id="dummy_rounding_currency" model="res.currency">
+           <field name="full_name">RND</field>
+           <field name="name">Rounding Currency</field>
+           <field name="active" eval="'False'" />
+           <field name="symbol">RND</field>
+           <field name="rounding">0.0001</field>
+        </record>
+    </data>
+</odoo>

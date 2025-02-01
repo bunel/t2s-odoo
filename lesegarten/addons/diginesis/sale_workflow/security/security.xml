@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<odoo>
+	<data>
+		<record id="group_allow_edit_invoice_on_picking" model="res.groups">
+			<field name="name">Allow invoice field edit on picking</field>
+		</record>
+	</data>
+</odoo>

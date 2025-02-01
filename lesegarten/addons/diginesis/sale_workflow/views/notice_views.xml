@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="sw_account_notice_customer_form" model="ir.ui.view">
+        <field name="name">sw.account.notice.customer.form</field>
+        <field name="model">account.notice</field>
+        <field name="inherit_id" ref="account_notice.account_notice_customer_form"/>
+        <field name="arch" type="xml">
+            <field name="address_delivery_id" position="after">
+                <field name="delegate_id" />
+                <field name="vehicle_reference" />
+                <field name="autocomplete_picking_id" domain="[('partner_id.commercial_partner_id', '=', partner_id), ('location_usage', '=' ,'internal')]" />
+            </field>
+            <field name="date" position="after">
+                <field name="responsible_id" />
+            </field>
+            <xpath expr="//page[@name='other_info']//field[@name='account_id']" position="after">
+                <field name="incoterm_id" groups="account.group_account_user" options="{'no_create': True}"/>
+            </xpath>
+            <xpath expr="//field[@name='notice_line_ids']/tree/field[@name='discount']" position="attributes">
+                <attribute name="invisible">0</attribute>
+                <attribute name="groups">product.group_discount_per_so_line</attribute>
+            </xpath>
+
+            <div name="button_box" position="inside">
+                <field name="sale_count" invisible="1" />
+                <button type="object" attrs="{'invisible': [('sale_count', '=', 0)]}"
+                    name="action_view_sales"
+                    class="oe_stat_button" icon="fa-truck">
+                    <field name="sale_count" widget="statinfo" string="Sales"/>
+                </button>
+            </div>
+        </field>
+    </record>
+
+    <menuitem id="menu_sale_notice" name="Notice" parent="sale.sale_menu_root" sequence="3" groups="account_notice.group_vendor_notice_manager,account_notice.group_customer_notice_manager,account_notice.group_internal_notice_manager"/>
+
+        <menuitem action="account_notice.action_notice_supplier_tree" id="menu_sale_notice_supplier" parent="sale_workflow.menu_sale_notice" name="Vendor Notice" groups="account_notice.group_vendor_notice_manager"/>
+        <menuitem action="account_notice.action_notice_customer_tree" id="menu_sale_notice_customer" parent="sale_workflow.menu_sale_notice" name="Customer Notice" groups="account_notice.group_customer_notice_manager"/>
+        <menuitem action="account_notice.action_notice_internal_tree" id="menu_sale_notice_internal" parent="sale_workflow.menu_sale_notice" name="Internal Notice" groups="account_notice.group_internal_notice_manager"/>
+</odoo>

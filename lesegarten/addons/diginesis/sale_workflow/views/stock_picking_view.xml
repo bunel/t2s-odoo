@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="sw_view_picking_form" model="ir.ui.view">
+        <field name="name">sw.view_picking_form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="account_notice.an_view_picking_form" />
+        <field name="arch" type="xml">
+            <field name="notice_id" position="after">
+                <field name="outgoing_notice_id" invisible="1"/>
+            </field>
+            <div name="button_box" position="inside">
+                <button type="object"
+                    name="action_view_notice"
+                    class="oe_stat_button"
+                    icon="fa-truck"  string="Notice"
+                    attrs="{'invisible': [('picking_type_code', '!=', 'outgoing')]}"
+                />
+            </div>
+            <button name="button_scrap" position="after">
+                <button name="do_notice" string="Create Notice" type="object" attrs="{'invisible': ['|', '|', '|', '|', ('state','in',['cancel']),('notice_id', '!=', False), ('outgoing_notice_id', '!=', False), ('picking_type_code', '!=', 'outgoing'), ('invoice_id', '!=', False)]}" class="oe_highlight"/>
+            </button>
+            <field name="origin" position="after">
+                <field name="invoice_id" options="{'no_create':True}" attrs="{'invisible': [ ('picking_type_code', '!=', 'outgoing')], 'readonly': [('state', 'in', ['done'])]}"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="sw_view_picking_form2" model="ir.ui.view">
+        <field name="name">sw.view_picking_form2</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="sale_workflow.sw_view_picking_form" />
+        <field name="groups_id" eval="[(4,ref('sale_workflow.group_allow_edit_invoice_on_picking'))]"/>
+        <field name="arch" type="xml">
+            <field name="invoice_id" position="attributes">
+                <attribute name="attrs">{'invisible': [ ('picking_type_code', '!=', 'outgoing')]}</attribute>
+            </field>
+        </field>
+    </record>
+
+</odoo>

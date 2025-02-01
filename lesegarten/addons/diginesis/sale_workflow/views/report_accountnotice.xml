@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+	<template id="report_deliverynote_document" inherit_id="account_notice.report_deliverynote_document">
+		<xpath expr="//div[hasclass('footer')]/div[hasclass('zero_min_height')]" position="before">
+			<div t-if="o.responsible_id" name="responsible_info" class="row"><p style="font-size: 9pt;"><span t-field="o.responsible_id"/> I confirm that the goods are intact, upon first sealing, and were handed over to the delegate in good condition.</p></div>
+		</xpath>
+		<xpath expr="//div[hasclass('footer')]//table[@id='footer_shipment_table']//td[@name='shipment_date']" position="attributes">
+			<attribute name="width">25%</attribute>
+		</xpath><xpath expr="//div[hasclass('footer')]//table[@id='footer_shipment_table']//td[@name='misc']" position="attributes">
+			<attribute name="width">20%</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('footer')]//table[@id='footer_shipment_table']//td[@name='misc']" position="before">
+			<td width="25%" class="text-left" style="border-right: 0px!important;" name="delegate">
+				<p style="font-size: 9pt;">Delegate: <strong><span t-field="o.delegate_id"/></strong><br/>
+					ID Serial: <strong></strong> No.: <strong></strong><br/>
+					Auto: <strong><span t-field="o.vehicle_reference"/></strong>
+				</p>
+			</td>
+		</xpath>
+	</template>
+</data>
+</openerp>
+

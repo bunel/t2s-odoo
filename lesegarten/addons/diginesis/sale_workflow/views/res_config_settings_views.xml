@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sw_res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">sw.res.config.settings.view.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <div name="invoicing_setting_container" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box" id="picking_in_invoice_line_description">
+                    <div class="o_setting_left_pane">
+                        <field name="picking_in_invoice_line_description"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="picking_in_invoice_line_description" string="Add picking in invoice line description"/>
+                        <div class="text-muted">
+                            Include picking name in invoice line description, before default invoice line description
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box" id="special_currency_for_rounding">
+                    <div class="o_setting_left_pane">
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="special_rounding_currency_id"/>
+                        <field name="special_rounding_currency_id"  context="{'active_test': False}" />
+                        <div class="text-muted">
+                            This currency will be used for rounding in places where the currency used is too restrictive
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </field>
+    </record>
+
+    <record id="sw_notice_config_settings_view_form" model="ir.ui.view">
+        <field name="name">sw.config.settings.view.form.notice</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account_notice.notice_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <div id="notice_setting_container" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box" id="origin_in_notice_line_description">
+                    <div class="o_setting_left_pane">
+                        <field name="origin_in_notice_line_description"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="origin_in_notice_line_description" string="Add origin in notice line description"/>
+                        <div class="text-muted">
+                            Include sale name and delivery name in notice line description, before default notice line description
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </field>
+    </record>
+</odoo>

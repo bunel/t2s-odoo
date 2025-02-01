@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sw_view_order_form" model="ir.ui.view">
+        <field name="name">sw.sale.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/form//div[@name='delivered_qty']" position="after">
+                <label for="qty_noticed" string="Noticed" attrs="{'invisible': [('parent.state', 'not in', ['sale', 'done'])]}"/>
+                <div name="qty_noticed" attrs="{'invisible': [('parent.state', 'not in', ['sale', 'done'])]}">
+                    <field name="qty_noticed" readonly="1"/>
+                </div>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='qty_delivered']" position="after">
+                <field name="qty_noticed" readonly="1" attrs="{'column_invisible': [('parent.state', 'not in', ['sale', 'done'])]}"/>
+                <field name="original_downpayment_line_id" invisible="1" />
+            </xpath>
+
+             <div name="button_box" position="inside">
+                <button type="object" attrs="{'invisible': [('notice_count', '=', 0)]}"
+                    name="action_view_notice"
+                    class="oe_stat_button"
+                    icon="fa-truck">
+                    <field name="notice_count" widget="statinfo" string="Notices"/>
+                </button>
+            </div>
+        </field>
+    </record>
+</odoo>
