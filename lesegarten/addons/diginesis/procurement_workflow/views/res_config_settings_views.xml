@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="workflow_config_settings_view_form" model="ir.ui.view">
+        <field name="name">config.settings.view.form.inherit.workflow</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='default_accounts']//field[@name='transfer_account_id']/../." position="after">
+                <div class="row mt8">
+                    <label for="goods_transit_account_id" class="col-lg-5 o_light_label"/>
+                    <field name="goods_transit_account_id"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="workflow_config_settings_stock_view_form" model="ir.ui.view">
+            <field name="name">config.settings.view.form.inherit.workflow.stock</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="stock.res_config_settings_view_form" />
+            <field name="arch" type="xml">
+                <div id="process_transfers" position="after">
+                    <div class="col-12 col-lg-6 o_setting_box" id="merge_receptions_by_invoice">
+                        <div class="o_setting_left_pane">
+                            <field name="merge_receptions_by_invoice"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="merge_receptions_by_invoice"/>
+                            <div class="text-muted">
+                                Merge receptions based on invoice
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </field>
+    </record>
+</odoo>

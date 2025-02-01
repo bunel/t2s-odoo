@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="notice_purchase_order_form" model="ir.ui.view">
+            <field name="name">notice.purchase.order.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='purchase_delivery_invoice']//field[@name='fiscal_position_id']" position="after">
+                    <field name="reception_mode" attrs="{'readonly': ['|', ('invoice_count', '>', 0), ('notice_count', '>', 0)]}"/>
+                </xpath>
+
+                <xpath expr="//page[@name='products']/field[@name='order_line']/tree/field[@name='qty_invoiced']" position="after">
+                    <field name="qty_noticed" string="Noticed" attrs="{'column_invisible': [('parent.state', 'not in', ('purchase', 'done'))]}" optional="show"/>
+                </xpath>
+                <xpath expr="//page[@name='products']/field[@name='order_line']/form//field[@name='qty_invoiced']" position="after">
+                    <field name="qty_noticed" string="Noticed Quantity" attrs="{'invisible': [('parent.state', 'not in', ('purchase', 'done'))]}"/>
+                </xpath>
+
+                <div name="button_box" position="inside">
+                    <button type="object"  name="action_view_notice"
+                        class="oe_stat_button"
+                        icon="fa-pencil-square-o" attrs="{'invisible':['|', ('notice_count', '=', 0), ('state', 'in', ('draft','sent','to approve'))]}">
+                        <field name="notice_count" widget="statinfo" string="Notices"/>
+                    </button>
+                </div>
+                <xpath expr="//button[@name='action_create_invoice'][1]" position="after">
+                    <button name="action_create_workflow_invoice" string="Create Bill" type="object" class="oe_highlight" context="{'create_bill':True}" attrs="{'invisible': ['|', '|',  ('state', 'not in', ('purchase', 'done')), ('invoice_status', 'in', ('no', 'invoiced')), ('reception_mode', '=', False)]}" data-hotkey="w"/>
+                    <button name="action_create_notice" string="Create Notice" type="object" class="oe_highlight" context="{'create_notice':True}" attrs="{'invisible': ['|', ('reception_mode', '=', 'bill_reception'), ('reception_mode', '=', False)]}" />
+                </xpath>
+                <xpath expr="//button[@name='action_create_invoice'][1]" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//button[@name='action_create_invoice'][2]" position="after">
+                    <button name="action_create_workflow_invoice" string="Create Bill" type="object" context="{'create_bill':True}" attrs="{'invisible': ['|', '|', '|', ('state', 'not in', ('purchase', 'done')), ('invoice_status', 'not in', ('no', 'invoiced')), ('order_line', '=', []), ('reception_mode', '=', False)]}" data-hotkey="w"/>
+                </xpath>
+                <xpath expr="//button[@name='action_create_invoice'][2]" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+</odoo>

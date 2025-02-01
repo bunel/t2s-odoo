@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2023-08-25 14:00+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_account_notice
+msgid "Account Notice"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_account_notice_line
+msgid "Account Notice Line"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_company__goods_transit_account_id
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_config_settings__goods_transit_account_id
+#: model:ir.model.fields,help:procurement_workflow.field_res_company__goods_transit_account_id
+#: model:ir.model.fields,help:procurement_workflow.field_res_config_settings__goods_transit_account_id
+msgid "Account for Goods in Transit"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,help:procurement_workflow.field_account_notice__purchase_id
+msgid "Auto-complete from a past purchase order."
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: procurement_workflow
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.notice_purchase_order_form
+msgid "Create Bill"
+msgstr ""
+
+#. module: procurement_workflow
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.notice_purchase_order_form
+msgid "Create Notice"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.ui.menu,name:procurement_workflow.menu_purchase_notice_customer
+msgid "Customer Notice"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.ui.menu,name:procurement_workflow.menu_purchase_notice_internal
+msgid "Internal Notice"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__purchase_order__reception_mode__bill_notice_reception
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__res_partner__reception_mode__bill_notice_reception
+msgid "Invoice then Notice then Reception"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_company__merge_receptions_by_invoice
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_config_settings__merge_receptions_by_invoice
+msgid "Merge Receptions"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,help:procurement_workflow.field_res_config_settings__merge_receptions_by_invoice
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.workflow_config_settings_stock_view_form
+msgid "Merge receptions based on invoice"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.ui.menu,name:procurement_workflow.menu_purchase_notice
+msgid "Notice"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_purchase_order__notice_count
+msgid "Notice Count"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_purchase_order_line__notice_line_ids
+msgid "Notice Lines"
+msgstr ""
+
+#. module: procurement_workflow
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.notice_purchase_order_form
+msgid "Noticed"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_purchase_order_line__qty_noticed
+msgid "Noticed Qty"
+msgstr ""
+
+#. module: procurement_workflow
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.notice_purchase_order_form
+msgid "Noticed Quantity"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_purchase_order__notice_ids
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.notice_purchase_order_form
+msgid "Notices"
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/purchase.py:0
+#, python-format
+msgid ""
+"PO already has a notice not yet received. Please first receive the existing "
+"notice."
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/purchase.py:0
+#: code:addons/procurement_workflow/models/purchase.py:0
+#, python-format
+msgid "Please configure Goods in Transit account."
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/purchase.py:0
+#: code:addons/procurement_workflow/models/purchase.py:0
+#, python-format
+msgid "Please define an vendor notice journal for the company %s (%s)."
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#, python-format
+msgid "Please first register the Invoice from the supplier"
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#, python-format
+msgid "Please first register the Invoice then the Notice from the supplier"
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#, python-format
+msgid "Please first register the Notice from the supplier"
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#, python-format
+msgid "Product {0}, quantity {1}, not invoiced"
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#, python-format
+msgid "Product {0}, quantity {1}, not noticed"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_notice_line__purchase_line_ids
+msgid "Purchase Lines"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_purchase_order
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_notice__purchase_id
+msgid "Purchase Order"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/account_move.py:0
+#, python-format
+msgid "Quantities have been set on reception"
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/account_move.py:0
+#, python-format
+msgid "Quantities not updated, reception not found/not in the correct state"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_bank_statement_line__picking_incoming_count
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_move__picking_incoming_count
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_payment__picking_incoming_count
+msgid "Reception Count"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_purchase_order__reception_mode
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_partner__reception_mode
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_users__reception_mode
+msgid "Reception Mode"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__purchase_order__reception_mode__bill_reception
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__res_partner__reception_mode__bill_reception
+msgid "Reception with Bill"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__purchase_order__reception_mode__notice_reception
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__res_partner__reception_mode__notice_reception
+msgid "Reception with Notice"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_bank_statement_line__picking_incoming_ids
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_move__picking_incoming_ids
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_payment__picking_incoming_ids
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.pw_view_move_form
+msgid "Receptions"
+msgstr ""
+
+#. module: procurement_workflow
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.pw_view_move_form
+msgid "Set Reception Quantity"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_stock_move
+msgid "Stock Move"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_stock_rule
+msgid "Stock Rule"
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/purchase.py:0
+#: code:addons/procurement_workflow/models/purchase.py:0
+#, python-format
+msgid "There are not notice lines."
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/notice.py:0
+#, python-format
+msgid ""
+"There is a mismatch between the selected purchase order and this notice. "
+"Please check Partner / Currency / Location of the selected purchase order."
+msgstr ""
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/purchase.py:0
+#: code:addons/procurement_workflow/models/purchase.py:0
+#: code:addons/procurement_workflow/models/purchase.py:0
+#, python-format
+msgid "There is no invoiceable line."
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_stock_picking__vendorbill_id
+msgid "Vendor Bill"
+msgstr ""
+
+#. module: procurement_workflow
+#: model:ir.ui.menu,name:procurement_workflow.menu_purchase_notice_supplier
+msgid "Vendor Notice"
+msgstr ""

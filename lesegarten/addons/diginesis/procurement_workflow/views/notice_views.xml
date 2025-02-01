@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="pw_account_notice_supplier_form" model="ir.ui.view">
+        <field name="name">pw.account.notice.supplier.form</field>
+        <field name="model">account.notice</field>
+        <field name="inherit_id" ref="account_notice.account_notice_supplier_form"/>
+        <field name="groups_id" eval="[(4, ref('purchase.group_purchase_user'))]"/>
+        <field name="arch" type="xml">
+            <field name="address_delivery_id" position="after">
+                <field name="purchase_id"
+                       domain="partner_id and [('company_id', '=', company_id), ('partner_id', '=', partner_id), ('reception_mode', '!=', 'bill_reception')] or [('company_id', '=', company_id), ('reception_mode', '!=', 'bill_reception')]"
+                       attrs="{'invisible': ['|', ('state','!=','draft'), ('type', '!=', 'in_notice')]}" />
+            </field>
+        </field>
+    </record>
+
+    <record id="pw_account_notice_supplier_form2" model="ir.ui.view">
+        <field name="name">pw.account.notice.supplier.form2</field>
+        <field name="model">account.notice</field>
+        <field name="inherit_id" ref="account_notice.account_notice_supplier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='notice_line_ids']/tree/field[@name='currency_id']" position="after">
+                <field name="purchase_line_ids" invisible="1" />
+            </xpath>
+        </field>
+    </record>
+
+     <menuitem id="menu_purchase_notice" name="Notice" parent="purchase.menu_purchase_root" sequence="3" groups="account_notice.group_vendor_notice_manager,account_notice.group_customer_notice_manager,account_notice.group_internal_notice_manager"/>
+
+        <menuitem action="account_notice.action_notice_supplier_tree" id="menu_purchase_notice_supplier" parent="procurement_workflow.menu_purchase_notice" name="Vendor Notice" groups="account_notice.group_vendor_notice_manager"/>
+        <menuitem action="account_notice.action_notice_customer_tree" id="menu_purchase_notice_customer" parent="procurement_workflow.menu_purchase_notice" name="Customer Notice" groups="account_notice.group_customer_notice_manager"/>
+        <menuitem action="account_notice.action_notice_internal_tree" id="menu_purchase_notice_internal" parent="procurement_workflow.menu_purchase_notice" name="Internal Notice" groups="account_notice.group_internal_notice_manager"/>
+
+</odoo>

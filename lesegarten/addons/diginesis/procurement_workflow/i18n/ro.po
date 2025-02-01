@@ -1,0 +1,321 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * procurement_workflow
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220317\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-25 09:54+0000\n"
+"PO-Revision-Date: 2023-08-25 13:59+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_account_notice
+msgid "Account Notice"
+msgstr "Cont Aviz"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_account_notice_line
+msgid "Account Notice Line"
+msgstr "Linie Cont Aviz"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_company__goods_transit_account_id
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_config_settings__goods_transit_account_id
+#: model:ir.model.fields,help:procurement_workflow.field_res_company__goods_transit_account_id
+#: model:ir.model.fields,help:procurement_workflow.field_res_config_settings__goods_transit_account_id
+msgid "Account for Goods in Transit"
+msgstr "Cont Marfa în Curs"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,help:procurement_workflow.field_account_notice__purchase_id
+msgid "Auto-complete from a past purchase order."
+msgstr "Completare automată dintr-o comandă de achiziție anterioară."
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_res_company
+msgid "Companies"
+msgstr "Companii"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_res_config_settings
+msgid "Config Settings"
+msgstr "Setări de configurare"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: procurement_workflow
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.notice_purchase_order_form
+msgid "Create Bill"
+msgstr "Creează Factură"
+
+#. module: procurement_workflow
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.notice_purchase_order_form
+msgid "Create Notice"
+msgstr "Creează Aviz"
+
+#. module: procurement_workflow
+#: model:ir.ui.menu,name:procurement_workflow.menu_purchase_notice_customer
+msgid "Customer Notice"
+msgstr "Aviz Client"
+
+#. module: procurement_workflow
+#: model:ir.ui.menu,name:procurement_workflow.menu_purchase_notice_internal
+msgid "Internal Notice"
+msgstr "Aviz Intern"
+
+#. module: procurement_workflow
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__purchase_order__reception_mode__bill_notice_reception
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__res_partner__reception_mode__bill_notice_reception
+msgid "Invoice then Notice then Reception"
+msgstr "Factura marfă în curs, aviz și recepție"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_account_move
+msgid "Journal Entry"
+msgstr "Notă contabilă"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_account_move_line
+msgid "Journal Item"
+msgstr "Element jurnal"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_company__merge_receptions_by_invoice
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_config_settings__merge_receptions_by_invoice
+msgid "Merge Receptions"
+msgstr "Combină Recepțiile"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,help:procurement_workflow.field_res_config_settings__merge_receptions_by_invoice
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.workflow_config_settings_stock_view_form
+msgid "Merge receptions based on invoice"
+msgstr "Combină recepțiile pe bază de factură"
+
+#. module: procurement_workflow
+#: model:ir.ui.menu,name:procurement_workflow.menu_purchase_notice
+msgid "Notice"
+msgstr "Aviz"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_purchase_order__notice_count
+msgid "Notice Count"
+msgstr "Număr Aviz"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_purchase_order_line__notice_line_ids
+msgid "Notice Lines"
+msgstr "Linii Aviz"
+
+#. module: procurement_workflow
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.notice_purchase_order_form
+msgid "Noticed"
+msgstr "Avizat"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_purchase_order_line__qty_noticed
+msgid "Noticed Qty"
+msgstr "Cantitate Avizată"
+
+#. module: procurement_workflow
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.notice_purchase_order_form
+msgid "Noticed Quantity"
+msgstr "Cantitate Avizată"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_purchase_order__notice_ids
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.notice_purchase_order_form
+msgid "Notices"
+msgstr "Avize"
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/purchase.py:0
+#, python-format
+msgid ""
+"PO already has a notice not yet received. Please first receive the existing "
+"notice."
+msgstr ""
+"PO are deja un aviz neprimit încă. Vă rugăm să înregistrați mai întâi avizul"
+" existent."
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/purchase.py:0
+#: code:addons/procurement_workflow/models/purchase.py:0
+#, python-format
+msgid "Please configure Goods in Transit account."
+msgstr "Vă rugăm să configurați contul Marfa în curs."
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/purchase.py:0
+#: code:addons/procurement_workflow/models/purchase.py:0
+#, python-format
+msgid "Please define an vendor notice journal for the company %s (%s)."
+msgstr ""
+"Vă rugăm să definiți un jurnal avize furnizor pentru compania %s (%s)."
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#, python-format
+msgid "Please first register the Invoice from the supplier"
+msgstr "Vă rugăm să înregistrați întâi factura de la furnizor"
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#, python-format
+msgid "Please first register the Invoice then the Notice from the supplier"
+msgstr ""
+"Vă rugăm să înregistrați întâi factura, iar mai apoi avizul de la furnizor"
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#, python-format
+msgid "Please first register the Notice from the supplier"
+msgstr "Vă rugăm să înregistrați întâi avizul de la furnizor"
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#, python-format
+msgid "Product {0}, quantity {1}, not invoiced"
+msgstr "Produs {0}, cantiate {1}, nefacturat"
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#: code:addons/procurement_workflow/models/stock_picking.py:0
+#, python-format
+msgid "Product {0}, quantity {1}, not noticed"
+msgstr "Produs {0}, cantitate {1}, neavizat"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_notice_line__purchase_line_ids
+msgid "Purchase Lines"
+msgstr "Linii de achiziție"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_purchase_order
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_notice__purchase_id
+msgid "Purchase Order"
+msgstr "Comandă de achiziție"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Linie comandă de achiziție"
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/account_move.py:0
+#, python-format
+msgid "Quantities have been set on reception"
+msgstr "Cantitățile au fost stabilite pe recepție"
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/account_move.py:0
+#, python-format
+msgid "Quantities not updated, reception not found/not in the correct state"
+msgstr ""
+"Cantități neactualizate, recepția nu a fost găsită/nu este în statusul "
+"corect"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_bank_statement_line__picking_incoming_count
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_move__picking_incoming_count
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_payment__picking_incoming_count
+msgid "Reception Count"
+msgstr "Număr Recepție"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_purchase_order__reception_mode
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_partner__reception_mode
+#: model:ir.model.fields,field_description:procurement_workflow.field_res_users__reception_mode
+msgid "Reception Mode"
+msgstr "Mod Recepție"
+
+#. module: procurement_workflow
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__purchase_order__reception_mode__bill_reception
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__res_partner__reception_mode__bill_reception
+msgid "Reception with Bill"
+msgstr "Recepție cu Factură"
+
+#. module: procurement_workflow
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__purchase_order__reception_mode__notice_reception
+#: model:ir.model.fields.selection,name:procurement_workflow.selection__res_partner__reception_mode__notice_reception
+msgid "Reception with Notice"
+msgstr "Recepție cu Aviz"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_bank_statement_line__picking_incoming_ids
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_move__picking_incoming_ids
+#: model:ir.model.fields,field_description:procurement_workflow.field_account_payment__picking_incoming_ids
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.pw_view_move_form
+msgid "Receptions"
+msgstr "Recepții"
+
+#. module: procurement_workflow
+#: model_terms:ir.ui.view,arch_db:procurement_workflow.pw_view_move_form
+msgid "Set Reception Quantity"
+msgstr "Setați Cantitatea Recepționată"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_stock_move
+msgid "Stock Move"
+msgstr "Mișcare stoc"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_stock_rule
+msgid "Stock Rule"
+msgstr "Regulă stoc"
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/purchase.py:0
+#: code:addons/procurement_workflow/models/purchase.py:0
+#, python-format
+msgid "There are not notice lines."
+msgstr "Nu există linii de avizat."
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/notice.py:0
+#, python-format
+msgid ""
+"There is a mismatch between the selected purchase order and this notice. "
+"Please check Partner / Currency / Location of the selected purchase order."
+msgstr ""
+"Există o nepotrivire între comanda de achiziție selectată și acest aviz. Vă "
+"rugăm să verificați Partener / Moneda / Locația comenzii de cumpărare "
+"selectată."
+
+#. module: procurement_workflow
+#: code:addons/procurement_workflow/models/purchase.py:0
+#: code:addons/procurement_workflow/models/purchase.py:0
+#: code:addons/procurement_workflow/models/purchase.py:0
+#, python-format
+msgid "There is no invoiceable line."
+msgstr "Nu există linii de facturat"
+
+#. module: procurement_workflow
+#: model:ir.model,name:procurement_workflow.model_stock_picking
+msgid "Transfer"
+msgstr "Transfer"
+
+#. module: procurement_workflow
+#: model:ir.model.fields,field_description:procurement_workflow.field_stock_picking__vendorbill_id
+msgid "Vendor Bill"
+msgstr "Factura Furnizor"
+
+#. module: procurement_workflow
+#: model:ir.ui.menu,name:procurement_workflow.menu_purchase_notice_supplier
+msgid "Vendor Notice"
+msgstr "Aviz Furnizor"

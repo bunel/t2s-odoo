@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="pw_view_picking_form" model="ir.ui.view">
+        <field name="name">pw.view_picking_form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="l10n_ro_stock.l10n_ro_stock_view_picking_form" />
+        <field name="arch" type="xml">
+            <field name="origin" position="after">
+                <field name="vendorbill_id" options="{'no_create':True}" attrs="{'invisible': [('location_usage', 'not in', 'supplier'), ('location_dest_usage', 'not in', 'supplier')], 'readonly': [('state', 'in', ['done'])]}"/>
+            </field>
+        </field>
+    </record>
+</odoo>

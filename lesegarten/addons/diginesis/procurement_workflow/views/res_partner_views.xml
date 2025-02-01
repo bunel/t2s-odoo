@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="pw_view_partner_property_form" model="ir.ui.view">
+            <field name="name">pw.res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="purchase.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <field name="property_purchase_currency_id" position="after">
+                    <field name="reception_mode" />
+                    <field name="supplier_incoterm_id" />
+                </field>
+            </field>
+    </record>
+
+</odoo>
