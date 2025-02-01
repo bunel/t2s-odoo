@@ -1,0 +1,790 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_ro_landed_cost
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220317\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-30 08:49+0000\n"
+"PO-Revision-Date: 2023-04-03 00:14+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost_lines__split_method__by_value
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__product_template__split_method_landed_cost__by_value
+msgid " By Value"
+msgstr "După Valoare"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_stock_landed_cost_view_kanban
+msgid "<i class=\"fa fa-clock-o\" title=\"Date\" role=\"img\" aria-label=\"Date\"/>"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_account_move_line__product_type
+msgid ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+"Un produs stocabil este un produs pentru care gestionați stocul. Aplicația "
+"Inventory trebuie instalată.\n"
+"Un produs consumabil este un produs pentru care stocul nu este gestionat.\n"
+"Un serviciu este un produs nematerial pe care îl oferiți."
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__account_id
+msgid "Account"
+msgstr "Cont"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__account_journal_id
+msgid "Account Journal"
+msgstr "Jurnal de Cont"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_needaction
+msgid "Action Needed"
+msgstr "Acțiune necesară"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_ids
+msgid "Activities"
+msgstr "Activități"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_state
+msgid "Activity State"
+msgstr "Stare activitate"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Pictogramă tip acțune"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.res_config_settings_view_form
+msgid ""
+"Add additional cost (transport, customs, ...) in the value of the product."
+msgstr ""
+"Adăugați cost suplimentar (transport, vamă,...) în valoarea produsului."
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Additional Costs"
+msgstr "Costuri adiționale"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__additional_landed_cost
+msgid "Additional Landed Cost"
+msgstr "Distribuire cheltuieli adiționale"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_res_config_settings__module_l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.res_config_settings_view_form
+msgid ""
+"Affect landed costs on reception operations and split them among products to"
+" update their cost price."
+msgstr ""
+"Afectează distribuirea cheltuielilor pe operațiunile de recepție și le "
+"împarte între produse pentru a-și actualiza costurile."
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__target_model
+msgid "Apply On"
+msgstr "Aplică pe"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_attachment_count
+msgid "Attachment Count"
+msgstr "Număr de atașamente"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__split_method
+msgid ""
+"By Value : Cost will be divided according to product's value.\n"
+"By Weight : Cost will be divided depending on its weight.\n"
+"By Volume : Cost will be divided depending on its volume."
+msgstr ""
+"După Valoare : Costul va fi împărțit în funcție de valoarea produsului.\n"
+"După Greutate : Costul va fi împărțit în funcție de greutatea acestuia.\n"
+"După Volum : Costul va fi împărțit în funcție de volumul acestuia."
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost_lines__split_method__by_volume
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__product_template__split_method_landed_cost__by_volume
+msgid "By Volume"
+msgstr "După Volum"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost_lines__split_method__by_weight
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__product_template__split_method_landed_cost__by_weight
+msgid "By Weight"
+msgstr "După Greutate"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Cancel"
+msgstr "Anulează"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost__state__cancel
+msgid "Cancelled"
+msgstr "Anulat"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_res_company
+msgid "Companies"
+msgstr "Companii"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__company_id
+msgid "Company"
+msgstr "Companie"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__company_id
+msgid "Company related to this journal"
+msgstr "Companie legată de acest jurnal"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Compute"
+msgstr "Calculează"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_res_config_settings
+msgid "Config Settings"
+msgstr "Setări de configurare"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__price_unit
+msgid "Cost"
+msgstr "Cost"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__cost_line_id
+msgid "Cost Line"
+msgstr "Linie Cost"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__cost_lines
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Cost Lines"
+msgstr "Linii de Cost"
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid ""
+"Cost and adjustments lines do not match. You should maybe recompute the "
+"landed costs."
+msgstr ""
+"Liniile de cost și ajustări nu se potrivesc. Poate ar trebui să recalculați "
+"distribuirea cheltuielilor."
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.account_view_move_form_inherited
+msgid "Create Landed Costs"
+msgstr "Creați Distribuirea Cheltuielilor"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.actions.act_window,help:l10n_ro_landed_cost.action_l10n_ro_stock_landed_cost
+msgid "Create a new landed cost"
+msgstr "Creați o nouă distribuire a cheltuielilor"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__create_uid
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__create_uid
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__create_uid
+msgid "Created by"
+msgstr "Creat de "
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__create_date
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__create_date
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__create_date
+msgid "Created on"
+msgstr "Creat în"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__currency_id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__currency_id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__currency_id
+msgid "Currency"
+msgstr "Valută"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__date
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Date"
+msgstr "Dată"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_res_config_settings__lc_journal_id
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.res_config_settings_view_form
+msgid "Default Journal"
+msgstr "Jurnal implicit"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_product_product__split_method_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_product_template__split_method_landed_cost
+msgid "Default Split Method"
+msgstr "Metoda de divizare implicită"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_product_product__split_method_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_product_template__split_method_landed_cost
+msgid "Default Split Method when used for Landed Cost"
+msgstr "Metoda de împărțire implicită atunci când este realizată distribuirea cheltuielilor"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__name
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__name
+msgid "Description"
+msgstr "Descriere"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__diff_account_id
+msgid "Difference Account"
+msgstr "Cont Diferență"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__display_name
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__display_name
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__display_name
+msgid "Display Name"
+msgstr "Nume afișat"
+
+#. module: l10n_ro_landed_cost
+#: model:mail.message.subtype,name:l10n_ro_landed_cost.mt_stock_landed_cost_open
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Done"
+msgstr "Efectuat"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost__state__draft
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Draft"
+msgstr "Ciornă"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_follower_ids
+msgid "Followers"
+msgstr "Urmăritori"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Urmăritori (Parteneri)"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Future Activities"
+msgstr "Activități viitoare"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Group By"
+msgstr "Grupați după"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__has_message
+msgid "Has Message"
+msgstr "Are un mesaj"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_exception_icon
+msgid "Icon"
+msgstr "Pictogramă"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Pictogramă pentru a indica o activitate de excepție."
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_needaction
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Dacă sunt bifate, mesajele noi necesită atenția dumneavoastră."
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_error
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Dacă sunt bifate, unele mesaje prezintă o eroare de livrare"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_product_product__landed_cost_ok
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_product_template__landed_cost_ok
+msgid "Indicates whether the product is a landed cost."
+msgstr "Indică dacă produsul reprezintă o distribuire a cheltuielilor."
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__bill_ids
+msgid "Invoices"
+msgstr "Facturi"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_is_follower
+msgid "Is Follower"
+msgstr "Este un urmăritor."
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_move_line__is_landed_costs_line
+msgid "Is Landed Costs Line"
+msgstr "Este linia de distribuire cheltuieli"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_product_product__landed_cost_ok
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_product_template__landed_cost_ok
+msgid "Is a Landed Cost"
+msgstr "Este distribuire de cheltuieli"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__description
+msgid "Item Description"
+msgstr "Descrierea obiectuluui"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Journal"
+msgstr "Jurnal"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_account_move
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__account_move_id
+msgid "Journal Entry"
+msgstr "Notă contabilă"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_account_move_line
+msgid "Journal Item"
+msgstr "Element jurnal"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__cost_id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__cost_id
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Landed Cost"
+msgstr "Distribuire Cheltuieli"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.actions.act_window,name:l10n_ro_landed_cost.action_l10n_ro_stock_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_bank_statement_line__landed_costs_ids
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_move__landed_costs_ids
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_payment__landed_costs_ids
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_res_config_settings__module_l10n_ro_landed_cost
+#: model:ir.ui.menu,name:l10n_ro_landed_cost.menu_action_l10n_ro_stock_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.account_view_move_form_inherited
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_tree
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_tree2
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Landed Costs"
+msgstr "Distribuire Cheltuieli"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_bank_statement_line__landed_costs_visible
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_move__landed_costs_visible
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_payment__landed_costs_visible
+msgid "Landed Costs Visible"
+msgstr "Distribuire Cheltuieli Vizibilă"
+
+#. module: l10n_ro_landed_cost
+#: model:mail.message.subtype,description:l10n_ro_landed_cost.mt_stock_landed_cost_open
+msgid "Landed cost validated"
+msgstr "Distribuire Cheltuieli Validată"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost____last_update
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines____last_update
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificare pe"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__write_uid
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__write_uid
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__write_uid
+msgid "Last Updated by"
+msgstr "Modificat ultima dată de către"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__write_date
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__write_date
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__write_date
+msgid "Last Updated on"
+msgstr "Ultima modificare pe"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Late Activities"
+msgstr "Activități întârziate"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_res_company__lc_journal_id
+msgid "Lc Journal"
+msgstr "Jurnal DC"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Atașament principal"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_error
+msgid "Message Delivery error"
+msgstr "Eroare de livrare a mesajului"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_ids
+msgid "Messages"
+msgstr "Mesaje"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Termenul limită pentru activitatea mea"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__name
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Name"
+msgstr "Nume"
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid "New"
+msgstr "Nou"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__final_cost
+msgid "New Value"
+msgstr "Valoare nouă"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Următorul eveniment din calendarul de activități"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Termenul limită pentru următoarea activitate"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_summary
+msgid "Next Activity Summary"
+msgstr "Rezumatul activității următoare"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipul activității următoare"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__notice_ids
+msgid "Notice"
+msgstr "Aviz"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Număr de acțiuni"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_error_counter
+msgid "Number of errors"
+msgstr "Număr de erori"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Numărul mesajelor care necesită o acțiune"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numărul mesajelor cu eroare de livrare"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Numărul mesajelor necitite"
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid "Only draft landed costs can be validated"
+msgstr "Pot fi validate doar cionele de distribuire cheltuieli"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__former_cost
+msgid "Original Value"
+msgstr "Valoare inițială"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Picking"
+msgstr "Operație"
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid "Please check {0}. You can not allocate negative amounts."
+msgstr "Vă rugăm să verificați {0}. Nu puteți aloca sume negative."
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid ""
+"Please configure Difference Account for valuation adjustment of product: %s."
+msgstr ""
+"Vă rugăm să configurați Contul de Diferență pentru ajustarea evaluării "
+"produsului: %s."
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid "Please configure Expense Account for product: %s."
+msgstr "Vă rugăm să configurați Contul de Cheltuieli pentru produsul: %s."
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid "Please define %s on which those additional costs should apply."
+msgstr "Vă rugăm să definiți %s pentru care ar trebui să se aplice acele costuri suplimentare."
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost__state__done
+msgid "Posted"
+msgstr "Postat"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__price_unit_additional
+msgid "Price Unit Additional"
+msgstr "Preț unitar adițional"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__product_id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__product_id
+msgid "Product"
+msgstr "Produs"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_product_template
+msgid "Product Template"
+msgstr "Șablon produs"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_move_line__product_type
+msgid "Product Type"
+msgstr "Tip Produs"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Linie comandă de achiziție"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__quantity
+msgid "Quantity"
+msgstr "Cantitate"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_user_id
+msgid "Responsible User"
+msgstr "Utilizator responsabil"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__rounding_difference
+msgid "Round Diff"
+msgstr "Diferența de Rotunjire"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Eroare de livrare SMS"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Set to Draft"
+msgstr "Setați ca ciornă"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Show all records which has next action date is before today"
+msgstr "Afișați toate înregistrările care au următoarea datp de acțiune anterioară zilei de astăzi"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__split_method
+msgid "Split Method"
+msgstr "Metoda de Divizare"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__state
+msgid "State"
+msgstr "Județ"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Status"
+msgstr "Stare"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Stare bazată pe activități\n"
+"Întârziat: Data scadentă este deja depășită \n"
+"Astăzi: Data activității este astăzi\n"
+"Planificat: Activități viitoare."
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_l10n_ro_stock_landed_cost
+msgid "Stock Landed Cost"
+msgstr "Stoc Distribuire Cheltuieli"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_l10n_ro_stock_landed_cost_lines
+msgid "Stock Landed Cost Line"
+msgstr "Stoc Linie de Distribuire Cheltuieli"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_stock_move
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__move_id
+msgid "Stock Move"
+msgstr "Mișcare stoc"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Today Activities"
+msgstr "Activitățile de astăzi"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__amount_total
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__picking_ids
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost__target_model__picking
+msgid "Transfers"
+msgstr "Transferuri"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipul activității de excepție înregistrată."
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_unread
+msgid "Unread Messages"
+msgstr "Mesaje necitite"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contor Mesaje Necitite"
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Validate"
+msgstr "Validează"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_l10n_ro_stock_valuation_adjustment_lines
+msgid "Valuation Adjustment Lines"
+msgstr "Linii de Ajustare de Evaluare"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__valuation_adjustment_lines
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Valuation Adjustments"
+msgstr "Ajustări de Evaluare "
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__vendor_bill_ids
+msgid "Vendor Bill"
+msgstr "Factură de Furnizor"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__vendor_bill_ids
+msgid "Vendor Bill with Landed Cost"
+msgstr "Factura de Furnizor cu Distribuire Cheltuieli"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__volume
+msgid "Volume"
+msgstr "Volum"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__weight
+msgid "Weight"
+msgstr "Greutate"
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid ""
+"You cannot apply landed costs on the chosen %s(s). Landed costs can only be "
+"applied for products with FIFO or average costing method."
+msgstr ""
+"Nu puteți aplica distribuire de cheltuieli pentru %s(s) alese. Distribuirea "
+"de cheltuieli poate fi aplicată doar produselor cu metoda FIFO sau cost "
+"mediu."
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/product.py:0
+#, python-format
+msgid ""
+"You cannot change the product type or disable landed cost option because the"
+" product is used in an account move line."
+msgstr ""
+"Nu puteți modifica tipul de produs sau nu puteți dezactiva opțiunea de "
+"distribuire de cheltuieli, deoarece produsul este utilizat într-o linie de "
+"miscare contabilă."

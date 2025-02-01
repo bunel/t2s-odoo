@@ -1,0 +1,767 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2023-04-03 00:15+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost_lines__split_method__by_value
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__product_template__split_method_landed_cost__by_value
+msgid " By Value"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_stock_landed_cost_view_kanban
+msgid "<i class=\"fa fa-clock-o\" title=\"Date\" role=\"img\" aria-label=\"Date\"/>"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_account_move_line__product_type
+msgid ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__account_id
+msgid "Account"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__account_journal_id
+msgid "Account Journal"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.res_config_settings_view_form
+msgid ""
+"Add additional cost (transport, customs, ...) in the value of the product."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Additional Costs"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__additional_landed_cost
+msgid "Additional Landed Cost"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_res_config_settings__module_l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.res_config_settings_view_form
+msgid ""
+"Affect landed costs on reception operations and split them among products to"
+" update their cost price."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__target_model
+msgid "Apply On"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__split_method
+msgid ""
+"By Value : Cost will be divided according to product's value.\n"
+"By Weight : Cost will be divided depending on its weight.\n"
+"By Volume : Cost will be divided depending on its volume."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost_lines__split_method__by_volume
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__product_template__split_method_landed_cost__by_volume
+msgid "By Volume"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost_lines__split_method__by_weight
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__product_template__split_method_landed_cost__by_weight
+msgid "By Weight"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Cancel"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost__state__cancel
+msgid "Cancelled"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__company_id
+msgid "Company"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__company_id
+msgid "Company related to this journal"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Compute"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__price_unit
+msgid "Cost"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__cost_line_id
+msgid "Cost Line"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__cost_lines
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Cost Lines"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid ""
+"Cost and adjustments lines do not match. You should maybe recompute the "
+"landed costs."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.account_view_move_form_inherited
+msgid "Create Landed Costs"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.actions.act_window,help:l10n_ro_landed_cost.action_l10n_ro_stock_landed_cost
+msgid "Create a new landed cost"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__create_uid
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__create_uid
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__create_date
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__create_date
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__currency_id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__currency_id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__date
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Date"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_res_config_settings__lc_journal_id
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.res_config_settings_view_form
+msgid "Default Journal"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_product_product__split_method_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_product_template__split_method_landed_cost
+msgid "Default Split Method"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_product_product__split_method_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_product_template__split_method_landed_cost
+msgid "Default Split Method when used for Landed Cost"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__name
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__name
+msgid "Description"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__diff_account_id
+msgid "Difference Account"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__display_name
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__display_name
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:mail.message.subtype,name:l10n_ro_landed_cost.mt_stock_landed_cost_open
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Done"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost__state__draft
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Draft"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Future Activities"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Group By"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_needaction
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_error
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_product_product__landed_cost_ok
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_product_template__landed_cost_ok
+msgid "Indicates whether the product is a landed cost."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__bill_ids
+msgid "Invoices"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_move_line__is_landed_costs_line
+msgid "Is Landed Costs Line"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_product_product__landed_cost_ok
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_product_template__landed_cost_ok
+msgid "Is a Landed Cost"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__description
+msgid "Item Description"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Journal"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_account_move
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__account_move_id
+msgid "Journal Entry"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__cost_id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__cost_id
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Landed Cost"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.actions.act_window,name:l10n_ro_landed_cost.action_l10n_ro_stock_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_bank_statement_line__landed_costs_ids
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_move__landed_costs_ids
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_payment__landed_costs_ids
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_res_config_settings__module_l10n_ro_landed_cost
+#: model:ir.ui.menu,name:l10n_ro_landed_cost.menu_action_l10n_ro_stock_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.account_view_move_form_inherited
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_tree
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_tree2
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Landed Costs"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_bank_statement_line__landed_costs_visible
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_move__landed_costs_visible
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_payment__landed_costs_visible
+msgid "Landed Costs Visible"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:mail.message.subtype,description:l10n_ro_landed_cost.mt_stock_landed_cost_open
+msgid "Landed cost validated"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost____last_update
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines____last_update
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__write_uid
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__write_uid
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__write_date
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__write_date
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Late Activities"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_res_company__lc_journal_id
+msgid "Lc Journal"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__name
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Name"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__final_cost
+msgid "New Value"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__notice_ids
+msgid "Notice"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid "Only draft landed costs can be validated"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__former_cost
+msgid "Original Value"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Picking"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid "Please check {0}. You can not allocate negative amounts."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid ""
+"Please configure Difference Account for valuation adjustment of product: %s."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid "Please configure Expense Account for product: %s."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid "Please define %s on which those additional costs should apply."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost__state__done
+msgid "Posted"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__price_unit_additional
+msgid "Price Unit Additional"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__product_id
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__product_id
+msgid "Product"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_account_move_line__product_type
+msgid "Product Type"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__quantity
+msgid "Quantity"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__rounding_difference
+msgid "Round Diff"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Set to Draft"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Show all records which has next action date is before today"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost_lines__split_method
+msgid "Split Method"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__state
+msgid "State"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Status"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_l10n_ro_stock_landed_cost
+msgid "Stock Landed Cost"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_l10n_ro_stock_landed_cost_lines
+msgid "Stock Landed Cost Line"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_stock_move
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__move_id
+msgid "Stock Move"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.l10n_ro_view_stock_landed_cost_search
+msgid "Today Activities"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__amount_total
+msgid "Total"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__picking_ids
+#: model:ir.model.fields.selection,name:l10n_ro_landed_cost.selection__l10n_ro_stock_landed_cost__target_model__picking
+msgid "Transfers"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Validate"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model,name:l10n_ro_landed_cost.model_l10n_ro_stock_valuation_adjustment_lines
+msgid "Valuation Adjustment Lines"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__valuation_adjustment_lines
+#: model_terms:ir.ui.view,arch_db:l10n_ro_landed_cost.view_l10n_ro_stock_landed_cost_form
+msgid "Valuation Adjustments"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__vendor_bill_ids
+msgid "Vendor Bill"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__vendor_bill_ids
+msgid "Vendor Bill with Landed Cost"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__volume
+msgid "Volume"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,help:l10n_ro_landed_cost.field_l10n_ro_stock_landed_cost__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: model:ir.model.fields,field_description:l10n_ro_landed_cost.field_l10n_ro_stock_valuation_adjustment_lines__weight
+msgid "Weight"
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/stock_landed_cost.py:0
+#, python-format
+msgid ""
+"You cannot apply landed costs on the chosen %s(s). Landed costs can only be "
+"applied for products with FIFO or average costing method."
+msgstr ""
+
+#. module: l10n_ro_landed_cost
+#: code:addons/l10n_ro_landed_cost/models/product.py:0
+#, python-format
+msgid ""
+"You cannot change the product type or disable landed cost option because the"
+" product is used in an account move line."
+msgstr ""

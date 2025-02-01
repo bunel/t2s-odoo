@@ -1,0 +1,23 @@
+{
+    "name" : "Romania - Landed Cost",
+    "version": "15.0.1.1.0",
+    "author" : "SC Diginesis SRL",
+    "website" : "http://www.diginesis.com",
+    "category" : "Accounting/Localization",
+    'summary': 'Landed Cost functionality',
+    "depends" : ["base", "account", "purchase", "account_notice", "procurement_workflow", "stock_account", "l10n_ro_stock_account"],
+    "init_xml" : [],
+    "data" : [
+                "security/security.xml",
+                "security/ir.model.access.csv",
+                "data/stock_landed_cost_data.xml",
+                "views/stock_landed_cost_views.xml",
+                "views/account_move_views.xml",
+                "views/product_views.xml",
+                "views/res_config_settings_views.xml",
+            ],
+    "demo_xml" : [],
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}
