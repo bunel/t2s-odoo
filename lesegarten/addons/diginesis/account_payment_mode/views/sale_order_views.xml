@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="apm_order_form_inherit" model="ir.ui.view">
+            <field name="name">apm.sale.order.form.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='note']" position="before">
+                    <group name="payment_mode" colspan="4">
+                        <field name="payment_mode_id" />
+                    </group>
+                    <newline/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
