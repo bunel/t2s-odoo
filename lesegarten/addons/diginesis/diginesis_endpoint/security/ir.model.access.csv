@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_diginesis_delivery_user_api,diginesis.delivery.api.user,model_diginesis_api_endpoint,,1,0,0,0
+access_diginesis_delivery_manager_api,diginesis.delivery.api.manager,model_diginesis_api_endpoint,base.group_system,1,1,1,1
+access_diginesis_delivery_user_api_line,diginesis.delivery.api.line.user,model_diginesis_api_endpoint_line,,1,0,0,0
+access_diginesis_delivery_manager_api_line,diginesis.delivery.api.line.manager,model_diginesis_api_endpoint_line,base.group_system,1,1,1,1

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+			   
+		<record id="diginesis_api_credentials_tree" model="ir.ui.view">
+            <field name="name">diginesis.api.credentials.tree</field>
+            <field name="model">diginesis.api.endpoint</field>
+            <field name="arch" type="xml">
+                <tree string="Api Credentials">
+                    <field name="name" />
+                    <field name="endpoint" />
+                    <field name="username" />
+                </tree>
+            </field>
+        </record>
+        
+        <record id="diginesis_api_credentials_form" model="ir.ui.view">
+          <field name="name">diginesis.api.credentials.form</field>
+          <field name="model">diginesis.api.endpoint</field>
+          <field name="arch" type="xml">
+          	<form string="Api Credentials" version="7.0">	          	
+				<sheet name="api_endpoint">					
+					<group name="meta" colspan="4">
+							<field name="name" />
+							<field name="endpoint" />
+							<field name="username"/>
+							<field name="clientid"/>
+							<field name="password"/>
+					</group>
+					<newline/>
+					<group name="lines" colspan="4">		
+						<field name="endpoint_lines">
+							<tree name="endpoint_lines_tree" editable="bottom">
+								<field name="name" />
+								<field name="endpoint" />
+							</tree>
+						</field>
+					</group>
+				</sheet>
+              </form>
+          </field>
+       </record>
+        
+       <record id="act_open_diginesis_api_credentials_view" model="ir.actions.act_window">
+            <field name="name">Api Endpoint Credentials</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">diginesis.api.endpoint</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="diginesis_api_credentials_tree"/>            
+       </record>
+        
+       <menuitem id="menu_api_endpoint_credentials_view" name="Api Credentials" parent="sale.menu_sale_config" action="act_open_diginesis_api_credentials_view"/>   
+        
+	</data>
+</odoo>
