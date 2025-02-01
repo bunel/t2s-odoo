@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sh_merge_ecommerce_category_form_wizard" model="ir.ui.view">
+        <field name="name">sh.merge.po.category.wizard</field>
+        <field name="model">merge.po.category.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Select the operation to do.">
+                <group string="Select the operation to do.">
+                    <field name="operation" widget="radio" nolabel="1" />
+                </group>
+                <group string="Select Categories to merge with Ecommerce" attrs="{'invisible':[('operation','=','assign_category')]}">
+                    <field name="category_ids" widget="many2many_list" nolabel="1" />
+                </group>
+                <footer>
+                    <button name="button_apply" string="Apply" type="object" class="btn-primary" />
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="sh_merge_ecommerce_category_action" model="ir.actions.act_window">
+        <field name="name">Merge Ecommerce Category</field>
+        <field name="res_model">merge.po.category.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="sh_merge_ecommerce_category_form_wizard" />
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_merge_ecommerce_category" name="Merge Ecommerce Category" parent="website.menu_website_configuration" sequence="20" groups="sh_all_in_one_merge.group_merge_category" action="sh_merge_ecommerce_category_action" />
+</odoo>

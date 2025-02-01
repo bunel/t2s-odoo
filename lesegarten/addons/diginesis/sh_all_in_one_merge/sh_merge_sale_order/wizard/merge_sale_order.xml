@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- MERGE SALE ORDERS WIZARDS-->
+    <record id="sh_merge_sale_order_wizard_form" model="ir.ui.view">
+        <field name="name">sh.merge.sale.order.wizard.form</field>
+        <field name="model">sh.mso.merge.sale.order.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Merge Sale Orders">
+                <group>
+                    <group>
+                        <field name="sale_order_ids" widget="many2many_tags" invisible="1" />
+                        <field name="partner_id" />
+                        <field name="sale_order_id" domain="[('state','in',['draft', 'sent']),('partner_id','=',partner_id),('id','not in',sale_order_ids)]" />
+                        <field name="merge_type" widget="radio" />
+                    </group>
+                </group>
+
+                <footer>
+                    <button class="btn-primary" name="action_merge_sale_order" type="object" string="Merge" />
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="sh_merge_sale_order_multi_action" model="ir.actions.act_window">
+        <field name="name">Merge Sale Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sh.mso.merge.sale.order.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="sh_merge_sale_order_wizard_form" />
+        <field name="binding_model_id" ref="sale.model_sale_order" />
+        <field name="binding_view_types">list</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

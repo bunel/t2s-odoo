@@ -1,0 +1,757 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_all_in_one_merge
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-12 05:40+0000\n"
+"PO-Revision-Date: 2021-03-12 05:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_ecommerce_category_form_wizard
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_pos_category_form_wizard
+msgid "Apply"
+msgstr "申請"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__auto_sync_product_with_ecommerce_category
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__auto_sync_product_with_ecommerce_category
+msgid "Auto Sync new Product With Ecommerce Category"
+msgstr "使用電子商務類別自動同步新產品"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__auto_sync_product_with_pos_category
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__auto_sync_product_with_pos_category
+msgid "Auto Sync new Product With POS Category"
+msgstr "使用POS類別自動同步新產品"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_website_res_config_settings_product_category_inherit
+msgid "Auto Sync new product to Ecommerce Category"
+msgstr "將新產品自動同步到電子商務類別"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_pos_res_config_settings_product_category_inherit
+msgid "Auto Sync new product to POS Category"
+msgstr "自動同步新產品到POS類別"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_ecommerce_category_form_wizard
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_invoice_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_mrp_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_picking_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_pos_category_form_wizard
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_purchase_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_sale_order_wizard_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_minv_merge_invoice_wizard__merge_type__cancel
+msgid "Cancel Other Invoices"
+msgstr "取消其他發票"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mpo_merge_purchase_order_wizard__merge_type__cancel
+msgid "Cancel Other Purchase Orders"
+msgstr "取消其他採購訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mso_merge_sale_order_wizard__merge_type__cancel
+msgid "Cancel Other Sale Orders"
+msgstr "取消其他銷售訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__location_src_id
+msgid "Components Location"
+msgstr "組件位置"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置設置"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__partner_id
+msgid "Contact"
+msgstr "接觸"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__merge_po_category_wizard__operation__create_category
+msgid "Create All remaining categories on Ecommerce."
+msgstr "在電子商務中創建所有剩餘類別。"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__merge_pos_category_wizard__operation__create_category
+msgid "Create All remaining categories on POS."
+msgstr "在POS上創建所有剩餘類別。"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__create_uid
+msgid "Created by"
+msgstr "由...製作"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__create_date
+msgid "Created on"
+msgstr "創建於"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__partner_id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__partner_id
+msgid "Customer"
+msgstr "顧客"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__merge_type
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__merge_type
+msgid "Default Merge Type"
+msgstr "默認合併類型"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__check_available_pos
+msgid "Default check Available in POS option in product."
+msgstr "默認檢查產品中的POS選項可用。"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__picking_type_code__outgoing
+msgid "Delivery Orders"
+msgstr "交貨訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__location_dest_id
+msgid "Destination Location"
+msgstr "目的地位置"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_pos_category__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_public_category__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_template__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_minv_merge_invoice_wizard__merge_type__nothing
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mpo_merge_purchase_order_wizard__merge_type__nothing
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mso_merge_sale_order_wizard__merge_type__nothing
+msgid "Do Nothing"
+msgstr "沒做什麼"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__ecommerce_category_id
+msgid "Ecommerce Category"
+msgstr "電子商務類別"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__cancel_existing
+msgid "Existing Order and Cancel selected mrp orders"
+msgstr "現有訂單並取消選定的MRP訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__cancel_existing
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__cancel_existing
+msgid "Existing Order and Cancel selected picking orders"
+msgstr "現有訂單並取消選定的選擇訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__nothing_existing
+msgid "Existing Order and Do Nothing with selected mrp orders"
+msgstr "現有的訂單並對選定的MRP訂單無關"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__nothing_existing
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__nothing_existing
+msgid "Existing Order and Do Nothing with selected picking orders"
+msgstr "現有的訂單，並對選定的選擇訂單不做"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__remove_existing
+msgid "Existing Order and Remove selected mrp orders"
+msgstr "現有訂單並刪除所選MRP訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__remove_existing
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__remove_existing
+msgid "Existing Order and Remove selected picking orders"
+msgstr "現有訂單並刪除選定的選擇訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__picking_order_id
+msgid "Existing Picking Order"
+msgstr "現有的揀貨訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__location_dest_id
+msgid "Finished Products Location"
+msgstr "成品位置"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__hide_sync_field
+msgid "Hide Sync Fields"
+msgstr "隱藏sync字段"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_pos_category__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_public_category__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_template__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__picking_type_code__internal
+msgid "Internal Transfers"
+msgstr "內部轉移"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__invoice_id
+msgid "Invoice"
+msgstr "發票"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__inv_type
+msgid "Invoice Type"
+msgstr "發票類型"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__invoice_ids
+msgid "Invoices"
+msgstr "發票"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_pos_category____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_public_category____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_template____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard____last_update
+msgid "Last Modified on"
+msgstr "最後修改了"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__write_uid
+msgid "Last Updated by"
+msgstr "最後更新"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__write_date
+msgid "Last Updated on"
+msgstr "上次更新了"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__merge_po_category_wizard__operation__assign_category
+msgid "Linked all products with corresponding Ecommerce category."
+msgstr "鏈接所有具有相應電子商務類別的產品。"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__merge_pos_category_wizard__operation__assign_category
+msgid "Linked all products with corresponding POS category."
+msgstr "將所有產品與相應的POS類別聯繫起來。"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_mrp_config_setting_view
+msgid "Manufacturing Order Merge Configuration"
+msgstr "製造訂單合併配置"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_mrp_order/wizard/merge_mrp_order.py:0
+#, python-format
+msgid "Manufacturing Orders"
+msgstr "製造訂單"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_invoice_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_mrp_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_picking_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_purchase_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_sale_order_wizard_form
+msgid "Merge"
+msgstr "合併"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_ecommerce_category_action
+#: model:ir.model,name:sh_all_in_one_merge.model_merge_po_category_wizard
+#: model:ir.ui.menu,name:sh_all_in_one_merge.menu_merge_ecommerce_category
+msgid "Merge Ecommerce Category"
+msgstr "合併電子商務類別"
+
+#. module: sh_all_in_one_merge
+#: model:res.groups,name:sh_all_in_one_merge.group_merge_category
+msgid "Merge Internal Category To Ecommerce"
+msgstr "將內部類別合併到電子商務中"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_website_res_config_settings_product_category_inherit
+msgid "Merge Internal Category to Ecommerce Category"
+msgstr "將內部類別合併到電子商務類別"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_pos_res_config_settings_product_category_inherit
+msgid "Merge Internal Category to POS Category"
+msgstr "將內部類別合併到POS類別"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_sh_minv_merge_invoice_wizard
+msgid "Merge Invoice Wizard"
+msgstr "合併發票嚮導"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_invoice_multi_action
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_invoice_wizard_form
+msgid "Merge Invoices"
+msgstr "合併發票"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_sh_merge_mrp_order_wizard
+msgid "Merge MRP Order Wizard"
+msgstr "合併MRP訂單嚮導"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_mrp_order_multi_action
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_mrp_order_wizard_form
+msgid "Merge Mrp Orders"
+msgstr "合併MRP訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_pos_category_action
+#: model:ir.model,name:sh_all_in_one_merge.model_merge_pos_category_wizard
+#: model:ir.ui.menu,name:sh_all_in_one_merge.menu_merge_pos_category
+msgid "Merge POS Category"
+msgstr "合併POS類別"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_sh_merge_picking_order_wizard
+msgid "Merge Picking Order Wizard"
+msgstr "合併採摘訂單嚮導"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_picking_order_multi_action
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_picking_order_wizard_form
+msgid "Merge Picking Orders"
+msgstr "合併挑選訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_sh_mpo_merge_purchase_order_wizard
+msgid "Merge Purchase Order Wizard"
+msgstr "合併購買訂單嚮導"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_purchase_order_multi_action
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_purchase_order_wizard_form
+msgid "Merge Purchase Orders"
+msgstr "合併購買訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_sh_mso_merge_sale_order_wizard
+msgid "Merge Sale Order Wizard"
+msgstr "合併銷售訂單嚮導"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_sale_order_multi_action
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_sale_order_wizard_form
+msgid "Merge Sale Orders"
+msgstr "合併銷售訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__merge_type
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__merge_type
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__merge_type
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__merge_type
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__merge_type
+msgid "Merge Type"
+msgstr "合併類型"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__mrp_order_id
+msgid "Mrp Order"
+msgstr "MRP訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__mrp_order_ids
+msgid "Mrp Orders"
+msgstr "MRP訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__cancel_new
+msgid "New Order and Cancel selected mrp orders"
+msgstr "新訂單並取消選定的MRP訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__cancel_new
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__cancel_new
+msgid "New Order and Cancel selected picking orders"
+msgstr "新訂單並取消選定的選擇訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__nothing_new
+msgid "New Order and Do Nothing with selected mrp orders"
+msgstr "新訂單並對選定的MRP訂單不做任何操作"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__nothing_new
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__nothing_new
+msgid "New Order and Do Nothing with selected picking orders"
+msgstr "新訂單並對所選揀配訂單不做任何操作"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__remove_new
+msgid "New Order and Remove selected mrp orders"
+msgstr "新訂單並刪除選定的MRP訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__remove_new
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__remove_new
+msgid "New Order and Remove selected picking orders"
+msgstr "新訂單並刪除選定的選擇訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__notify_in_chatter
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__notify_in_chatter
+msgid "Notify in Chatter ?"
+msgstr "喋喋不休地通知？"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__pos_category_id
+msgid "POS Category"
+msgstr "POS類別"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_inventory_config_setting_view
+msgid "Picking Order Merge Configuration"
+msgstr "採摘訂單​​合併配置"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__picking_order_ids
+msgid "Picking Orders"
+msgstr "選擇訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__picking_type_code
+msgid "Picking Type Code"
+msgstr "採摘類型代碼"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_picking_order/wizard/merge_picking_order.py:0
+#, python-format
+msgid "Piking Orders"
+msgstr "偷偷摸摸的訂單"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_purchase_order/wizard/merge_purchase_order.py:0
+#, python-format
+msgid ""
+"Please Select atleast two Requests for Quotation to perform merge operation."
+msgstr "請選擇至少兩個請求引用以執行合併操作。"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_invoice/wizard/merge_invoice.py:0
+#, python-format
+msgid "Please Select atleast two invoices to perform merge operation."
+msgstr "請選擇至少兩份發票以執行合併操作。"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_mrp_order/wizard/merge_mrp_order.py:0
+#, python-format
+msgid "Please Select atleast two mrp orders to perform merge operation."
+msgstr "請選擇至少兩個MRP訂單以執行合併操作。"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_picking_order/wizard/merge_picking_order.py:0
+#, python-format
+msgid "Please Select atleast two pickings to perform merge operation."
+msgstr "請選擇至少兩種摘要以執行合併操作。"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_sale_order/wizard/merge_sale_order.py:0
+#, python-format
+msgid "Please Select atleast two quotations to perform merge operation."
+msgstr "請選擇至少兩個引號來執行合併操作。"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_ecommerce_categories_merge/wizard/merge_category.py:0
+#, python-format
+msgid "Please select categories to merge with Ecommerce !"
+msgstr "請選擇分類以合併電子商務！"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_pos_categories_merge/wizard/merge_category.py:0
+#, python-format
+msgid "Please select categories to merge with POS !"
+msgstr "請選擇分類以與POS合併！"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_pos_category
+msgid "Point of Sale Category"
+msgstr "銷售點類別"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__product_id
+msgid "Product"
+msgstr "產品"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_product_category
+msgid "Product Category"
+msgstr "產品分類"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_product_template
+msgid "Product Template"
+msgstr "產品模板"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_invoice/wizard/merge_invoice.py:0
+#: code:addons/sh_all_in_one_merge/sh_merge_mrp_order/wizard/merge_mrp_order.py:0
+#: code:addons/sh_all_in_one_merge/sh_merge_picking_order/wizard/merge_picking_order.py:0
+#: code:addons/sh_all_in_one_merge/sh_merge_purchase_order/wizard/merge_purchase_order.py:0
+#: code:addons/sh_all_in_one_merge/sh_merge_sale_order/wizard/merge_sale_order.py:0
+#, python-format
+msgid ""
+"Programming error: wizard action executed without active_ids in context."
+msgstr "編程錯誤：在上下文中沒有Active_ID執行嚮導操作。"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__purchase_order_id
+msgid "Purchase Order"
+msgstr "採購訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__purchase_order_ids
+msgid "Purchase Orders"
+msgstr "訂單"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_sale_order/wizard/merge_sale_order.py:0
+#, python-format
+msgid "Quotations"
+msgstr "報價"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__picking_type_code__incoming
+msgid "Receipts"
+msgstr "收據"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__category_ids
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__category_ids
+msgid "Remaining Categories"
+msgstr "剩餘的類別"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_minv_merge_invoice_wizard__merge_type__remove
+msgid "Remove Other Invoices"
+msgstr "刪除其他發票"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mpo_merge_purchase_order_wizard__merge_type__remove
+msgid "Remove Other Purchase Orders"
+msgstr "刪除其他採購訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mso_merge_sale_order_wizard__merge_type__remove
+msgid "Remove Other Sale Orders"
+msgstr "刪除其他銷售訂單"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_purchase_order/wizard/merge_purchase_order.py:0
+#, python-format
+msgid "Requests for Quotation"
+msgstr "報價要求"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__sale_order_id
+msgid "Sale Order"
+msgstr "銷售訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__sale_order_ids
+msgid "Sale Orders"
+msgstr "銷售訂單"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_ecommerce_category_form_wizard
+msgid "Select Categories to merge with Ecommerce"
+msgstr "選擇與電子商務合併的類別"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_pos_category_form_wizard
+msgid "Select Categories to merge with POS"
+msgstr "選擇分類以與POS合併"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__operation
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__operation
+msgid "Select Operation to Do."
+msgstr "選擇要做的操作。"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_ecommerce_category_form_wizard
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_pos_category_form_wizard
+msgid "Select the operation to do."
+msgstr "選擇要做的操作。"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__location_id
+msgid "Source Location"
+msgstr "源碼位置"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_website_res_config_settings_product_category_inherit
+msgid "Sync new Internal Category to Ecommerce Category"
+msgstr "將新的內部類別同步到電子商務類別"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_pos_res_config_settings_product_category_inherit
+msgid "Sync new Internal Category to POS Category"
+msgstr "將新的內部類別同步到POS類別"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__sync_with_ecommerce_category
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__sync_with_ecommerce_category
+msgid "Sync new Product Category With Ecommerce Category"
+msgstr "使用電子商務類別同步新產品類別"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__sync_with_pos_category
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__sync_with_pos_category
+msgid "Sync new Product Category With POS Category"
+msgstr "使用POS類同步新產品類別"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__sync_with_ecommerce_category
+msgid "Sync with Ecommerce Category"
+msgstr "與電子商務類別同步"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__sync_with_pos_category
+msgid "Sync with POS Category"
+msgstr "與POS類別同步"
+
+#. module: sh_all_in_one_merge
+#: model:res.groups,comment:sh_all_in_one_merge.group_merge_category
+msgid "This user will be Merge Internal Category To Ecommerce"
+msgstr "此用戶將合併內部類別到電子商務"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__partner_id
+msgid "Vendor"
+msgstr "小販"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_product_public_category
+msgid "Website Product Category"
+msgstr "網站產品類別"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_invoice/wizard/merge_invoice.py:0
+#, python-format
+msgid "You can only merge invoices which are in draft state"
+msgstr "您只能合併符合國家草稿的發票"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_mrp_order/wizard/merge_mrp_order.py:0
+#, python-format
+msgid ""
+"You can only merge mrp orders which are in Draft/Confirmed/In Progress state"
+msgstr "您只能合併以草案/確認/在進展狀態下的MRP訂單"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_mrp_order/wizard/merge_mrp_order.py:0
+#, python-format
+msgid ""
+"You can only merge mrp orders which are in same product/bill of material. "
+msgstr "您只能合併同一產品/材料清單的MRP訂單。"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_picking_order/wizard/merge_picking_order.py:0
+#, python-format
+msgid ""
+"You can only merge picking orders which are in Draft/Waiting/Ready state"
+msgstr "您只能合併採摘訂單，這些訂單是草案/等待/準備狀態"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_picking_order/wizard/merge_picking_order.py:0
+#, python-format
+msgid "You can only merge picking orders which are in same operation type. "
+msgstr "您只能合併採摘訂單，這些訂單是相同的操作類型。"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_purchase_order/wizard/merge_purchase_order.py:0
+#, python-format
+msgid "You can only merge purchase orders which are in RFQ state"
+msgstr "您只能合併在RFQ狀態中的採購訂單"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_sale_order/wizard/merge_sale_order.py:0
+#, python-format
+msgid "You can only merge sale orders which are in Quotation state"
+msgstr "您只能合併具有引號的銷售訂單"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_pos_category__product_category_id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_public_category__product_category_id
+msgid "product Category"
+msgstr "產品分類"

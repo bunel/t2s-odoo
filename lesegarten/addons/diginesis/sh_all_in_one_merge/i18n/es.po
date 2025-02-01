@@ -1,0 +1,757 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_all_in_one_merge
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-12 05:40+0000\n"
+"PO-Revision-Date: 2021-03-12 05:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_ecommerce_category_form_wizard
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_pos_category_form_wizard
+msgid "Apply"
+msgstr "Solicitar"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__auto_sync_product_with_ecommerce_category
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__auto_sync_product_with_ecommerce_category
+msgid "Auto Sync new Product With Ecommerce Category"
+msgstr "Nuevo producto de sincronización automática con categoría de comercio electrónico."
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__auto_sync_product_with_pos_category
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__auto_sync_product_with_pos_category
+msgid "Auto Sync new Product With POS Category"
+msgstr "Nuevo producto de sincronización automática con POS Categoría"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_website_res_config_settings_product_category_inherit
+msgid "Auto Sync new product to Ecommerce Category"
+msgstr "Sincronización automática Nuevo producto a la categoría ECOMMERCE"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_pos_res_config_settings_product_category_inherit
+msgid "Auto Sync new product to POS Category"
+msgstr "Sincronización automática Nuevo producto a POS Categoría"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_ecommerce_category_form_wizard
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_invoice_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_mrp_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_picking_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_pos_category_form_wizard
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_purchase_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_sale_order_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_minv_merge_invoice_wizard__merge_type__cancel
+msgid "Cancel Other Invoices"
+msgstr "Cancelar otras facturas"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mpo_merge_purchase_order_wizard__merge_type__cancel
+msgid "Cancel Other Purchase Orders"
+msgstr "Cancelar otras órdenes de compra"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mso_merge_sale_order_wizard__merge_type__cancel
+msgid "Cancel Other Sale Orders"
+msgstr "Cancelar otros pedidos de venta"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__location_src_id
+msgid "Components Location"
+msgstr "Ubicación de los componentes"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configuración de configuración"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__partner_id
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__merge_po_category_wizard__operation__create_category
+msgid "Create All remaining categories on Ecommerce."
+msgstr "Crea todas las categorías restantes en el comercio electrónico."
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__merge_pos_category_wizard__operation__create_category
+msgid "Create All remaining categories on POS."
+msgstr "Crea todas las categorías restantes en POS."
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__partner_id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__partner_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__merge_type
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__merge_type
+msgid "Default Merge Type"
+msgstr "Tipo de fusión predeterminado"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__check_available_pos
+msgid "Default check Available in POS option in product."
+msgstr "Compruebe por defecto disponible en la opción POS en el producto."
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__picking_type_code__outgoing
+msgid "Delivery Orders"
+msgstr "Órdenes de entrega"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__location_dest_id
+msgid "Destination Location"
+msgstr "Ubicación de destino"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_pos_category__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_public_category__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_template__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_minv_merge_invoice_wizard__merge_type__nothing
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mpo_merge_purchase_order_wizard__merge_type__nothing
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mso_merge_sale_order_wizard__merge_type__nothing
+msgid "Do Nothing"
+msgstr "Hacer nada"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__ecommerce_category_id
+msgid "Ecommerce Category"
+msgstr "Categoría de comercio electrónico"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__cancel_existing
+msgid "Existing Order and Cancel selected mrp orders"
+msgstr "Orden existente y cancele los pedidos de MRP seleccionados"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__cancel_existing
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__cancel_existing
+msgid "Existing Order and Cancel selected picking orders"
+msgstr "Pedido existente y cancele las órdenes de selección seleccionadas"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__nothing_existing
+msgid "Existing Order and Do Nothing with selected mrp orders"
+msgstr "Orden existente y no haga nada con los pedidos de MRP seleccionados"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__nothing_existing
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__nothing_existing
+msgid "Existing Order and Do Nothing with selected picking orders"
+msgstr "Orden existente y no haga nada con las órdenes de selección seleccionadas"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__remove_existing
+msgid "Existing Order and Remove selected mrp orders"
+msgstr "Orden existente y eliminar los pedidos de MRP seleccionados"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__remove_existing
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__remove_existing
+msgid "Existing Order and Remove selected picking orders"
+msgstr "Orden existente y eliminar pedidos seleccionados de recogida"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__picking_order_id
+msgid "Existing Picking Order"
+msgstr "Orden de recogida existente"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__location_dest_id
+msgid "Finished Products Location"
+msgstr "Ubicación de productos terminados"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__hide_sync_field
+msgid "Hide Sync Fields"
+msgstr "Ocultar campos de sincronización"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_pos_category__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_public_category__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_template__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__id
+msgid "ID"
+msgstr "IDENTIFICACIÓN"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__picking_type_code__internal
+msgid "Internal Transfers"
+msgstr "Transferencias internas"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__invoice_id
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__inv_type
+msgid "Invoice Type"
+msgstr "Tipo de factura"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__invoice_ids
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_pos_category____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_public_category____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_template____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__merge_po_category_wizard__operation__assign_category
+msgid "Linked all products with corresponding Ecommerce category."
+msgstr "Vinculados todos los productos con la categoría de comercio electrónico correspondiente."
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__merge_pos_category_wizard__operation__assign_category
+msgid "Linked all products with corresponding POS category."
+msgstr "Vinculados todos los productos con la categoría POS correspondiente."
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_mrp_config_setting_view
+msgid "Manufacturing Order Merge Configuration"
+msgstr "Configuración de fusión de pedidos de fabricación"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_mrp_order/wizard/merge_mrp_order.py:0
+#, python-format
+msgid "Manufacturing Orders"
+msgstr "Órdenes de fabricación"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_invoice_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_mrp_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_picking_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_purchase_order_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_sale_order_wizard_form
+msgid "Merge"
+msgstr "Unir"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_ecommerce_category_action
+#: model:ir.model,name:sh_all_in_one_merge.model_merge_po_category_wizard
+#: model:ir.ui.menu,name:sh_all_in_one_merge.menu_merge_ecommerce_category
+msgid "Merge Ecommerce Category"
+msgstr "Fusionar la categoría de comercio electrónico"
+
+#. module: sh_all_in_one_merge
+#: model:res.groups,name:sh_all_in_one_merge.group_merge_category
+msgid "Merge Internal Category To Ecommerce"
+msgstr "Fusionar la categoría interna al comercio electrónico."
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_website_res_config_settings_product_category_inherit
+msgid "Merge Internal Category to Ecommerce Category"
+msgstr "Combinar la categoría interna a la categoría ECOMMERCE"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_pos_res_config_settings_product_category_inherit
+msgid "Merge Internal Category to POS Category"
+msgstr "Fusionar la categoría interna a la categoría POS"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_sh_minv_merge_invoice_wizard
+msgid "Merge Invoice Wizard"
+msgstr "Mago de fusión de facturas"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_invoice_multi_action
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_invoice_wizard_form
+msgid "Merge Invoices"
+msgstr "Fusionar facturas"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_sh_merge_mrp_order_wizard
+msgid "Merge MRP Order Wizard"
+msgstr "Merge mago MRP PEDIDO"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_mrp_order_multi_action
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_mrp_order_wizard_form
+msgid "Merge Mrp Orders"
+msgstr "Fusionar pedidos MRP"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_pos_category_action
+#: model:ir.model,name:sh_all_in_one_merge.model_merge_pos_category_wizard
+#: model:ir.ui.menu,name:sh_all_in_one_merge.menu_merge_pos_category
+msgid "Merge POS Category"
+msgstr "Merge POS Categoría"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_sh_merge_picking_order_wizard
+msgid "Merge Picking Order Wizard"
+msgstr "Asistente de orden de picking"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_picking_order_multi_action
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_picking_order_wizard_form
+msgid "Merge Picking Orders"
+msgstr "Fusionar pedidos de picking"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_sh_mpo_merge_purchase_order_wizard
+msgid "Merge Purchase Order Wizard"
+msgstr "Asistente de orden de compra de compras"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_purchase_order_multi_action
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_purchase_order_wizard_form
+msgid "Merge Purchase Orders"
+msgstr "Fusionar pedidos de compra"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_sh_mso_merge_sale_order_wizard
+msgid "Merge Sale Order Wizard"
+msgstr "MERGE DE VENTA DE VENTA MAGA"
+
+#. module: sh_all_in_one_merge
+#: model:ir.actions.act_window,name:sh_all_in_one_merge.sh_merge_sale_order_multi_action
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_sale_order_wizard_form
+msgid "Merge Sale Orders"
+msgstr "Fusionar pedidos de venta"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__merge_type
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__merge_type
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_minv_merge_invoice_wizard__merge_type
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__merge_type
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__merge_type
+msgid "Merge Type"
+msgstr "Tipo de combinación"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__mrp_order_id
+msgid "Mrp Order"
+msgstr "Orden mRP"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__mrp_order_ids
+msgid "Mrp Orders"
+msgstr "Pedidos MRP"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__cancel_new
+msgid "New Order and Cancel selected mrp orders"
+msgstr "Nuevo pedido y cancele los pedidos de MRP seleccionados"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__cancel_new
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__cancel_new
+msgid "New Order and Cancel selected picking orders"
+msgstr "Nuevo pedido y cancele las órdenes de selección seleccionadas"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__nothing_new
+msgid "New Order and Do Nothing with selected mrp orders"
+msgstr "Nuevo pedido y no haga nada con los pedidos de MRP seleccionados"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__nothing_new
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__nothing_new
+msgid "New Order and Do Nothing with selected picking orders"
+msgstr "Nuevo pedido y no haga nada con las órdenes de selección seleccionadas."
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_mrp_order_wizard__merge_type__remove_new
+msgid "New Order and Remove selected mrp orders"
+msgstr "Nuevo pedido y eliminar pedidos MRP seleccionados"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__res_company__merge_type__remove_new
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__merge_type__remove_new
+msgid "New Order and Remove selected picking orders"
+msgstr "Nuevo pedido y eliminar pedidos seleccionados de recogida"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__notify_in_chatter
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__notify_in_chatter
+msgid "Notify in Chatter ?"
+msgstr "¿Notificar en Chatter?"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__pos_category_id
+msgid "POS Category"
+msgstr "Categoría POS"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_inventory_config_setting_view
+msgid "Picking Order Merge Configuration"
+msgstr "PEDIDO PEDIDO MERGE CONFIGURACIÓN"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__picking_order_ids
+msgid "Picking Orders"
+msgstr "Recogiendo pedidos"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__picking_type_code
+msgid "Picking Type Code"
+msgstr "Código de tipo de recogida"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_picking_order/wizard/merge_picking_order.py:0
+#, python-format
+msgid "Piking Orders"
+msgstr "Órdenes de Piking"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_purchase_order/wizard/merge_purchase_order.py:0
+#, python-format
+msgid ""
+"Please Select atleast two Requests for Quotation to perform merge operation."
+msgstr "Seleccione al menos dos solicitudes de cotización para realizar una operación de combinación."
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_invoice/wizard/merge_invoice.py:0
+#, python-format
+msgid "Please Select atleast two invoices to perform merge operation."
+msgstr "Seleccione al menos dos facturas para realizar una operación de combinación."
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_mrp_order/wizard/merge_mrp_order.py:0
+#, python-format
+msgid "Please Select atleast two mrp orders to perform merge operation."
+msgstr "Seleccione al menos dos pedidos MRP para realizar una operación de combinación."
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_picking_order/wizard/merge_picking_order.py:0
+#, python-format
+msgid "Please Select atleast two pickings to perform merge operation."
+msgstr "Seleccione al menos dos selecciones para realizar una operación de combinación."
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_sale_order/wizard/merge_sale_order.py:0
+#, python-format
+msgid "Please Select atleast two quotations to perform merge operation."
+msgstr "Seleccione al menos dos cotizaciones para realizar una operación de combinación."
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_ecommerce_categories_merge/wizard/merge_category.py:0
+#, python-format
+msgid "Please select categories to merge with Ecommerce !"
+msgstr "¡Seleccione las categorías para fusionarse con el comercio electrónico!"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_pos_categories_merge/wizard/merge_category.py:0
+#, python-format
+msgid "Please select categories to merge with POS !"
+msgstr "Por favor, seleccione Categorías para fusionarse con POS!"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_pos_category
+msgid "Point of Sale Category"
+msgstr "Categoría de punto de venta"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_mrp_order_wizard__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_product_category
+msgid "Product Category"
+msgstr "categoria de producto"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_invoice/wizard/merge_invoice.py:0
+#: code:addons/sh_all_in_one_merge/sh_merge_mrp_order/wizard/merge_mrp_order.py:0
+#: code:addons/sh_all_in_one_merge/sh_merge_picking_order/wizard/merge_picking_order.py:0
+#: code:addons/sh_all_in_one_merge/sh_merge_purchase_order/wizard/merge_purchase_order.py:0
+#: code:addons/sh_all_in_one_merge/sh_merge_sale_order/wizard/merge_sale_order.py:0
+#, python-format
+msgid ""
+"Programming error: wizard action executed without active_ids in context."
+msgstr "Error de programación: Acción del asistente ejecutada sin Active_IDs en contexto."
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__purchase_order_id
+msgid "Purchase Order"
+msgstr "Orden de compra"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__purchase_order_ids
+msgid "Purchase Orders"
+msgstr "Ordenes de compra"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_sale_order/wizard/merge_sale_order.py:0
+#, python-format
+msgid "Quotations"
+msgstr "Citas"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_merge_picking_order_wizard__picking_type_code__incoming
+msgid "Receipts"
+msgstr "Ingresos"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__category_ids
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__category_ids
+msgid "Remaining Categories"
+msgstr "Categorías restantes"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_minv_merge_invoice_wizard__merge_type__remove
+msgid "Remove Other Invoices"
+msgstr "Eliminar otras facturas"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mpo_merge_purchase_order_wizard__merge_type__remove
+msgid "Remove Other Purchase Orders"
+msgstr "Eliminar otras órdenes de compra"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields.selection,name:sh_all_in_one_merge.selection__sh_mso_merge_sale_order_wizard__merge_type__remove
+msgid "Remove Other Sale Orders"
+msgstr "Eliminar otros pedidos de venta"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_purchase_order/wizard/merge_purchase_order.py:0
+#, python-format
+msgid "Requests for Quotation"
+msgstr "Solicitudes de cotización"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__sale_order_id
+msgid "Sale Order"
+msgstr "Orden de venta"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mso_merge_sale_order_wizard__sale_order_ids
+msgid "Sale Orders"
+msgstr "Venta de pedidos"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_ecommerce_category_form_wizard
+msgid "Select Categories to merge with Ecommerce"
+msgstr "Seleccione Categorías para fusionarse con ECOMMERCE"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_pos_category_form_wizard
+msgid "Select Categories to merge with POS"
+msgstr "Seleccione Categorías para fusionarse con POS"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_po_category_wizard__operation
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_merge_pos_category_wizard__operation
+msgid "Select Operation to Do."
+msgstr "Seleccione Operación para hacer."
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_ecommerce_category_form_wizard
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_merge_pos_category_form_wizard
+msgid "Select the operation to do."
+msgstr "Seleccione la operación para hacer."
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_merge_picking_order_wizard__location_id
+msgid "Source Location"
+msgstr "Ubicación de la fuente"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_website_res_config_settings_product_category_inherit
+msgid "Sync new Internal Category to Ecommerce Category"
+msgstr "Sincronizar nueva categoría interna a la categoría de comercio electrónico"
+
+#. module: sh_all_in_one_merge
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_merge.sh_pos_res_config_settings_product_category_inherit
+msgid "Sync new Internal Category to POS Category"
+msgstr "Sincronizar nueva categoría interna a la categoría POS"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__sync_with_ecommerce_category
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__sync_with_ecommerce_category
+msgid "Sync new Product Category With Ecommerce Category"
+msgstr "Sincronizar la categoría de nuevos productos con la categoría ECOMMERCE"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_company__sync_with_pos_category
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_res_config_settings__sync_with_pos_category
+msgid "Sync new Product Category With POS Category"
+msgstr "Sync New Categoría de producto con POS Categoría"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__sync_with_ecommerce_category
+msgid "Sync with Ecommerce Category"
+msgstr "Sincronizar con la categoría de comercio electrónico"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_category__sync_with_pos_category
+msgid "Sync with POS Category"
+msgstr "Sincronizar con la categoría POS"
+
+#. module: sh_all_in_one_merge
+#: model:res.groups,comment:sh_all_in_one_merge.group_merge_category
+msgid "This user will be Merge Internal Category To Ecommerce"
+msgstr "Este usuario se fusionará la categoría interna a ECOMMERCE"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_sh_mpo_merge_purchase_order_wizard__partner_id
+msgid "Vendor"
+msgstr "Vendedor"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model,name:sh_all_in_one_merge.model_product_public_category
+msgid "Website Product Category"
+msgstr "Categoría de producto de sitio web"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_invoice/wizard/merge_invoice.py:0
+#, python-format
+msgid "You can only merge invoices which are in draft state"
+msgstr "Solo puede fusionar las facturas que están en estado."
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_mrp_order/wizard/merge_mrp_order.py:0
+#, python-format
+msgid ""
+"You can only merge mrp orders which are in Draft/Confirmed/In Progress state"
+msgstr "Solo puede fusionar pedidos MRP que están en estado de borrador / confirmado / en curso"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_mrp_order/wizard/merge_mrp_order.py:0
+#, python-format
+msgid ""
+"You can only merge mrp orders which are in same product/bill of material. "
+msgstr "Solo puede fusionar pedidos MRP que se encuentran en el mismo producto / letra de material."
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_picking_order/wizard/merge_picking_order.py:0
+#, python-format
+msgid ""
+"You can only merge picking orders which are in Draft/Waiting/Ready state"
+msgstr "Solo puede fusionar pedidos de recogida que se encuentran en el estado de borrador / esperado / listo"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_picking_order/wizard/merge_picking_order.py:0
+#, python-format
+msgid "You can only merge picking orders which are in same operation type. "
+msgstr "Solo puede fusionar pedidos de escoger que se encuentren en el mismo tipo de operación."
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_purchase_order/wizard/merge_purchase_order.py:0
+#, python-format
+msgid "You can only merge purchase orders which are in RFQ state"
+msgstr "Solo puede fusionar pedidos de compra que se encuentran en estado de RFQ"
+
+#. module: sh_all_in_one_merge
+#: code:addons/sh_all_in_one_merge/sh_merge_sale_order/wizard/merge_sale_order.py:0
+#, python-format
+msgid "You can only merge sale orders which are in Quotation state"
+msgstr "Solo puede fusionar pedidos de venta que están en estado de cotización"
+
+#. module: sh_all_in_one_merge
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_pos_category__product_category_id
+#: model:ir.model.fields,field_description:sh_all_in_one_merge.field_product_public_category__product_category_id
+msgid "product Category"
+msgstr "categoria de producto"
