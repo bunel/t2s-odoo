@@ -1,0 +1,333 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_ro_account_anaf_sync_vendor_bills
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220317\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-08 12:19+0000\n"
+"PO-Revision-Date: 2023-12-08 14:37+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: code:addons/l10n_ro_account_anaf_sync_vendor_bills/models/spv_vendor_bill.py:0
+#: code:addons/l10n_ro_account_anaf_sync_vendor_bills/models/spv_vendor_bill.py:0
+#, python-format
+msgid "ANAF Response.zip"
+msgstr "RaspunsANAF.zip"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: code:addons/l10n_ro_account_anaf_sync_vendor_bills/models/spv_vendor_bill.py:0
+#: code:addons/l10n_ro_account_anaf_sync_vendor_bills/models/spv_vendor_bill.py:0
+#, python-format
+msgid "Access error"
+msgstr "Eroare de acces"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_needaction
+msgid "Action Needed"
+msgstr "Intervenție necesară"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_attachment_count
+msgid "Attachment Count"
+msgstr "Număr atașamente"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__communication
+msgid "Communication"
+msgstr "Comunicare"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__create_uid
+msgid "Created by"
+msgstr "Creat de"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__create_date
+msgid "Created on"
+msgstr "Creat în"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__display_name
+msgid "Display Name"
+msgstr "Nume afișat"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__l10n_ro_edi_download
+msgid "Download ID (RO)"
+msgstr "Index Descărcare"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields.selection,name:l10n_ro_account_anaf_sync_vendor_bills.selection__spv_vendor_bill__state__draft
+msgid "Draft"
+msgstr "Ciornă"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.actions.server,name:l10n_ro_account_anaf_sync_vendor_bills.ir_cron_spv_fetch_vendor_bills_ir_actions_server
+#: model:ir.cron,cron_name:l10n_ro_account_anaf_sync_vendor_bills.ir_cron_spv_fetch_vendor_bills
+#: model:ir.cron,name:l10n_ro_account_anaf_sync_vendor_bills.ir_cron_spv_fetch_vendor_bills
+msgid "EDI: Fetch Vendor Bills"
+msgstr "EDI: Obținere Facturi Furnizor"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.actions.server,name:l10n_ro_account_anaf_sync_vendor_bills.ir_cron_spv_fetch_xml_vendor_bills_ir_actions_server
+#: model:ir.cron,cron_name:l10n_ro_account_anaf_sync_vendor_bills.ir_cron_spv_fetch_xml_vendor_bills
+#: model:ir.cron,name:l10n_ro_account_anaf_sync_vendor_bills.ir_cron_spv_fetch_xml_vendor_bills
+msgid "EDI: Fetch XML Vendor Bills"
+msgstr "EDI: Obținere XML Facturi Furnizor"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.actions.server,name:l10n_ro_account_anaf_sync_vendor_bills.ir_cron_spv_vendor_bill_xml2pdf_ir_actions_server
+#: model:ir.cron,cron_name:l10n_ro_account_anaf_sync_vendor_bills.ir_cron_spv_vendor_bill_xml2pdf
+#: model:ir.cron,name:l10n_ro_account_anaf_sync_vendor_bills.ir_cron_spv_vendor_bill_xml2pdf
+msgid "EDI: XML2PDF Vendor Bills"
+msgstr "EDI: Facturi Furnizori din XML in PDF"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_follower_ids
+msgid "Followers"
+msgstr "Persoane interesate"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Urmăritori (Parteneri)"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__id
+msgid "ID"
+msgstr "Index"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,help:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_needaction
+#: model:ir.model.fields,help:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Dacă este selectat, mesajele noi necesită atenția dumneavoastră."
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,help:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_has_error
+#: model:ir.model.fields,help:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Dacă este bifată, unele mesaje au o eroare de livrare."
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: code:addons/l10n_ro_account_anaf_sync_vendor_bills/models/spv_vendor_bill.py:0
+#: code:addons/l10n_ro_account_anaf_sync_vendor_bills/models/spv_vendor_bill.py:0
+#, python-format
+msgid "Invoice"
+msgstr "Factură"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__invoice_type
+msgid "Invoice Type"
+msgstr "Tip factură"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_is_follower
+msgid "Is Follower"
+msgstr "Este urmăritor"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificare la"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualizare făcută de"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualizare pe"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Atașament principal"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_has_error
+msgid "Message Delivery error"
+msgstr "Eroare de livrare a mesajului"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_ids
+msgid "Messages"
+msgstr "Mesaje"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model_terms:ir.ui.view,arch_db:l10n_ro_account_anaf_sync_vendor_bills.syncvb_spv_vendor_bill_search
+msgid "Not matched"
+msgstr "Nemapat"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__notes
+msgid "Notes"
+msgstr "Note"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Număr de acțiuni"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_has_error_counter
+msgid "Number of errors"
+msgstr "Număr de erori"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,help:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Număr de mesaje ce necesită intervenție"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,help:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numărul de mesaje cu eroare de livrare"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,help:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Număr de mesaje necitite"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__pdf_attachment_id
+msgid "PDF"
+msgstr "PDF"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields.selection,name:l10n_ro_account_anaf_sync_vendor_bills.selection__spv_vendor_bill__state__pdf_error
+msgid "PDF Error"
+msgstr "Eroare PDF"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields.selection,name:l10n_ro_account_anaf_sync_vendor_bills.selection__spv_vendor_bill__state__pdf_success
+msgid "PDF Success"
+msgstr "Succes PDF"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__partner_id
+msgid "Partner"
+msgstr "Partener"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__partner_vat
+msgid "Partner VAT"
+msgstr "TVA Partener"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields.selection,name:l10n_ro_account_anaf_sync_vendor_bills.selection__spv_vendor_bill__invoice_type__in_refund
+msgid "Refund"
+msgstr "Stornare"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__xml_attachment_id
+msgid "Request XML"
+msgstr "Solicită XML"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.actions.act_window,name:l10n_ro_account_anaf_sync_vendor_bills.action_syncvb_spv_vendor_bill
+#: model:ir.ui.menu,name:l10n_ro_account_anaf_sync_vendor_bills.menu_action_syncvb_spv_vendor_bill
+msgid "SPV Bills"
+msgstr "Facturi SPV"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model,name:l10n_ro_account_anaf_sync_vendor_bills.model_spv_vendor_bill
+#: model_terms:ir.ui.view,arch_db:l10n_ro_account_anaf_sync_vendor_bills.syncvb_spv_vendor_bill_form
+#: model_terms:ir.ui.view,arch_db:l10n_ro_account_anaf_sync_vendor_bills.syncvb_spv_vendor_bill_search
+msgid "SPV Vendor Bill"
+msgstr "Factură Furnizor SPV"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__state
+msgid "State"
+msgstr "Stare"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__partner_name
+msgid "Supplier Name"
+msgstr "Nume furnizor"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__l10n_ro_edi_transaction
+msgid "Transaction ID (RO)"
+msgstr "Index Transmitere"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: code:addons/l10n_ro_account_anaf_sync_vendor_bills/models/spv_vendor_bill.py:0
+#: code:addons/l10n_ro_account_anaf_sync_vendor_bills/models/spv_vendor_bill.py:0
+#, python-format
+msgid "Unknown response"
+msgstr "Răspuns necunoscut"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_unread
+msgid "Unread Messages"
+msgstr "Mesaje necitite"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contor mesaje necitite"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__invoice_number
+#: model:ir.model.fields.selection,name:l10n_ro_account_anaf_sync_vendor_bills.selection__spv_vendor_bill__invoice_type__in_invoice
+msgid "Vendor Bill"
+msgstr "Factură Furnizor"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__invoice_id
+msgid "Vendor Bill Mapped"
+msgstr "Mapare Factură Furnizor"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__website_message_ids
+msgid "Website Messages"
+msgstr "Mesaje Website"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,help:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__website_message_ids
+msgid "Website communication history"
+msgstr "Istoric comunicare website"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__xml_invoice_file
+msgid "XML"
+msgstr "XML"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields.selection,name:l10n_ro_account_anaf_sync_vendor_bills.selection__spv_vendor_bill__state__xml_error
+msgid "XML Error"
+msgstr "Eroare XML"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields,field_description:l10n_ro_account_anaf_sync_vendor_bills.field_spv_vendor_bill__xml_invoice_filename
+msgid "XML Filename"
+msgstr "Nume fișier XML"
+
+#. module: l10n_ro_account_anaf_sync_vendor_bills
+#: model:ir.model.fields.selection,name:l10n_ro_account_anaf_sync_vendor_bills.selection__spv_vendor_bill__state__xml_success
+msgid "XML Success"
+msgstr "Succes XML"

@@ -1,0 +1,32 @@
+<odoo noupdate="1">
+    <record id="ir_cron_spv_fetch_vendor_bills" model="ir.cron">
+        <field name="name">EDI SPV: Fetch Vendor Bills</field>
+        <field name="model_id" ref="model_spv_vendor_bill"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_fetch_vendor_bills(days=1)</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="active">False</field>
+    </record>
+    <record id="ir_cron_spv_fetch_xml_vendor_bills" model="ir.cron">
+        <field name="name">EDI SPV: Fetch XML Vendor Bills</field>
+        <field name="model_id" ref="model_spv_vendor_bill"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_fetch_xml_vendor_bills(batch=10)</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="active">False</field>
+    </record>
+    <record id="ir_cron_spv_vendor_bill_xml2pdf" model="ir.cron">
+        <field name="name">EDI SPV: XML2PDF Vendor Bills</field>
+        <field name="model_id" ref="model_spv_vendor_bill"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_xml2pdf_vendor_bills(batch=10)</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="active">False</field>
+    </record>
+</odoo>
