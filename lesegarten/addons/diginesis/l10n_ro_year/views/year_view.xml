@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+			   
+		<record id="l10n_year_tree" model="ir.ui.view">
+            <field name="name">l10n.year.tree</field>
+            <field name="model">l10n.year</field>
+            <field name="arch" type="xml">
+                <tree string="Year">
+                    <field name="name" />
+                    <field name="year" />
+                    <field name="active" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="l10n_year_form" model="ir.ui.view">
+          <field name="name">l10n.year.form</field>
+          <field name="model">l10n.year</field>
+          <field name="arch" type="xml">
+          	<form string="Year">	          	
+				<sheet>		
+				 	<div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object"
+                                class="oe_stat_button" icon="fa-archive">
+                            <field name="active" widget="boolean_button"
+                                options='{"terminology": "archive"}'/>
+                        </button>
+                    </div>	
+                    <div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="Year Name"/>
+                        <h1><field name="name" placeholder="Year Name"/></h1>                        
+                    </div>		
+					<group name="meta">
+						<group>							
+							<field name="year" />
+						</group>
+					</group>
+				</sheet>
+              </form>
+          </field>
+       </record>
+        
+       <record id="action_l10n_year_view" model="ir.actions.act_window">
+            <field name="name">Years</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">l10n.year</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="l10n_year_tree"/>
+       </record>
+        
+       <menuitem id="menu_action_l10n_year_view" parent="account.menu_finance_configuration" action="action_l10n_year_view" groups="l10n_ro_year.group_manage_years"/>
+        
+	</data>
+</openerp>

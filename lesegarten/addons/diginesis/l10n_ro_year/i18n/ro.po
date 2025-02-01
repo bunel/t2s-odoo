@@ -1,0 +1,98 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_ro_year
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220317\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-04 06:06+0000\n"
+"PO-Revision-Date: 2022-10-04 09:19+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__active
+msgid "Active"
+msgstr "Activ"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__create_uid
+msgid "Created by"
+msgstr "Creat de către"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__create_date
+msgid "Created on"
+msgstr "Creat în"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__display_name
+msgid "Display Name"
+msgstr "Nume Afișat"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,help:l10n_ro_year.field_l10n_year__active
+msgid ""
+"If unchecked, it will allow you to hide the product without removing it."
+msgstr ""
+"Dacă nu este bifat, vă va permite să ascundeți produsul fără a-l elimina."
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year____last_update
+msgid "Last Modified on"
+msgstr "Ultima Modificare pe"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__write_uid
+msgid "Last Updated by"
+msgstr "Ultima Actualizare de către"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__write_date
+msgid "Last Updated on"
+msgstr "Ultima Actualizare pe"
+
+#. module: l10n_ro_year
+#: model:ir.model,name:l10n_ro_year.model_l10n_year
+msgid "Localization Year"
+msgstr "An de Localizare"
+
+#. module: l10n_ro_year
+#: model:res.groups,name:l10n_ro_year.group_manage_years
+msgid "Manage Years"
+msgstr "Gestionare Ani"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__name
+msgid "Name"
+msgstr "Nume"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__year
+#: model_terms:ir.ui.view,arch_db:l10n_ro_year.l10n_year_form
+#: model_terms:ir.ui.view,arch_db:l10n_ro_year.l10n_year_tree
+msgid "Year"
+msgstr "An"
+
+#. module: l10n_ro_year
+#: model_terms:ir.ui.view,arch_db:l10n_ro_year.l10n_year_form
+msgid "Year Name"
+msgstr "Nume An"
+
+#. module: l10n_ro_year
+#: model:ir.actions.act_window,name:l10n_ro_year.action_l10n_year_view
+#: model:ir.ui.menu,name:l10n_ro_year.menu_action_l10n_year_view
+msgid "Years"
+msgstr "Ani"

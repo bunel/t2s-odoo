@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2022-10-04 09:19+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__active
+msgid "Active"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,help:l10n_ro_year.field_l10n_year__active
+msgid ""
+"If unchecked, it will allow you to hide the product without removing it."
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model,name:l10n_ro_year.model_l10n_year
+msgid "Localization Year"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:res.groups,name:l10n_ro_year.group_manage_years
+msgid "Manage Years"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__name
+msgid "Name"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.model.fields,field_description:l10n_ro_year.field_l10n_year__year
+#: model_terms:ir.ui.view,arch_db:l10n_ro_year.l10n_year_form
+#: model_terms:ir.ui.view,arch_db:l10n_ro_year.l10n_year_tree
+msgid "Year"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model_terms:ir.ui.view,arch_db:l10n_ro_year.l10n_year_form
+msgid "Year Name"
+msgstr ""
+
+#. module: l10n_ro_year
+#: model:ir.actions.act_window,name:l10n_ro_year.action_l10n_year_view
+#: model:ir.ui.menu,name:l10n_ro_year.menu_action_l10n_year_view
+msgid "Years"
+msgstr ""
