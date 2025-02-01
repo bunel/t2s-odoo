@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="products_description" inherit_id="website_sale.products_description">
+        <xpath expr="//*[@itemprop='description']" position="attributes">
+        	<attribute name="t-field">product.description</attribute>           
+        </xpath>
+    </template>
+    
+    <template id="product" inherit_id="website_sale.product">
+    	<xpath expr="//*[@id='product_details']/*[@t-field='product.description_sale']" position="attributes">
+    		<attribute name="t-field">product.description</attribute>
+    	</xpath>
+    </template>
+    
+    <template id="suggested_products_list" inherit_id="website_sale.suggested_products_list">
+    	<xpath expr="//*[@id='suggested_products']//*[hasclass('td-product_name')]/*[@t-field='product.description_sale']" position="attributes">
+    		<attribute name="t-field">product.description</attribute>
+    	</xpath>
+    </template>
+</odoo>
