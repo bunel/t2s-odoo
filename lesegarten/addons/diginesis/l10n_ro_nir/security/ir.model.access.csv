@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_invoice_transport_allocation_wizard,access.invoice.transport.allocation.wizard,model_invoice_transport_allocation_wizard,l10n_ro_nir.group_transport_vendor_bill_allocate,1,1,1,0

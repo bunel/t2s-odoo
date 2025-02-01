@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record id="din_account_notice_supplier_form" model="ir.ui.view">
+            <field name="name">din.account.notice.supplier.form</field>
+            <field name="model">account.notice</field>
+            <field name="inherit_id" ref="account_notice.account_notice_supplier_form"/>
+            <field name="arch" type="xml">
+                <div name="button_box" position="inside">
+                    <button name="action_print_nir" type="object"
+                            class="oe_stat_button" icon="fa-print" string="NIR"
+                            attrs="{'invisible': [('type', '!=', 'in_notice')]}" />
+                </div>
+            </field>
+        </record>
+</odoo>

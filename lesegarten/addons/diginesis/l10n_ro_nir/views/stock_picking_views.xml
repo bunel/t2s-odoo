@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="l10n_ro_nir_view_picking_form" model="ir.ui.view">
+        <field name="name">l10n.ro.nir.picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+         <field name="arch" type="xml">
+             <field name="backorder_id" position="after">
+                <field name="nir_number" attrs="{'invisible': [('nir_number','=', False)]}" />
+            </field>
+         </field>
+    </record>
+
+     <record id="l10n_ro_nir_view_picking_form2" model="ir.ui.view">
+        <field name="name">l10n.ro.nir.picking.form2</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="l10n_ro_stock_report.l10n_ro_stock_report_view_picking_form" />
+         <field name="arch" type="xml">
+             <xpath expr="//button[@name='action_print_transfer']//span[hasclass('o_stat_text')]" position="attributes">
+                 <attribute name="attrs">{'invisible': [('picking_type_code', '=', 'incoming')]}</attribute>
+             </xpath>
+             <xpath expr="//button[@name='action_print_transfer']//div[hasclass('o_stat_info')]" position="inside">
+                <span class="o_stat_text" id="nir_print_name" attrs="{'invisible': [('picking_type_code', '!=', 'incoming')]}">NIR</span>
+             </xpath>
+         </field>
+    </record>
+
+    <record id="l10n_ro_nir_view_picking_search" model="ir.ui.view">
+        <field name="name">l10n.ro.nir.picking.search</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_internal_search" />
+        <field name="arch" type="xml">
+            <field name="name" position="attributes">
+                <attribute name="filter_domain">['|', '|',('name', 'ilike', self), ('origin', 'ilike', self), ('nir_number', 'ilike', self)]</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>

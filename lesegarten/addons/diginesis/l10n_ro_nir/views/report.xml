@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="l10n_ro_stock_report.report_picking_incoming" model="ir.actions.report">
+            <field name="print_report_name">'NIR - %s' % (object.nir_number or object.name).replace('/','')</field>
+        </record>
+    </data>
+</odoo>
+

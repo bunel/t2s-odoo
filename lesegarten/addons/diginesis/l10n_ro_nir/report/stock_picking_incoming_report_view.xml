@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="report_pickingincoming_header" inherit_id="l10n_ro_stock_report.report_pickingincoming_header">
+    <xpath expr="//table[@name='number']//td[@name='header_number_number']/span" position="replace">
+        <span t-field="o.nir_number" />
+    </xpath>
+    <span name="header_supplier_nrc" position="after">
+         <t t-if="o.vendorbill_id">
+            <br/><span name="header_vendorbill">Vendor bill: <span t-field="o.vendorbill_id.ref"/></span>
+            <t t-if="o.vendorbill_id.rate">
+                <t t-if="o.vendorbill_id.rate > 1"> &amp;nbsp; Rate: <span t-esc="format_lang(o.vendorbill_id.rate, digits=4)" /></t>
+            </t>
+        </t>
+        <t t-if="o.notice_id">
+            <br/><span name="header_notice">Notice: <span t-field="o.notice_id.reference"/></span>
+            <t t-if="o.notice_id.rate">
+                <t t-if="o.notice_id.rate > 1"> &amp;nbsp; Rate: <span t-esc="format_lang(o.notice_id.rate, digits=4)" /></t>
+            </t>
+        </t>
+    </span>
+</template>
+
+<template id="report_pickingincoming_landed_cost" >
+    <t t-set="landed_cost_lines" t-value="get_landed_cost_lines(o)" />
+    <t t-if="landed_cost_lines">
+        <p style="page-break-before:always;"> </p>
+        <div class="page" style="font-size: 12px;">
+            <t t-set="landed_cost_bills_numbers" t-value="landed_cost_lines.mapped('cost_id.bill_ids.ref')" />
+            <h2 class="mt-4 mb-4 text-center" name="title">Reception Detail: <span t-field="o.nir_number" /></h2>
+            <h2 class="mt-4 mb-4 text-center" name="title" t-if="landed_cost_bills_numbers">Bill: <span t-esc="','.join(landed_cost_bills_numbers)" /></h2>
+            <t t-set="landed_cost_description_lines" t-value="landed_cost_lines.mapped('cost_line_id')" />
+            <table t-if="landed_cost_description_lines" class="mt-4 table table-bordered table-sm o_main_table" name="detail_description_table">
+                <thead>
+                    <tr name="header1_desc">
+                        <td name="header1_desc_desc">Description</td>
+                        <td name="header1_desc_split">Split Method</td>
+                        <td name="header1_desc_cost">Cost</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr t-foreach="landed_cost_description_lines" t-as="lcl_desc">
+                        <td><span t-field="lcl_desc.name" /></td>
+                        <td><span t-field="lcl_desc.split_method" /></td>
+                        <td class="text-right"><span t-field="lcl_desc.price_unit" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mt-4 table table-bordered table-sm o_main_table" name="detail_table">
+                <thead>
+                    <tr name="header1">
+                        <th name="header1_idx" style="font-weight: bolder;" class="text-center">Crt</th>
+                        <th name="header1_product_name" style="font-weight: bolder;" class="text-center">Product Name</th>
+                        <th name="header1_uom" style="font-weight: bolder;" class="text-center">UoM</th>
+                        <th name="header1_quantity" style="font-weight: bolder;" class="text-center">Quantity</th>
+                        <th name="header1_value" style="font-weight: bolder; " class="text-center" >Additional Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-set="landed_cost_total" t-value="0" />
+                    <tr t-foreach="landed_cost_lines" t-as="lcl">
+                        <td><t t-esc="lcl_index + 1" /></td>
+                        <td><span t-field="lcl.product_id" /></td>
+                        <td><span t-field="lcl.product_id.uom_id" /></td>
+                        <td class="text-right"><span t-field="lcl.quantity" /></td>
+                        <td class="text-right"><t t-esc="format_lang((lcl.quantity or 0) * (lcl.price_unit_additional or 0), currency_obj=company_currency)" /></td>
+                        <t t-set="landed_cost_total" t-value="landed_cost_total + ((lcl.quantity or 0) * (lcl.price_unit_additional or 0))" />
+                    </tr>
+                </tbody>
+                <!-- Total -->
+                <tr name="section_total">
+                    <td name="section_total_info" colspan="4" class="text-right"  style="font-size: smaller;font-weight: bolder;text-transform: uppercase;">Total</td>
+                    <td name="section_total_value"  style="font-size: smaller;font-weight: bolder;" class="text-right">
+                        <t t-esc="format_lang(landed_cost_total, currency_obj=company_currency)" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </t>
+
+</template>
+
+<template id="report_pickingincoming_document" inherit_id="l10n_ro_stock_report.report_pickingincoming_document">
+    <xpath expr="//div[hasclass('page')]" position="after">
+        <t t-call="l10n_ro_nir.report_pickingincoming_landed_cost"/>
+    </xpath>
+</template>
+
+</odoo>

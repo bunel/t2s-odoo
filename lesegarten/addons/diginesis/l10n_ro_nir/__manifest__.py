@@ -1,0 +1,41 @@
+{
+    "name" : "Romania - NIR",
+    "version" : "0",
+    "author" : "SC Diginesis SRL",
+    "website" : "http://www.diginesis.com",
+    "category" : "Generic Modules/Company",
+    "description": """
+This module contains:
+	- NIR information on Vendor Bill
+	- NIR print
+	- Transport allocation on Vendor Bill
+""",
+    "depends" : ["base",
+                 "account",
+                 "stock",
+                 "stock_account",
+                 "l10n_ro_landed_cost",
+                 "l10n_ro_stock_account",
+                 "l10n_ro_stock_report",
+                 "diginesis_invoice",
+                 "procurement_workflow",
+                 "account_notice"],
+    "init_xml": [],
+    "data": [ "security/security.xml",
+			 	"security/ir.model.access.csv",
+                "data/paperformat.xml",
+                "views/report.xml",
+                "wizard/invoice_transport_allocation_view.xml",
+			 	"views/account_move_view.xml",
+			 	"views/res_config_settings_views.xml",
+			 	"views/stock_warehouse_views.xml",
+			 	"views/notice_views.xml",
+			 	"report/stock_picking_incoming_report_view.xml",
+			 	"views/stock_picking_views.xml",
+			 ],
+    "demo_xml" : [],
+    "active": False,
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="l10n_nir_view_warehouse" model="ir.ui.view">
+            <field name="name">l10n.nir.stock.warehouse</field>
+            <field name="model">stock.warehouse</field>
+            <field name="inherit_id" ref="stock.view_warehouse"/>
+            <field name="arch" type="xml">
+                <group name="group_resupply" position="after">
+                    <group name="group_nir" string="NIR">
+                        <field name="nir_number_sequence_id" />
+                    </group>
+                </group>
+            </field>
+        </record>
+
+</odoo>
