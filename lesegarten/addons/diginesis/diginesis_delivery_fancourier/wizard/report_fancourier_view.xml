@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    <record id="view_diginesis_delivery_fancurier_report" model="ir.ui.view">
+        <field name="name">Report FanCourier</field>
+        <field name="model">delivery.report.fancourier</field>
+        <field name="arch" type="xml">
+            <form string="FanCourier Report">
+                <group>
+					<group>
+						<field name="date_from"/>
+						<field name="date_to"/>
+					</group>
+					<group>
+						<field name="delivery_time_days"/>
+					</group>
+                </group>
+					<group>
+						<field name="status_fancourier" widget="many2many_tags"/>                    
+					</group>
+                <footer>
+                    <button name="action_generate_email_template" type="object" string="Generate Email"/>
+                    <button special="cancel" string="Close"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_diginesis_delivery_fancurier_report" model="ir.actions.act_window">
+        <field name="name">Report FanCourier</field>
+        <field name="res_model">delivery.report.fancourier</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="view_diginesis_delivery_fancurier_report"/>
+    </record>
+
+    <menuitem name="Report FanCourier" action="action_diginesis_delivery_fancurier_report" id="menu_diginesis_delivery_fancurier_report"
+    	parent="stock.menu_warehouse_report"/>
+
+    </data>
+</odoo>

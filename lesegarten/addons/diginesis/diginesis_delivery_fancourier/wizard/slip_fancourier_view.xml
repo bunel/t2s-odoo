@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+	    <record id="view_slip_fancourier" model="ir.ui.view">
+	        <field name="name">FanCourier Slip</field>
+	        <field name="model">delivery.slip.fancourier</field>        
+	        <field name="arch" type="xml">
+				<form string="FanCourier Slip">				
+					<group>
+						<field name="slip_date_from"/>					
+						<field name="slip_date_to"/>					
+					</group>					
+					
+					<group colspan="4">
+					<label for="message" />
+	                <field height="80" name="message" nolabel="1" colspan="4"/>
+	                </group>	                
+	                <footer>
+		                <button name="get_fancourier_slip_action" type="object" string="Process Slip"/>
+						<button special="cancel" string="Close"/>
+					</footer>
+				</form>				
+			</field>
+	    </record>
+	    
+	    <record id="action_slip_fancourier" model="ir.actions.act_window">
+			<field name="name">FanCourier Slip</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">delivery.slip.fancourier</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+			<field name="view_id" ref="view_slip_fancourier"/>
+		</record>
+	    
+	    <menuitem id="menu_slip_fancourier" name="FanCourier Slip" parent="account.menu_finance_receivables" action="action_slip_fancourier"/>
+
+    </data>
+</odoo>

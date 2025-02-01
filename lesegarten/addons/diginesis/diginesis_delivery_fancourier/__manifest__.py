@@ -1,0 +1,27 @@
+{
+    "name" : "Diginesis Delivery FanCourier",
+    "version" : "0",
+    "author" : "SC Diginesis SRL",
+    "website" : "http://www.diginesis.com",
+    "category" : "Generic Modules/Company",
+    "description": """
+Integration with FanCourier delivery system
+""",
+    "depends" : ["base", "diginesis_delivery", "mail", "sale", "diginesis_endpoint", "account"],
+    "init_xml" : [],
+    "data" : [ "security/ir.model.access.csv", 
+			 "data/data.xml", 
+			 "data/cron_data.xml", 
+			 "views/delivery_view.xml", 
+			 "views/stock_view.xml", 
+			 "views/diginesis_api_endpoint_view.xml",
+			 "wizard/report_fancourier_view.xml", 
+			 "wizard/slip_fancourier_view.xml",
+			 "views/res_config_settings_views.xml",
+			],
+    "demo_xml" : [],
+    "active": False,
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <data  noupdate="1">  	
+   
+     <record id="delivery_carrier_fancourier" model="diginesis.delivery.carrier">
+	    <field name="name">FanCourier</field>
+	    <field name="code">fancourier</field>
+	   </record>
+	   
+     <record id="delivery_carrier_api_fancourier" model="diginesis.api.endpoint">
+	    <field name="name">Fan Courier Default Endpoint</field>
+	    <field name="username">clienttest</field>
+	    <field name="password">testing</field>
+	    <field name="clientid">7032158</field>
+	    <field name="endpoint">https://www.selfawb.ro/</field>
+	   </record>
+	   
+     <record id="delivery_carrier_api_fancourier_get_awb" model="diginesis.api.endpoint.line">
+	    <field name="name">get_awb</field>
+	    <field name="endpoint">import_awb_integrat.php</field>
+	    <field name="endpoint_credentials_id" ref="diginesis_delivery_fancourier.delivery_carrier_api_fancourier" />
+	   </record>
+	   
+     <record id="delivery_carrier_api_fancourier_delete_awb" model="diginesis.api.endpoint.line">
+	    <field name="name">delete_awb</field>
+	    <field name="endpoint">delete_awb_integrat.php</field>
+	    <field name="endpoint_credentials_id" ref="diginesis_delivery_fancourier.delivery_carrier_api_fancourier" />
+	   </record>
+     <record id="delivery_carrier_api_fancourier_get_print" model="diginesis.api.endpoint.line">
+	    <field name="name">get_print</field>
+	    <field name="endpoint">view_awb_integrat_pdf.php</field>
+	    <field name="endpoint_credentials_id" ref="diginesis_delivery_fancourier.delivery_carrier_api_fancourier" />
+	   </record>
+     <record id="delivery_carrier_api_fancourier_get_delivered_date" model="diginesis.api.endpoint.line">
+	    <field name="name">get_delivered_date</field>
+	    <field name="endpoint">awb_tracking_list_integrat.php</field>
+	    <field name="endpoint_credentials_id" ref="diginesis_delivery_fancourier.delivery_carrier_api_fancourier" />
+	 </record>
+	 <record id="delivery_carrier_api_fancourier_get_tariff" model="diginesis.api.endpoint.line">
+	    <field name="name">get_tariff</field>
+	    <field name="endpoint">tarif.php</field>
+	    <field name="endpoint_credentials_id" ref="diginesis_delivery_fancourier.delivery_carrier_api_fancourier" />
+	 </record>
+	 	   
+	 <record id="email_template_delivery_fancourier_delivery_sent_alert" model="mail.template">
+         <field name="name">FanCourier Delivery Sent Alert</field>
+         <field name="subject">Your Delivery has been picked up by FanCourier</field>
+         <field name="model_id" ref="diginesis_delivery_fancourier.model_diginesis_delivery_fancourier"/>
+         <field name="auto_delete" eval="True"/>
+         <field name="body_html" type="html">
+<p>Dear {{ object.partner_full_name }},</p>
+<p>Your delivery was picked up by the courier and is accompanied by the AWB transport document number {{ object.awb }}</p>
+<p>Delivery tracking is available here <a href="http://www.fancourier.ro/tools/awb-tracking/">http://www.fancourier.ro/tools/awb-tracking/</a></p>
+<p>For any requests please contact us by email.</p>
+<p>Thank you</p>
+         </field>
+     </record>
+     
+     <record id="fancourier_slip_process_result_template" model="mail.template">
+        <field name="name">Fancourier Slip Results Email</field>        
+        <field name="subject">Fancourier Slip Results</field>
+        <field name="model_id" ref="account.model_account_move"/>            
+        <field name="auto_delete" eval="True"/>        
+        <field name="body_html" type="html">
+            <p>Fancourier Slip processed for {{ slip_date }}</p> 
+        	<p>{{ process_results }}</p>        
+        </field>
+    </record>
+    
+    <record id="fancourier_send_report_fancourier_email_template" model="mail.template">
+            <field name="name">Report FanCourier Email</field>            
+			<field name="subject">Report FanCourier</field>
+			<field name="model_id" ref="diginesis_delivery_fancourier.model_delivery_report_fancourier"/>            
+            <field name="auto_delete" eval="True"/>            
+            <field name="body_html" type="html">
+<p>Hello,</p>
+<p>Deliveries status below:</p>
+<p>{{ ctx.get('body') }}</p> 
+<br/>
+<p>Thank you</p>
+</field>
+        </record>
+
+    </data>
+</odoo> 

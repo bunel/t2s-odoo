@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="ddfc_account_config_settings_form" model="ir.ui.view">
+            <field name="name">ddfc.account.config.settings</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="diginesis_delivery.dd_account_config_settings_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='deliveryslip_setting_container']" position="inside">
+            	    <div class="col-12 o_setting_box">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                            <span class="o_form_label">FanCourier Slip</span>
+                            <div class="text-muted">
+                            </div>
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <label for="fancourier_slip_journal_id" class="col-2 o_light_label"/>
+                                    <field name="fancourier_slip_journal_id" options="{'no_open': True, 'no_create': True}"/>
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                </xpath>
+            </field>
+        </record>
+        
+    </data>
+</odoo>

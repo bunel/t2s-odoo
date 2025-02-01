@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+			   
+		<record id="diginesis_fancourier_credentials_tree" model="ir.ui.view">
+            <field name="name">diginesis.fanourier.credentials.tree</field>
+            <field name="model">diginesis.api.endpoint</field>
+            <field name="inherit_id" ref="diginesis_endpoint.diginesis_api_credentials_tree"/>
+            <field name="arch" type="xml">
+            	<field name="username" position="after">
+                    <field name="page_setup" />
+                </field>
+            </field>
+        </record>
+        
+        <record id="diginesis_fancourier_credentials_form" model="ir.ui.view">
+          <field name="name">diginesis.fancourier.credentials.form</field>
+          <field name="model">diginesis.api.endpoint</field>
+          <field name="inherit_id" ref="diginesis_endpoint.diginesis_api_credentials_form"/>
+          <field name="arch" type="xml">
+          	<field name="password" position="after">
+				<field name="page_setup" />
+			</field>
+          </field>
+       </record>
+        
+	</data>
+</odoo>

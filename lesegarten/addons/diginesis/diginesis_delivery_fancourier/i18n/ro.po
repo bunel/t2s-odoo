@@ -1,0 +1,641 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * diginesis_delivery_fancourier
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-09 09:17+0000\n"
+"PO-Revision-Date: 2016-02-22 10:49+0000\n"
+"Last-Translator: Martin Trigaux\n"
+"Language-Team: Romanian (http://www.transifex.com/odoo/odoo-9/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.module.module,description
+msgid "Integration with FanCourier delivery system."
+msgstr "Integrare cu sistemul de curierat FanCourier"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_name
+msgid "Name"
+msgstr "Nume"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_awb
+msgid "AWB"
+msgstr "AWB"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_date
+msgid "Date"
+msgstr "Data"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_delivery_note_id
+msgid "Delivery Note"
+msgstr "Aviz"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_partner_id
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_commercial_partner_full_name
+#: view:diginesis.delivery.fancourier:0
+#: selection:diginesis.delivery.fancourier,payment_location:0
+#: selection:diginesis.delivery.fancourier,cash_on_delivery_payment_type:0
+msgid "Recipient"
+msgstr "Destinatar"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_commercial_partner_id
+msgid "Commercial Partner"
+msgstr "Companie Asociată"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_commercial_partner_name
+msgid "Recipient Name"
+msgstr "Nume"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_commercial_partner_contact
+msgid "Recipient Contact"
+msgstr "Persoana Contact"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_commercial_state_name
+msgid "State"
+msgstr "Județ"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_country_id
+msgid "Country"
+msgstr "Țara"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_city
+msgid "City"
+msgstr "Oraș"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_street
+msgid "Street"
+msgstr "Strada"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_zip
+msgid "Zip"
+msgstr "Cod Poștal"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_phone
+msgid "Phone"
+msgstr "Telefon"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_fax
+msgid "Fax"
+msgstr "Fax"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_email
+msgid "Email"
+msgstr "Email"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_cost_center
+msgid "Cost Center"
+msgstr "Centru Cost"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_sender_contact
+msgid "Sender Contact"
+msgstr "Persoana Contact Expeditor"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_option_a
+msgid "Open on Delivery"
+msgstr "Deschidere la Livrare"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:diginesis_delivery_fancourier_option_b
+msgid "oPOD"
+msgstr "oPOD"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:diginesis_delivery_fancourier_option_x
+msgid "ePOD"
+msgstr "ePOD"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_sending_mode
+msgid "Sending Mode"
+msgstr "Mod Trimitere"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,sending_mode:0
+msgid "Car"
+msgstr "Rutier"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,sending_mode:0
+msgid "Plane"
+msgstr "Aerian"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_type
+msgid "Type"
+msgstr "Tip Serviciu"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_gross_weight
+msgid "Pack Brut Weight (kg)"
+msgstr "Greutate (kg)"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_product_pack_count
+msgid "Packs Number"
+msgstr "Număr Colete"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_product_envelope_count
+msgid "Envelopes Number"
+msgstr "Număr Plicuri"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_product_content_type
+msgid "Sending Type"
+msgstr "Tip Conținut"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,content_type:0
+msgid "Document"
+msgstr "Document"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,content_type:0
+msgid "Non Document"
+msgstr "Non Document"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_height
+msgid "Height (cm)"
+msgstr "Înălțime (cm)"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_width
+msgid "Width (cm)"
+msgstr "Lățime (cm)"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_length
+msgid "Length (cm)"
+msgstr "Lungime (cm)"
+
+#. module: diginesis_delivery_fancourier
+#: view:diginesis.delivery.fancourier:0
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_notes
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_notes_external
+msgid "Notes"
+msgstr "Observații"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_declared_contents
+msgid "Declared Contents"
+msgstr "Conținut"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_payment_location
+msgid "Payment Location"
+msgstr "Plata Expediției la"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,payment_location:0
+#: selection:diginesis.delivery.fancourier,cash_on_delivery_payment_type:0
+#: view:diginesis.delivery.fancourier:0
+msgid "Sender"
+msgstr "Expeditor"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,payment_location:0
+msgid "Other"
+msgstr "Altul"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_recipient_payment
+msgid "Recipient Payment"
+msgstr "Client Plată"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_cash_on_delivery
+msgid "Cash on Delivery"
+msgstr "Ramburs Numerar"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_refund
+msgid "Refund"
+msgstr "Restituire"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_cash_on_delivery_payment_type
+msgid "Cash on Delivery Payment Type"
+msgstr "Plată Transport Ramburs la"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_declared_value
+msgid "Declared Value"
+msgstr "Valoarea Declarată"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_recipient_identification_number
+msgid "Recipient ID Number"
+msgstr "Număr CI Destinatar"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_recipient_recipient_identification_serial
+msgid "Recipient ID Serial"
+msgstr "Serie CI Destinatar"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_recipient_packing_lines
+msgid "Packing Lines"
+msgstr "Packing"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_sale_order
+msgid "Sale Order"
+msgstr "Comandă Vânzare"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_salesperson
+msgid "Salesperson"
+msgstr "Agent Vânzări"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_carrier_id
+msgid "Carrier"
+msgstr "Curier"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_state
+msgid "State"
+msgstr "Stare"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,state:0
+msgid "Draft"
+msgstr "Ciornă"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,state:0
+msgid "Pending"
+msgstr "În așteptare"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,state:0
+msgid "Confirmed"
+msgstr "Confirmat"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,state:0
+msgid "Cancelled"
+msgstr "Anulat"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,state:0
+msgid "Delivered"
+msgstr "Livrat"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_messages
+msgid "Messages"
+msgstr "Mesaje"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:19
+#, python-format
+msgid "FanCourier Delivery Carrier does not exist!"
+msgstr "Curier FanCourier nu există!"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:261
+#, python-format
+msgid "Invalid Request!"
+msgstr "Cerere Invalidă!"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:265
+#, python-format
+msgid "Delivery cannot be Cancelled! FanCourier does not allow it!"
+msgstr "Livrarea nu poate fi Anulată! FanCourier nu permite anularea!"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Delivery cannot be Cancelled!"
+msgstr "Livrarea nu poate fi Anulată!"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Error!"
+msgstr "Eroare!"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Invalid AWB number for delivery %s"
+msgstr "Număr AWB invalid pentru livrarea %s"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Invalid Request! AWB pdf cannot be attached!"
+msgstr "Cerere Invalidă! Nu se poate atașa fișierul PDF"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Invalid Delivery"
+msgstr "Livrare Invalidă"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Invalid Pack Brut Weight (kg)"
+msgstr "Greutate Invalidă (kg)"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Fill in either Packs or Envelopes Count"
+msgstr "Completați Număr Colete sau Număr Plicuri"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Invalid Height"
+msgstr "Înălțime Invalidă"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Invalid Width"
+msgstr "Lățime Invalidă"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Invalid Length"
+msgstr "Lungime Invalidă"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Invalid FanCourier Endpoint Credentials!"
+msgstr "Date de autentificare pentru Punct Acces FanCourier invalide!"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Invalid FanCourier Endpoints!"
+msgstr "Puncte de acces FanCourier invalide!"
+
+#. module: diginesis_delivery_fancourier
+#: code:addons/diginesis_delivery_fancourier/delivery.py:277
+#, python-format
+msgid "Invalid FanCourier <<%s>> Endpoint!"
+msgstr "Punct Acces FanCourier <<%s>> invalid!"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_delivery_line_product_id
+msgid "Product"
+msgstr "Produs"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_delivery_line_delivery_fancourier_id
+msgid "Delivery"
+msgstr "Livrare"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_delivery_line_name
+msgid "Description"
+msgstr "Descriere"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_delivery_line_default_code
+msgid "Internal Reference"
+msgstr "Cod"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_delivery_line_quantity
+msgid "Quantity"
+msgstr "Buc"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_delivery_line_price_subtotal
+msgid "Amount"
+msgstr "Val declarată"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_stock_warehouse_fancourier_api_endpoint
+msgid "Fan Courier Endpoint Credentials"
+msgstr "Puncte Acces Fan Courier"
+
+#. module: diginesis_delivery
+#: view:delivery.note:0
+msgid "AWB Fan Courier"
+msgstr "AWB Fan Courier"
+
+#. module: diginesis_delivery
+#: model:ir.actions.act_window,name:diginesis_delivery_fancourier.diginesis_delivery_fancourier_action_deliveries
+#: model:ir.ui.menu,name:diginesis_delivery_fancourier.diginesis_delivery_fancourier_menu_deliveries
+msgid "Deliveries FanCourier"
+msgstr "Livrări FanCourier"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.fancourier:0
+msgid "Confirm"
+msgstr "Confirmă"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.fancourier:0
+msgid "Cancel"
+msgstr "Anulează"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.fancourier:0
+msgid "Attach PDF"
+msgstr "Atașează PDF"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.fancourier:0
+msgid "Send Email"
+msgstr "Trimite Email"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.fancourier:0
+msgid "Set to Draft"
+msgstr "Setează Ciornă"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.fancourier:0
+msgid "Address"
+msgstr "Adresă"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.fancourier:0
+msgid "Options"
+msgstr "Opțiuni"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.fancourier:0
+msgid "Shipping Contents"
+msgstr "Conținut Livrare"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.fancourier:0
+msgid "Package Size"
+msgstr "Dimensiune Pachet"
+
+#. module: diginesis_delivery
+#: view:diginesis.delivery.fancourier:0
+msgid "Packing List"
+msgstr "Packing List"
+
+#. module: diginesis_delivery_fancourier
+#: model:email.template,body_html:diginesis_delivery_fancourier.email_template_delivery_fancourier_delivery_sent_alert
+msgid ""
+"<p>Dear ${object.partner_full_name},</p>"
+"<p>Your delivery was picked up by the courier and is accompanied by the AWB transport document number ${object.awb}</p>"
+"<p>Delivery tracking is available here <a href="http://www.fancourier.ro/tools/awb-tracking/">http://www.fancourier.ro/tools/awb-tracking/</a></p>"
+"<p>For any requests please contact us by email: logistica@artmatch.ro, phone 0736 909 450 or fax 0256 305 007.</p>"
+"<p>Thank you,</p>"
+"<p>Art Match Team</p>"
+""
+msgstr ""
+"<p>Stimate ${object.partner_full_name},</p>"
+"<p>Expeditia dvs a fost preluata de curier si este insotita de documentul de transport cu numarul de AWB ${object.awb}</p>"
+"<p>Puteti urmari traseul, accesand linkul <a href="http://www.fancourier.ro/tools/awb-tracking/">http://www.fancourier.ro/tools/awb-tracking/</a></p>"
+"<p>Daca aveti solicitari, le asteptam la adresa noastra de e-mail.</p>"
+"<p>Multumim</p>"
+""
+
+#. module: diginesis_delivery_fancourier
+#: model:email.template,subject:diginesis_delivery_fancourier.email_template_delivery_fancourier_delivery_sent_alert
+msgid "Your Delivery has been picked up by FanCourier"
+msgstr "Livrarea dumneavoastra a fost trimisa la curier FanCourier"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:diginesis_delivery_fancourier.field_diginesis_delivery_fancourier_urgent_delivery
+#: code:addons/diginesis_delivery_fancourier/models/delivery.py:0
+#, python-format
+msgid "Urgent delivery"
+msgstr "Livrare urgentă"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:diginesis_delivery_fancourier.field_diginesis_delivery_fancourier_delivery_day
+msgid "Delivery day"
+msgstr "Ziua livrării"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,delivery_day:0
+#: code:addons/diginesis_delivery_fancourier/models/delivery.py:0
+#, python-format
+msgid "Deliver on saturday"
+msgstr "Livrare sâmbăta"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,delivery_day:0
+#: code:addons/diginesis_delivery_fancourier/models/delivery.py:0
+#, python-format
+msgid "Deliver on monday"
+msgstr "Livrare luni"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:diginesis_delivery_fancourier.field_diginesis_delivery_fancourier_delivery_hour
+msgid "Delivery hour"
+msgstr "Ora livrării"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,delivery_hour:0
+#: code:addons/diginesis_delivery_fancourier/models/delivery.py:0
+#, python-format
+msgid "Deliver after 16:00"
+msgstr "Livrare după ora 16:00"
+
+#. module: diginesis_delivery_fancourier
+#: selection:diginesis.delivery.fancourier,delivery_hour:0
+#: code:addons/diginesis_delivery_fancourier/models/delivery.py:0
+#, python-format
+msgid "Deliver 09:00 -17:00"
+msgstr "Livrare în intervalul 09:00 -17:00"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:diginesis_delivery_fancourier.field_diginesis_delivery_fancourier_delivery_with_phonecall
+#: code:addons/diginesis_delivery_fancourier/models/delivery.py:0
+#, python-format
+msgid "Delivery with phonecall"
+msgstr "A se contacta telefonic"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:diginesis_delivery_fancourier.field_diginesis_delivery_fancourier_delivery_fragile
+#: code:addons/diginesis_delivery_fancourier/models/delivery.py:0
+#, python-format
+msgid "Fragile delivery"
+msgstr "Atentie-FRAGIL"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:diginesis_delivery_fancourier.field_diginesis_delivery_fancourier_delivery_personal
+#: code:addons/diginesis_delivery_fancourier/models/delivery.py:0
+#, python-format
+msgid "Personal delivery"
+msgstr "Livrare personala cu CNP/serie CI"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:diginesis_delivery_fancourier.field_diginesis_delivery_fancourier_delivery_with_stamp
+#: code:addons/diginesis_delivery_fancourier/models/delivery.py:0
+#, python-format
+msgid "Delivery with stamp"
+msgstr "Livrare cu stampila si semnatura"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:diginesis_delivery_fancourier.field_diginesis_delivery_fancourier_fancurier_delivery
+#: code:addons/diginesis_delivery_fancourier/models/delivery.py:0
+#, python-format
+msgid "Deliver from FanCurier Quarters"
+msgstr "Livrare din sediul FanCurier"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_api_endpoint_import_slip
+msgid "Import Slip"
+msgstr "Importă Borderou"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_date_to_client
+msgid "Date to Client"
+msgstr "Dată Livrare"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_status_fancourier
+msgid "FanCourier Status"
+msgstr "Stare FanCourier"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.model.fields,field_description:field_diginesis_delivery_fancourier_delivery_time_days
+msgid "Delivery Time (days)"
+msgstr "Timp Livrare (zile)"
+
+#. module: diginesis_delivery_fancourier
+#: model:ir.ui.view,arch_db:diginesis_delivery_fancourier.diginesis_delivery_fancourier_view_deliveries_filter
+msgid "Last 30 days"
+msgstr "Ultimele 30 zile"

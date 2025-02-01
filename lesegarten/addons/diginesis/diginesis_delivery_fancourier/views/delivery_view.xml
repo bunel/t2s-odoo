@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    
+		<record id="diginesis_delivery_fancourier_view_delivery_form" model="ir.ui.view">
+          <field name="name">diginesis.delivery.fancourier.view.delivery.form</field>
+          <field name="model">diginesis.delivery.fancourier</field>
+          <field name="arch" type="xml">
+          	<form string="Delivery">
+	          	<header>								
+				<button name="action_confirm" type="object" states="draft" string="Confirm" class="oe_highlight"/>
+				<button name="action_cancel" type="object" states="draft" string="Cancel"/>
+												
+				<button name="action_attach_awb" type="object" states="pending" string="Attach PDF" class="oe_highlight"/>
+				
+				<button name="action_send_email" states="confirmed" string="Send Email" class="oe_highlight" type="object"/>
+				<button name="action_confirmed_cancel" states="confirmed,pending" string="Cancel" type="object"/>
+				
+				<button name="action_cancel_draft" states="cancel" string="Set to Draft" type="object"/>
+				
+				<field name="state" widget="statusbar" statusbar_visible="draft,pending,confirmed,delivered,cancel" statusbar_colors='{"confirmed":"blue"}'/>
+			</header>
+			<sheet name="fancourier_delivery">
+				<div class="oe_title">
+					<h1>
+						<field name="name" />
+						<field name="carrier_id" invisible="1" />
+						<field name="api_endpoint" invisible="1" />
+					</h1>
+				</div>
+				<group name="meta">
+					<group>
+						<field name="awb" />
+						<field name="date" />
+						<field name="status_fancourier" />
+						<field name="delivery_time_days" />
+					</group>
+					<group>
+						<field name="stock_picking_id" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" domain="[('state', 'in', ['confirmed'])]" />
+						<field name="payment_id" />
+						<field name="sale_order" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+						<field name="salesperson" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+					</group>
+				</group>
+				<group name="sender_recipient">
+					<group string="Recipient" name="recipient">										
+						<field name="partner_name"  attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+						<field name="partner_contact"  attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+						<field name="phone"  attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+						<field name="email"  attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+						<field name="partner_id" invisible="1" />
+					</group>
+					<group name="sender" string="Sender">
+						<field name="cost_center"  attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+						<field name="sender_contact"  attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+					</group>
+				</group>
+				<group name="address_options">
+					<group string="Address" name="address">
+						<field name="country_id" attrs="{'invisible': [('type', '!=', 'export')], 'readonly': [('state', 'in', ('confirmed', 'cancel'))], 'required': [('type', '=', 'export')]}" />
+						<field name="state_name"  attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))], 'invisible': [('type', '=', 'export')], 'required': [('type', '!=', 'export')]}" />
+						<field name="city"  attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+						<field name="street"  attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+						<field name="zip"  attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+					</group>
+					<group name="options" string="Options" attrs="{'invisible': [('type', '=', 'export')]}">
+						<field name="option_a" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="option_b" attrs="{'readonly': ['|',('option_x','=',True),('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="option_x" attrs="{'readonly': ['|',('option_b','=',True),('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="fancurier_delivery" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+					</group>
+				</group>
+					
+				<group>	
+					<group>								
+						<field name="sending_mode" attrs="{'required': [('type', '=', 'export')], 'invisible': [('type', '!=', 'export')]}"/>
+						<field name="type" attrs="{'invisible': [('type', '=', 'export')], 'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+					</group>
+					<group>
+					</group>									
+				</group>
+				
+				<group name="shipping_package">	
+					<group string="Shipping Contents" name="shipping_contents">									
+						<field name="product_pack_count" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="product_envelope_count" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="gross_weight" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="content_type" attrs="{'required': [('type', '=', 'export')], 'invisible': [('type', '!=', 'export')], 'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+					</group>
+						
+					<group string="Package Size" name="package_size">
+						<field name="width" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))],'required': [('type', '=', 'export')]}"/> cm
+						<field name="height" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))],'required': [('type', '=', 'export')]}"/> cm
+						<field name="length" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))],'required': [('type', '=', 'export')]}"/> cm
+					</group>
+				</group>
+				
+				<group name="internal_delivery_info" attrs="{'invisible': [('type', '=', 'export')]}">
+					<group>
+						<field name="refund" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))], 'invisible': [('type', '=', 'export')]}"/>
+						<field name="declared_value" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))], 'invisible': [('type', '=', 'export')]}"/>
+						<field name="payment_location" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))], 'invisible': [('type', '=', 'export')], 'required': [('type', '!=', 'export')]}"/>
+						<field name="recipient_payment" attrs="{'invisible': ['|', ('payment_location', '!=', 'other'), ('type', '=', 'export')], 'readonly': [('state', 'in', ('confirmed', 'cancel'))]}" />
+					</group>
+					
+					<group>
+						<field name="cash_on_delivery_payment_type" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))], 'invisible': [('type', '=', 'export')], 'required': [('cash_on_delivery', '!=', False), ('cash_on_delivery', '!=', 0)]}"/>
+						<field name="cash_on_delivery" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))], 'invisible': [('type', '=', 'export')]}"/>
+						<field name="currency_id" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))], 'invisible': [('type', '=', 'export')]}"/>
+					</group>
+				</group>
+
+				<group string="Notes" name="Notes">
+					<group>
+						<field name="urgent_delivery" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="delivery_fragile" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="delivery_with_phonecall" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="delivery_personal" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+					</group>
+
+					<group>
+						<field name="delivery_day" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="delivery_hour" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="date_to_client" />
+						<field name="delivery_with_stamp" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+					</group>
+				</group>
+
+				<group attrs="{'invisible': [('type', '=', 'export')]}">
+					<group col="2">
+						<field name="declared_contents" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+					</group>
+				</group>
+				
+				<group attrs="{'invisible': [('type', '!=', 'export')]}">
+					<field name="notes_external" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+				</group>
+				
+				<group string="Packing List" name="internal_delivery_packing_list" attrs="{'invisible': ['|', ('type', '=', 'export'), ('option_a', '=', False)]}">
+					<group>
+						<field name="recipient_identification_number" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+						<field name="recipient_identification_serial" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}"/>
+					</group>
+					<group></group>									
+					
+					<field name="packing_lines" nolabel="1" colspan="4" attrs="{'readonly': [('state', 'in', ('confirmed', 'cancel'))]}">
+							<tree string="Packing lines">
+								<field name="product_id" />
+								<field name="name"/>
+								<field name="default_code" />
+								<field name="quantity" />
+								<field name="price_subtotal" />
+							</tree>
+					</field>
+				</group>
+				<group>
+					<field name="messages" />
+				</group>
+				
+				</sheet>
+				 <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+              </form>
+          </field>
+       </record>
+       
+       <record id="diginesis_delivery_fancourier_view_deliveries_tree" model="ir.ui.view">
+            <field name="name">diginesis.delivery.fancourier.view.deliveries.tree</field>
+            <field name="model">diginesis.delivery.fancourier</field>
+            <field name="arch" type="xml">
+                <tree string="FanCourier Deliveries">
+                    <field name="date"/>
+                    <field name="date_to_client"/>
+                    <field name="awb" />
+                    <field name="stock_picking_id"/>
+                    <field name="partner_id" invisible="1"/>
+                    <field name="partner_full_name" />
+                    <field name="sale_order"/>
+                    <field name="salesperson"/>
+                    <field name="declared_contents"/>
+                    <field name="cash_on_delivery"/>
+                    <field name="currency_id"/>
+                    <field name="refund"/>
+                    <field name="product_pack_count"/>
+                    <field name="product_envelope_count"/>
+                    <field name="state" />
+                    <field name="status_fancourier" />
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="diginesis_delivery_fancourier_view_deliveries_pivot">
+            <field name="name">diginesis.delivery.fancourier.deliveries.pivot</field>
+            <field name="model">diginesis.delivery.fancourier</field>
+            <field name="arch" type="xml">
+                <pivot string="Deliveries" display_quantity="true">
+                    <field name="date" type="row" interval="day"/>
+                    <field name="status_fancourier" type="row"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="diginesis_delivery_fancourier_view_deliveries_graph">
+            <field name="name">diginesis.delivery.fancourier.deliveries.graph</field>
+            <field name="model">diginesis.delivery.fancourier</field>
+            <field name="arch" type="xml" >
+                <graph string="Deliveries">
+                    <field name="date" type="row" interval="day"/>
+                    <field name="status_fancourier" type="row" />
+                </graph>
+            </field>
+        </record>
+        
+        <record id="diginesis_delivery_fancourier_view_deliveries_filter" model="ir.ui.view">
+            <field name="name">diginesis.delivery.fancourier.deliveries.select</field>
+            <field name="model">diginesis.delivery.fancourier</field>            
+            <field name="arch" type="xml">
+            	<search string="Search FanCourier Deliveries">
+                    <field name="date_to_client" filter_domain="[('date_to_client','&gt;=',self)]" string="Delivery day greater than"/>
+                    <field name="date_to_client" filter_domain="[('date_to_client','&lt;=',self)]" string="Delivery day lower than"/>
+            		<field name="awb" />
+            		<field name="sale_order" />
+            		<field name="stock_picking_id" />
+            		<field name="partner_id" />
+            		<field name="commercial_partner_id" />
+            		<filter string="Last 30 days" name="last_30_days" domain="[('create_date', '&gt;=' ,(context_today()-datetime.timedelta(days=30)).strftime('%Y-%m-%d'))]"  />
+            	</search>
+            </field>
+        </record>		
+       
+       <record id="diginesis_delivery_fancourier_action_deliveries" model="ir.actions.act_window">
+            <field name="name">Deliveries FanCourier</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">diginesis.delivery.fancourier</field>
+            <field name="view_mode">tree,form,graph,pivot</field>
+            <field name="context">{'group_by':[], 'graph_mode':'somproductbar', 'graph_stacked': False, 'search_default_last_30_days':1}</field>
+            <field name="search_view_id" ref="diginesis_delivery_fancourier_view_deliveries_filter"/>            
+            <field name="view_id" ref="diginesis_delivery_fancourier_view_deliveries_tree"/>            
+        </record>
+       
+       <menuitem id="diginesis_delivery_fancourier_menu_deliveries" parent="sale.sale_order_menu" action="diginesis_delivery_fancourier_action_deliveries"/>
+			 
+		<record id="diginesis_delivery_fancourier_status_tree" model="ir.ui.view">
+            <field name="name">diginesis.delivery.fancourier.status.tree</field>
+            <field name="model">diginesis.delivery.fancourier.status</field>
+            <field name="arch" type="xml">
+                <tree string="FanCourier Status">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="diginesis_delivery_fancourier_status_form" model="ir.ui.view">
+          <field name="name">diginesis.delivery.fancourier.status.form</field>
+          <field name="model">diginesis.delivery.fancourier.status</field>
+          <field name="arch" type="xml">
+          	<form string="FanCourier Status" version="7.0">
+				<sheet name="fancourier_status">
+					<div class="oe_title">
+						<h1>
+							<field name="name" />
+						</h1>
+					</div>
+					<group name="meta" col="4">
+						<field name="code"/>
+					</group>	
+				</sheet>		
+            </form>
+          </field>
+       </record>
+       
+       <record id="diginesis_delivery_fancourier_status_action" model="ir.actions.act_window">
+            <field name="name">FanCourier Status</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">diginesis.delivery.fancourier.status</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="diginesis_delivery_fancourier_status_tree"/>            
+        </record>
+        
+        <menuitem id="diginesis_delivery_fancourier_status_menu" name="FanCourier Status" parent="sale.menu_sale_config" action="diginesis_delivery_fancourier_status_action"/>
+	</data>
+</odoo>
