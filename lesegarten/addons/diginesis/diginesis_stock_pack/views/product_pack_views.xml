@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+		<record model="ir.ui.view" id="product_pack_tree_view">
+		    <field name="name">product.pack.tree</field>
+		    <field name="model">product.pack</field>    
+		    <field name="type">tree</field>
+		    <field name="arch" type="xml">       
+		    	<tree string="Pack Type">
+					<field name='name'/>
+				</tree>
+		    </field>
+		</record>
+
+		<record model="ir.ui.view" id="product_pack_form_view">
+		    <field name="name">product.pack.form</field>
+		    <field name="model">product.pack</field>    
+		    <field name="type">form</field>
+		    <field name="arch" type="xml">
+				<form string="Pack Type">
+					<sheet>
+						<group>
+							<group>
+		       			<field name='name'/>
+								</group>
+						<group>
+						</group>
+						</group>
+					</sheet>
+		      	</form>
+		    </field>
+		</record>
+		
+		<record id="product_pack_form_action" model="ir.actions.act_window">
+		    <field name="name">Pack Type</field>
+		    <field name="type">ir.actions.act_window</field>
+		    <field name="res_model">product.pack</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="view_id" ref="product_pack_tree_view" />
+		    <field name="help" type="html">
+		      <p class="oe_view_nocontent_create">
+		        Click to add a new packaging type.
+		      </p><p>
+		        The packaging type define the dimensions as well as the number
+		        of products per package. This will ensure salesperson sell the
+		        right number of products according to the package selected.
+		      </p>
+		    </field>
+		</record>
+
+		<menuitem action="product_pack_form_action" groups="stock.group_stock_manager"  id="menu_product_pack_form_action" parent="stock.menu_product_in_config_stock"/>
+
+</odoo>

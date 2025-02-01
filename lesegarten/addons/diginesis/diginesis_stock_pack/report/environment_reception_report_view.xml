@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_environment_reception_report" model="ir.actions.client">
+            <field name="name">Environment Reception Report</field>
+            <field name="tag">account_report</field>
+            <field name="context" eval="{'model': 'environment.reception.report'}"/>
+        </record>
+
+        <menuitem id="menu_action_environment_reception_report"
+                  action="action_environment_reception_report"
+                  parent="stock.menu_warehouse_report"/>
+    </data>
+</odoo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+    <template id="search_template_with_pack_filter">
+        <button type="button" class="o-no-caret btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+            <span class="fa fa-book"/>
+            Pack:
+                <t t-set="with_pack_value">All</t>
+                <t t-foreach="options['with_pack']" t-as="a">
+                    <t t-if="a.get('selected') == True">
+                        <t t-set="with_pack_value" t-value="''"/>
+                        <t t-esc="a.get('name')"/>
+                    </t>
+                </t>
+                <t t-esc="with_pack_value"/>
+        </button>
+        <div class="dropdown-menu o_filter_menu" role="menu">
+             <t t-foreach="options['with_pack']" t-as="a">
+                <a role="menuitem" class="dropdown-item js_account_report_choice_filter" t-att-title="a.get('name')" t-att-data-id="a.get('id')" data-filter="with_pack"><t t-esc="a.get('name')"/></a>
+            </t>
+        </div>
+    </template>
+
+    <template id="search_template" inherit_id="account_reports.search_template">
+        <xpath expr="." position="inside">
+            <div class="btn-group dropdown o_account_reports_filter_with_pack" t-if="options.get('with_pack') != None">
+                <t t-call="diginesis_stock_pack.search_template_with_pack_filter"/>
+            </div>
+        </xpath>
+    </template>
+
+    </data>
+</odoo>

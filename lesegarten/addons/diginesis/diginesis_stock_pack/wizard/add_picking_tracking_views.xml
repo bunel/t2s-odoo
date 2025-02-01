@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="add_picking_tracking_form" model="ir.ui.view">
+		<field name="name">add.picking.tracking</field>
+		<field name="model">add.picking.tracking</field>
+		<field name="arch" type="xml">
+			<form string="Pack Split">
+				<group>
+					<group>
+						<field name="picking_id" readonly="1" attrs="{'invisible': [('picking_id', '=', False)]}" />
+						<field name="move_id" readonly="1" attrs="{'invisible': [('move_id', '=', False)]}"/>
+						<field name="name" string="Pack"/>
+						<field name="serial" />
+						<field name="pack_address" />
+						<field name="pack_note" />
+					</group>
+					<group>
+						<field name="date"  />
+						<label for="gross_weight"/>
+						<div id="gross_weight">
+							<field name="gross_weight" class="oe_inline"/> kg
+						</div>
+						<label for="net_weight" />
+						<div>
+							<field name="net_weight" class="oe_inline"/> kg
+						</div>
+					</group>
+				</group>
+				<group>
+					<group name="packs" string="Pack">
+						<field name="product_pack_id" />
+						<field name="product_pack_count" />
+					</group>
+					<group  name="pallet" string="Pallet">
+						<field name="product_pallet_id" />
+						<field name="product_pallet_count" />
+					</group>
+				</group>
+				<group string='Stock Moves' name="stock_moves">
+					<field name="line_ids" nolabel="1">
+						<tree editable="bottom" create="0">
+								<field name="stock_move_id"  invisible="1"/>
+								<field name="product_id" force_save="1" readonly="1"/>
+								<field name="product_qty" force_save="1" readonly="1"/>
+								<field name="quantity" attrs="{'readonly': [('stock_tracking_id', '!=', False)]}" />
+								<field name="uom_id" force_save="1" readonly="1"/>
+								<field name="stock_tracking_id" force_save="1" readonly="1"/>
+								<field name="company_id" invisible="1" force_save="1" />
+						</tree>
+					</field>
+				</group>
+				<footer>
+					<button name="action_split" string="Confirm Pack" type="object" class="oe_highlight"/>
+					<button string="Cancel" class="oe_link" special="cancel"/>
+				</footer>
+			</form>
+		</field>
+	</record>
+
+	 <record id="action_add_picking_tracking" model="ir.actions.act_window">
+		<field name="name">Pack Split</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">add.picking.tracking</field>
+		<field name="view_mode">form</field>
+		<field name="view_id" ref="add_picking_tracking_form"/>
+		<field name="binding_model_id" ref="stock.model_stock_picking"/>
+		<field name="binding_view_types">form</field>
+		<field name="context">{}</field>
+		<field name="target">new</field>
+	</record>
+</odoo>

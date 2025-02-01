@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stock_tracking_warehouse_manager,access.stock.tracking.manager,diginesis_stock_pack.model_stock_tracking,stock.group_stock_manager,1,1,1,1
+
+access_product_pack_warehouse_manager,access.product.pack.manager,diginesis_stock_pack.model_product_pack,stock.group_stock_manager,1,1,1,1
+access_product_pack_warehouse_user,access.product.pack.user,diginesis_stock_pack.model_product_pack,stock.group_stock_user,1,0,0,0
+
+access_product_pallet_warehouse_manager,access.product.pallet.manager,diginesis_stock_pack.model_product_pallet,stock.group_stock_manager,1,1,1,1
+access_product_pallet_warehouse_user,access.product.pallet.user,diginesis_stock_pack.model_product_pallet,stock.group_stock_user,1,0,0,0
+
+access_add_stock_tracking_user,access.add.stock.tracking.user,diginesis_stock_pack.model_add_picking_tracking,,1,1,1,1
+access_add_stock_tracking_line_user,access.add.stock.tracking.line.user,diginesis_stock_pack.model_add_picking_tracking_line,,1,1,1,1
+
+access_env_delivery_rep_user,access.env.delivery.report.user,diginesis_stock_pack.model_environment_delivery_report,,1,1,1,1
+access_env_reception_rep_user,access.env.reception.report.user,diginesis_stock_pack.model_environment_reception_report,,1,1,1,1

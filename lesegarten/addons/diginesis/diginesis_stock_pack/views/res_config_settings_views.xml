@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="dsp_config_settings_view_form" model="ir.ui.view">
+        <field name="name">config.settings.view.form.inherit.dsp</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="stock.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@data-key='stock']" position="inside">
+                <h2>Packaging</h2>
+                <div class="row mt16 o_settings_container" id="stock_packaging_setting_container">
+                    <div class="col-12 col-lg-6 o_setting_box" id="stock_packaging_foil">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                            <span class="o_form_label">Foil Coefficient</span>
+                            <div class="text-muted">
+                                Foil coefficient used in computing weight of foil used on pallets packaging
+                            </div>
+                             <div class="content-group">
+                                <field name="stock_packaging_foil_coefficient" class="o_light_label mt16" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

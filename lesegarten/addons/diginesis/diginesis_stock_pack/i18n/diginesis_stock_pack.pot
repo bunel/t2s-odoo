@@ -1,0 +1,668 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2023-09-01 15:04+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.search_template_with_pack_filter
+msgid ""
+"<span class=\"fa fa-book\"/>\n"
+"            Pack:"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.dsp_config_settings_view_form
+msgid "<span class=\"o_form_label\">Foil Coefficient</span>"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__active
+msgid "Active"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model,name:diginesis_stock_pack.model_add_picking_tracking
+msgid "Add Picking Tracking"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model,name:diginesis_stock_pack.model_add_picking_tracking_line
+msgid "Add Picking Tracking Line"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__serial
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__serial
+msgid "Additional Reference"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__pack_address
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__pack_address
+msgid "Address"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.search_template_with_pack_filter
+#, python-format
+msgid "All"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.add_picking_tracking_form
+msgid "Cancel"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/wizard/add_picking_tracking.py:0
+#, python-format
+msgid "Cannot create empty pack"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.actions.act_window,help:diginesis_stock_pack.product_pack_form_action
+#: model_terms:ir.actions.act_window,help:diginesis_stock_pack.product_pallet_form_action
+msgid "Click to add a new packaging type."
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model,name:diginesis_stock_pack.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__company_id
+msgid "Company"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model,name:diginesis_stock_pack.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.add_picking_tracking_form
+msgid "Confirm Pack"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.stock_tracking_form
+msgid "Contents"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__create_uid
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__create_uid
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pack__create_uid
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pallet__create_uid
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__create_date
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__create_date
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pack__create_date
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pallet__create_date
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.stock_tracking_form
+msgid "Customer Account Notice"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__date
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__date
+msgid "Date"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__display_name
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__display_name
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pack__display_name
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pallet__display_name
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Doc. Date"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Doc. Number"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: model:ir.actions.client,name:diginesis_stock_pack.action_environment_delivery_report
+#: model:ir.model,name:diginesis_stock_pack.model_environment_delivery_report
+#: model:ir.ui.menu,name:diginesis_stock_pack.menu_action_environment_delivery_report
+#, python-format
+msgid "Environment Delivery Report"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#: model:ir.actions.client,name:diginesis_stock_pack.action_environment_reception_report
+#: model:ir.model,name:diginesis_stock_pack.model_environment_reception_report
+#: model:ir.ui.menu,name:diginesis_stock_pack.menu_action_environment_reception_report
+#, python-format
+msgid "Environment Reception Report"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_res_company__stock_packaging_foil_coefficient
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_res_config_settings__stock_packaging_foil_coefficient
+msgid "Foil Coefficient"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Foil Weight"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.dsp_config_settings_view_form
+msgid ""
+"Foil coefficient used in computing weight of foil used on pallets packaging"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Gross Weight"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__id
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__id
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pack__id
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pallet__id
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__id
+msgid "ID"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__message_needaction
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__message_has_error
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking____last_update
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line____last_update
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pack____last_update
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pallet____last_update
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__write_uid
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__write_uid
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pack__write_uid
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pallet__write_uid
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__write_date
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__write_date
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pack__write_date
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pallet__write_date
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__line_ids
+msgid "Lines"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__move_id
+msgid "Move"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__product_qty
+msgid "Move Quantity"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.stock_tracking_form
+msgid "Moves"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__move_ids
+msgid "Moves for this pack"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__name
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__name
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pack__name
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pallet__name
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__name
+msgid "Name"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Net Weight"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.dsp_view_picking_form
+msgid "New Pack"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/wizard/add_picking_tracking.py:0
+#, python-format
+msgid "New pack quantity can not be bigger than stock move quantity"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "No Pack"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__pack_note
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__pack_note
+msgid "Note"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__stock_tracking_id
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__stock_tracking_id
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.add_picking_tracking_form
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.stock_tracking_form
+msgid "Pack"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__gross_weight
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__gross_weight
+msgid "Pack Brut Weight"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Pack Date"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__net_weight
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__net_weight
+msgid "Pack Net Weight"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__product_pack_count
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__product_pack_count
+msgid "Pack Number"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/models/stock_tracking.py:0
+#: model:ir.model.constraint,message:diginesis_stock_pack.constraint_stock_tracking_product_pack_count_gt_zero
+#, python-format
+msgid "Pack Number must be greater than 0"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__quantity
+msgid "Pack Quantity"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.actions.act_window,name:diginesis_stock_pack.action_add_picking_tracking
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.add_picking_tracking_form
+msgid "Pack Split"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/wizard/add_picking_tracking.py:0
+#, python-format
+msgid "Pack Split can not be used on done moves"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.actions.act_window,name:diginesis_stock_pack.product_pack_form_action
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__product_pack_id
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__product_pack_id
+#: model:ir.ui.menu,name:diginesis_stock_pack.menu_product_pack_form_action
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.product_pack_form_view
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.product_pack_tree_view
+msgid "Pack Type"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.dsp_config_settings_view_form
+msgid "Packaging"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,help:diginesis_stock_pack.field_res_company__stock_packaging_foil_coefficient
+#: model:ir.model.fields,help:diginesis_stock_pack.field_res_config_settings__stock_packaging_foil_coefficient
+msgid "Packaging Foil Coefficient"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Packaging Weight"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,help:diginesis_stock_pack.field_product_pallet__weight
+msgid "Packaging weight in kg"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.dsp_view_picking_form
+msgid "Packs"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.add_picking_tracking_form
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.stock_tracking_form
+msgid "Pallet"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__product_pallet_count
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__product_pallet_count
+msgid "Pallet Number"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/models/stock_tracking.py:0
+#: model:ir.model.constraint,message:diginesis_stock_pack.constraint_stock_tracking_product_pallet_count_gt_zero
+#, python-format
+msgid "Pallet Number must be positive!"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.actions.act_window,name:diginesis_stock_pack.product_pallet_form_action
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__product_pallet_id
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__product_pallet_id
+#: model:ir.ui.menu,name:diginesis_stock_pack.menu_product_pallet_form_action
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.product_pallet_form_view
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.product_pallet_tree_view
+msgid "Pallet Type"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Pallets"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Pallets Weight"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Paper+Cardboard Weight"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Partner"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking__picking_id
+msgid "Picking"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__picking_tracking_id
+msgid "Picking Tracking"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__product_id
+msgid "Product"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model,name:diginesis_stock_pack.model_product_pack
+msgid "Product Pack"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model,name:diginesis_stock_pack.model_product_pallet
+msgid "Product Pallet"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__uom_id
+msgid "Product UoM"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model,name:diginesis_stock_pack.model_stock_move
+msgid "Stock Move"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__move_ids
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.add_picking_tracking_form
+msgid "Stock Moves"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.actions.act_window,name:diginesis_stock_pack.stock_tracking_view_action
+#: model:ir.model,name:diginesis_stock_pack.model_stock_tracking
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_move__stock_tracking_id
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_picking__stock_tracking_ids
+#: model:ir.ui.menu,name:diginesis_stock_pack.menu_stock_tracking_view_action
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.stock_tracking_form
+msgid "Stock Tracking"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_add_picking_tracking_line__stock_move_id
+msgid "Stock move"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.actions.act_window,help:diginesis_stock_pack.product_pack_form_action
+#: model_terms:ir.actions.act_window,help:diginesis_stock_pack.product_pallet_form_action
+msgid ""
+"The packaging type define the dimensions as well as the number\n"
+"\t\t        of products per package. This will ensure salesperson sell the\n"
+"\t\t        right number of products according to the package selected."
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model,name:diginesis_stock_pack.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_stock_tracking__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,field_description:diginesis_stock_pack.field_product_pallet__weight
+msgid "Weight"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model:ir.model.fields,help:diginesis_stock_pack.field_add_picking_tracking__gross_weight
+#: model:ir.model.fields,help:diginesis_stock_pack.field_add_picking_tracking__net_weight
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__gross_weight
+#: model:ir.model.fields,help:diginesis_stock_pack.field_stock_tracking__net_weight
+msgid "Weight in kg"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "With Pack"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: code:addons/diginesis_stock_pack/report/environment_delivery_report.py:0
+#: code:addons/diginesis_stock_pack/report/environment_reception_report.py:0
+#, python-format
+msgid "Wood Weight"
+msgstr ""
+
+#. module: diginesis_stock_pack
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.add_picking_tracking_form
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.product_pallet_form_view
+#: model_terms:ir.ui.view,arch_db:diginesis_stock_pack.stock_tracking_form
+msgid "kg"
+msgstr ""

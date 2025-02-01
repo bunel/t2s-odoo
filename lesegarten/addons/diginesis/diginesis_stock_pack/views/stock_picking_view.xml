@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="dsp_view_picking_form" model="ir.ui.view">
+        <field name="name">dsp.stock_picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='move_ids_without_package']" position="before">
+                <button type="action" string="New Pack" name="%(diginesis_stock_pack.action_add_picking_tracking)d" />
+            </xpath>
+            <xpath expr="//field[@name='move_ids_without_package']/tree" position="inside">
+                <button type="action" alt="New Pack" name="%(diginesis_stock_pack.action_add_picking_tracking)d" icon="fa-cube" width="0.1" />
+            </xpath>
+            <notebook position="inside">
+                <page string="Packs" name="operation_packs">
+                    <field name="stock_tracking_ids" readonly="1">
+                        <tree create="0" delete="0" editable="bottom">
+                            <field name="name" />
+                            <field name="gross_weight" />
+                            <field name="net_weight" />
+                            <field name="product_pack_id" />
+                            <field name="product_pack_count" />
+                            <field name="product_pallet_id" />
+                            <field name="product_pallet_count" />
+                        </tree>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

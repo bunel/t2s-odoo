@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+		<record model="ir.ui.view" id="product_pallet_tree_view">
+		    <field name="name">product.pallet.tree</field>
+		    <field name="model">product.pallet</field>
+		    <field name="type">tree</field>    
+		    <field name="arch" type="xml">
+				<tree string="Pallet Type">
+		        	<field name="name"/>
+		        	<field name="weight"/>
+		      	</tree>
+		    </field>
+		</record>
+
+		<record model="ir.ui.view" id="product_pallet_form_view">
+		    <field name="name">product.pallet.form</field>
+		    <field name="model">product.pallet</field>    
+		    <field name="type">form</field>
+		    <field name="arch" type="xml">
+		    	<form string="Pallet Type">
+					<sheet>
+						<group>
+							<group>
+		    					<field name='name'/>
+							</group>
+							<group>
+								<label for="weight" />
+								<div>
+		        					<field name="weight" class="oe_inline"/> kg
+								</div>
+							</group>
+						</group>
+					</sheet>
+		      </form>
+		    </field>
+		</record>
+
+		<record id="product_pallet_form_action" model="ir.actions.act_window">
+		    <field name="name">Pallet Type</field>
+		    <field name="type">ir.actions.act_window</field>
+		    <field name="res_model">product.pallet</field>
+		    <field name="view_mode">tree,form</field>
+		    <field name="view_id" ref="product_pallet_tree_view" />
+		    <field name="help" type="html">
+		      <p class="oe_view_nocontent_create">
+		        Click to add a new packaging type.
+		      </p><p>
+		        The packaging type define the dimensions as well as the number
+		        of products per package. This will ensure salesperson sell the
+		        right number of products according to the package selected.
+		      </p>
+		    </field>
+		</record>
+
+		<menuitem action="product_pallet_form_action" groups="stock.group_stock_manager" id="menu_product_pallet_form_action" parent="stock.menu_product_in_config_stock"/>
+
+</odoo>

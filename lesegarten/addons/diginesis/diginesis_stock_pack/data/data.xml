@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="1">
+
+	<record id="ppck_pack" model="product.pack">
+	    <field name="name">Parcel</field>
+	</record>
+	
+	<record id="ppck_envelope" model="product.pack">
+	    <field name="name">Envelope</field>
+	</record>
+
+	<record id="seq_pack_name" model="ir.sequence">
+		<field name="name">Picking Tracking</field>
+		<field name="code">picking.tracking</field>
+		<field name="padding">3</field>
+	</record>
+  
+</data>
+</odoo>
+
