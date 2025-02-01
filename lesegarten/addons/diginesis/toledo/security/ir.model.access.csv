@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_change_currency_wizard,access.sale.change.currency.wizard,model_sale_change_currency,,1,1,1,0
+access_repair_change_currency_wizard,access.repair.change.currency.wizard,model_repair_change_currency,,1,1,1,0

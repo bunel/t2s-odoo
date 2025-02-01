@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="toledo_view_order_form1" model="ir.ui.view">
+        <field name="name">toledo.sale.order.form1</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+	          <xpath expr="//field[@name='order_line']/form//field[@name='price_unit']" position="attributes">
+	          	<attribute name="readonly">1</attribute>
+	          </xpath>
+	          <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="attributes">
+	          	<attribute name="readonly">1</attribute>
+	          </xpath>   
+	          <xpath expr="//field[@name='order_line']/form//field[@name='price_unit']" position="after">
+	          	<field name="price_reduce" string="Price with Disc." groups="product.group_discount_per_so_line" readonly="1" />
+	          </xpath>
+	          <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="after">
+	          	<field name="price_reduce" string="Price with Disc." groups="product.group_discount_per_so_line" readonly="1"/>
+	          </xpath>	          
+	          <xpath expr="//field[@name='order_line']/form//div[@name='discount']" position="after">
+	          	<field name="max_discount" string="Max Disc.%" groups="product.group_discount_per_so_line" readonly="1" force_save="1" />
+	          </xpath>
+	          <xpath expr="//field[@name='order_line']/tree/field[@name='discount']" position="after">
+	          	<field name="max_discount" string="Max Disc.%" groups="product.group_discount_per_so_line" readonly="1" force_save="1"/>
+	          </xpath>
+              <field name="validity_date" position="replace">
+                    <field name="offer_validity" attrs="{'invisible': [('state', 'in', ['sale', 'done'])]}"></field>
+              </field>
+			  <field name="pricelist_id"  position="after">
+				  <button name="%(toledo.action_sale_change_currency)d" type="action"
+							 icon="fa-pencil-square-o" class="oe_link"
+							attrs="{'invisible':[('state','!=','draft')]}" title="Change Currency" aria-label="Change Currency" />
+			  </field>
+        </field>
+    </record>
+    <record id="toledo_view_order_form2" model="ir.ui.view">
+        <field name="name">toledo.sale.order.form2</field>
+        <field name="model">sale.order</field>
+        <field name="groups_id" eval="[(6,0,[ref('sales_team.group_sale_manager')])]" />
+        <field name="inherit_id" ref="toledo.toledo_view_order_form1"/>
+        <field name="arch" type="xml">
+	          <xpath expr="//field[@name='order_line']/form//field[@name='price_unit']" position="attributes">
+	          	<attribute name="readonly">0</attribute>
+	          </xpath>
+	          <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="attributes">
+	          	<attribute name="readonly">0</attribute>
+	          </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,568 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * toledo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20211105\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-16 10:31+0000\n"
+"PO-Revision-Date: 2022-02-16 14:33+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "&amp;nbsp;"
+msgstr "&amp;nbsp;"
+
+#. module: toledo
+#: model:ir.actions.report,print_report_name:toledo.toledo_conformity_certificate
+msgid "'ConformityCertificate.pdf'"
+msgstr "'CertificatDeConformitate.pdf'"
+
+#. module: toledo
+#: model:ir.actions.report,print_report_name:toledo.toledo_report_nir
+msgid "'ReportNIR.pdf'"
+msgstr "'ReportNIR.pdf'"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid ", DRAFT"
+msgstr ", CIORNA"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid ", having its registered office in"
+msgstr ", având sediul înregistrat în"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid ", registered at RC Brasov with no."
+msgstr ", înregistrat la RC Brasov cu nr."
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid ", serial:"
+msgstr ", serial:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid ""
+", through the legal representative CAMPEAN Ioana as administrator, we declare on our own responsibility,\n"
+"\t\t\t\tknowing the provisions of art. 292 of the Criminal Code regarding the false statements and the provisions of art. 5 of GD no. 1022/2002 regarding the regime\n"
+"\t\t\t\tproducts and services that may endanger life, health, safety at work and the environment,\n"
+"\t\t\t\tthe fact that the product (s) below which are the subject of this declaration of conformity are not life-threatening,\n"
+"\t\t\t\toccupational health and safety, does not produce negative impact on the environment and is\n"
+"\t\t\t\tin accordance with the \"European Community and International regulations\"."
+msgstr ""
+", prin reprezentantul legal CAMPEAN Ioana in calitate de administrator, "
+"declaram pe propria raspundere,\n"
+"\t\t\t\tcunoscând prevederile art. 292 din Codul Penal privind falsul în "
+"declarații și prevederile art. 5 din HG nr. 1022/2002 privind regimul\n"
+"\t\t\t\tproduselor și serviciilor care pot pune în pericol viața, "
+"sănătatea, securitatea la locul de muncă și mediul,\n"
+"\t\t\t\tfaptul că produsele de mai jos care fac obiectul acestei "
+"declarații de conformitate nu pun viața în pericol,\n"
+"\t\t\t\tsănătatea și securitatea muncii, nu produc un impact negativ "
+"asupra mediului și este\n"
+"\t\t\t\în conformitate cu \"Reglementările comunitare și "
+"internaționale\"."
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid ""
+"<br/>\n"
+"\t\t\t\t<span>Calea Feldioarei 33</span><br/>\n"
+"\t\t\t\t<span>500471, Brasov / România</span>"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t<span>Calea Feldioarei 33</span><br/>\n"
+"\t\t\t\t<span>500471, Brasov / România</span>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid ""
+"<br/>\n"
+"\t\t\t\tIBAN: &amp;nbsp;"
+msgstr ""
+"<br/>\n"
+"\t\t\t\tIBAN: &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid ""
+"<br/>\n"
+"\t\t\t\tthrough CAMPEAN, Ioana"
+msgstr ""
+"<br/>\n"
+"\t\t\t\tthrough CAMPEAN, Ioana"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_technical
+msgid ""
+"<br/>\n"
+"\t                    \t\t<small>The image is for presentation purposes only</small>"
+msgstr ""
+"<br/>\n"
+"\t                    \t\t<small>Imaginea este doar în scop de prezentare<"
+"/small>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid ""
+"<br/>\n"
+"                                    Administrator:<br/><br/>\n"
+"                                    ____________________________________"
+msgstr ""
+"<br/>\n"
+"                                    Administrator:<br/><br/>\n"
+"                                    ____________________________________"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid ""
+"<br/><br/>\n"
+"                                    Operator:"
+msgstr ""
+"<br/><br/>\n"
+"                                    Operator:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<span> working days from confirmation</span>"
+msgstr "<span> zile lucratoare de la confirmare</span>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<span>200 lei</span>"
+msgstr "<span>200 lei</span>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "<span>Social Capital: 200 lei</span>"
+msgstr "<span>Capital Social: 200 lei</span>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Account</strong>"
+msgstr "<strong>Cont</strong>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Account</strong> &amp;nbsp;"
+msgstr "<strong>Cont</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Bank</strong>"
+msgstr "<strong>Bancă</strong>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Bank</strong> &amp;nbsp;"
+msgstr "<strong>Bancă</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>C.I.F.</strong>"
+msgstr "<strong>C.I.F.</strong>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>C.I.F.</strong> &amp;nbsp;"
+msgstr "<strong>C.I.F.</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>CLIENT</strong>"
+msgstr "<strong>CLIENT</strong>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Currency</strong>  &amp;nbsp;"
+msgstr "<strong>Monedă</strong>  &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Currency</strong> &amp;nbsp;"
+msgstr "<strong>Monedă</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Delivery address</strong> <br/>"
+msgstr "<strong>Adresa de livrare</strong> <br/>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Delivery date requested</strong>  &amp;nbsp;"
+msgstr "<strong>Data livrare solic.</strong>  &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Delivery method</strong> &amp;nbsp;"
+msgstr "<strong>Mod livrare</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Drafterd by</strong> &amp;nbsp;"
+msgstr "<strong>Întocmit de</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Email</strong>"
+msgstr "<strong>Email</strong>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Email</strong> &amp;nbsp;"
+msgstr "<strong>Email</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Estimated delivery date</strong> &amp;nbsp;"
+msgstr "<strong>Data livrare est.</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>In the attention of</strong>"
+msgstr "<strong>În atenția</strong>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Nr. ord. Reg. Com.</strong> &amp;nbsp;"
+msgstr "<strong>Nr. ord. Reg. Com.</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Nr. ord. Reg.</strong>"
+msgstr "<strong>Nr. ord. Reg.</strong>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Offer date</strong> &amp;nbsp;"
+msgstr "<strong>Data ofertei</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Offer validity</strong> &amp;nbsp;"
+msgstr "<strong>Valabilitate oferta</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Payment terms</strong> &amp;nbsp;"
+msgstr "<strong>Conditii de plata</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Phone</strong> &amp;nbsp;"
+msgstr "<strong>Telefon</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Release date</strong> &amp;nbsp;"
+msgstr "<strong>Data emitere</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Responsible</strong> &amp;nbsp;"
+msgstr "<strong>Responsabil</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Social Capital</strong>"
+msgstr "<strong>Capital Social</strong>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Terms of delivery</strong> &amp;nbsp;"
+msgstr "<strong>Conditii de livrare</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "<strong>The balance of due and uncollected invoices is: </strong>"
+msgstr "<strong>Soldul facturilor scadente si neincasate este: </strong>"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Your reference</strong> &amp;nbsp;"
+msgstr "<strong>Referința dvs</strong> &amp;nbsp;"
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_product_category__max_addition
+msgid "Addition (%)"
+msgstr "Adaos (%)"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "Amount"
+msgstr "Cantitate"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "Bank: &amp;nbsp;"
+msgstr "Bancă: &amp;nbsp;"
+
+#. module: toledo
+#: model:ir.model.fields,help:toledo.field_product_pricelist_item__base
+msgid ""
+"Base price for computation.\n"
+"Sales Price: The base price will be the Sales Price.\n"
+"Cost Price : The base price will be the cost price.\n"
+"Other Pricelist : Computation of the base price based on another Pricelist."
+msgstr ""
+"Preț de bază pentru calcul.\n"
+"Prețul de vânzare: Prețul de bază va fi Prețul de vânzare.\n"
+"Prețul costului: Prețul de bază va fi prețul costului.\n"
+"Altă listă de prețuri: calculul prețului de bază bazat pe o altă listă de prețuri."
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_product_pricelist_item__base
+msgid "Based on"
+msgstr "Bazat pe"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "C.I.:"
+msgstr "C.I.:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "CNP:"
+msgstr "CNP:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid "CUI"
+msgstr "CUI"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "CUI:"
+msgstr "CUI:"
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_res_company
+msgid "Companies"
+msgstr "Companii"
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_res_config_settings
+msgid "Config Settings"
+msgstr "Setări de configurare"
+
+#. module: toledo
+#: model:ir.actions.report,name:toledo.toledo_conformity_certificate
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid "Conformity Certificate"
+msgstr "Certificat de conformitate"
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_res_currency
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "Date:"
+msgstr "Data:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "Drafted by:"
+msgstr "Întocmit de:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "Entry Price"
+msgstr "Preț de intrare"
+
+#. module: toledo
+#: model:ir.model.fields,help:toledo.field_sale_order__offer_validity
+msgid "How many working days this offer is valid for"
+msgstr "Pentru câte zile lucrătoare este valabilă această ofertă"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid "Index"
+msgstr "Index"
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_res_company__invoice_drafter_partner_id
+#: model:ir.model.fields,field_description:toledo.field_res_config_settings__invoice_drafter_partner_id
+msgid "Invoice Drafter"
+msgstr "Întocmit de"
+
+#. module: toledo
+#: model:ir.model.fields,help:toledo.field_res_company__invoice_drafter_partner_id
+#: model:ir.model.fields,help:toledo.field_res_config_settings__invoice_drafter_partner_id
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_res_config_settings_view_form
+msgid "Invoice drafter, it will appear in invoice print"
+msgstr "Întocmit de, va apărea în printul facturii"
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_account_move
+msgid "Journal Entry"
+msgstr "Notă contabilă"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_external_layout_standard_so
+msgid "Logo"
+msgstr "Logo"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_view_order_form1
+msgid "Max Disc.%"
+msgstr "Disc. Max%"
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_sale_order_line__max_discount
+msgid "Max Discount (%)"
+msgstr "Discount Max (%)"
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_product_category__min_addition
+msgid "Minimum Addition (%)"
+msgstr "Adaos minim (%)"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "NIR Number:"
+msgstr "Număr NIR:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "NRC:"
+msgstr "NRC:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "Name:"
+msgstr "Nume:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "Nr."
+msgstr "Nr."
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_sale_order__offer_validity
+msgid "Offer validity"
+msgstr "Valabilitatea ofertei"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_view_order_form1
+msgid "Price with Disc."
+msgstr "Preț cu Discount"
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_product_pricelist
+msgid "Pricelist"
+msgstr "Listă de prețuri"
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_product_pricelist_item
+msgid "Pricelist Rule"
+msgstr "Regula listei de prețuri"
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_product_category
+msgid "Product Category"
+msgstr "Categorie produs"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid "Product Name"
+msgstr "Nume Produs"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "Product name"
+msgstr "Nume Produs"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "Quantity"
+msgstr "Cantitate"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "Reception note and establishment differences"
+msgstr "Notă de recepţie şi constatare diferenţe"
+
+#. module: toledo
+#: model:ir.actions.report,name:toledo.toledo_report_nir
+msgid "Report NIR"
+msgstr "Raport NIR"
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_sale_order
+msgid "Sales Order"
+msgstr "Comandă de vânzare"
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Linie comandă vânzare"
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_res_currency__similar_currency_id
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_view_currency_form
+msgid "Similar Currency"
+msgstr "Moneda similară"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "Supplier:"
+msgstr "Furnizor:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_technical
+msgid "Technical Description"
+msgstr "Descriere tehnica"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid ""
+"Thank you for your interest in the products sold by our company and we look "
+"forward to your decision."
+msgstr ""
+"Va multumim pentru interesul acordat produselor comercializate de compania "
+"noastra si asteptam cu interes decizia dumneavoastra."
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid "This certificate has been issued for invoice:"
+msgstr "Acest certificat a fost emis pentru factura:"
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_res_partner__total_overdue_balance
+#: model:ir.model.fields,field_description:toledo.field_res_users__total_overdue_balance
+msgid "Total Overdue Balance"
+msgstr "Sold total restante"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "Total:"
+msgstr "Total:"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_nir
+msgid "UM"
+msgstr "UM"
+
+#. module: toledo
+#: model:ir.model.fields.selection,name:toledo.selection__product_pricelist_item__base__vendor_price
+msgid "Vendor Price"
+msgstr "Preț Furnizor"

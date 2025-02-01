@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="toledo_res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">toledo.res.config.settings.view.form.inherit</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='invoicing_settings']" position="inside">
+                <div class="col-xs-12 col-md-6 o_setting_box" id="toledo_invoice_drafter">
+                    <div class="o_setting_left_pane">                       
+                    </div>
+                    <div class="o_setting_right_pane" name="show_invoice_drafter_right_pane">
+                        <label for="invoice_drafter_partner_id"/>
+                        <div class="text-muted">
+                            Invoice drafter, it will appear in invoice print
+                        </div>
+                        <div class="text-muted">
+                            <field name="invoice_drafter_partner_id"/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="toledo_res_config_settings_view_form1" model="ir.ui.view">
+        <field name="name">toledo.res.config.settings.sale</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@data-key='sale_management']/div[@id='pricing_setting_container']" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box" id="default_pricelist">
+                   <div class="o_setting_left_pane">
+                   </div>
+                   <div class="o_setting_right_pane">
+                       <label for="company_currency_pricelist" string="Default Pricelist in Company Currency"/>
+                       <div class="text-muted">
+                           Default pricelist in company currency, used when converting quotation to company currency
+                       </div>
+                       <div class="mt16">
+                            <field name="company_currency_pricelist" />
+                        </div>
+                   </div>
+               </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

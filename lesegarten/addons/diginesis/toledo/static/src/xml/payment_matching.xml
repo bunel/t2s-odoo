@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+
+    <t t-name="reconciliation.line" t-inherit="base_accounting_kit.reconciliation.line" t-inherit-mode="extension">
+        <xpath expr="//table[hasclass('accounting_view')]/thead//td[hasclass('cell_label')]/t[@t-if='state.st_line.name']" position="replace">
+            <t t-if="state.st_line.payment_ref" t-esc="state.st_line.payment_ref"/>
+        </xpath>
+    </t>
+
+</templates>

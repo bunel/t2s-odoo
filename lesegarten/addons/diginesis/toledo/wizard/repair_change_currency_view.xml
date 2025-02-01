@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_repair_change_currency" model="ir.ui.view">
+            <field name="name">Change Currency</field>
+            <field name="model">repair.change.currency</field>
+            <field name="arch" type="xml">
+                <form string="Change Currency">
+                	<p class="oe_grey">This wizard will change the pricelist of the repair order based on configuration for 'Default Pricelist in Company Currency'</p>
+                    <footer>
+                        <button name="change_currency" string="Change Currency" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_repair_change_currency" model="ir.actions.act_window">
+            <field name="name">Change Currency</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">repair.change.currency</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_repair_change_currency"/>
+            <field name="context">{}</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

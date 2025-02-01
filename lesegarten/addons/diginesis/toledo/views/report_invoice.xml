@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="report_invoice_document" inherit_id="diginesis_invoice.report_invoice_document" primary="True">
+    	<xpath expr="//div[hasclass('page')]/p[@name='incoterm']" position="after">
+    		<p name="outstanding_amount">
+    			<strong>The balance of due and uncollected invoices is: </strong><span t-field="o.partner_id.total_overdue_balance"/>
+    		</p>
+			<p name="drafted_by">
+				<div> Drafted by: Name: <span t-field="supplier_company.invoice_drafter_partner_id.name"/> , CNP: <span t-field="supplier_company.invoice_drafter_partner_id.vat"/> , C.I.: <span t-field="supplier_company.invoice_drafter_partner_id.nrc"/></div>
+			</p>
+    	</xpath>
+		<xpath expr="//div[@name='supplier_nrc']" position="after">
+			<div>
+				<span>Social Capital: 200 lei</span>
+			</div>
+			<div t-if="supplier.bank_ids">
+				Bank: &amp;nbsp;  <span t-field="supplier.bank_ids[0].bank_name"/>
+				<br/>
+				IBAN: &amp;nbsp; <span t-field="supplier.bank_ids[0].acc_number"/> &amp;nbsp; <span t-field="supplier.bank_ids[0].currency_id.name"/>
+			</div>
+			
+		</xpath>
+    </template>
+    
+    <template id="report_invoice" inherit_id="diginesis_invoice.report_invoice">
+        <xpath expr='//t[@t-call="account.report_invoice_document"]' position="after">
+            <t t-if="o._get_name_invoice_report() == 'toledo.report_invoice_document'"
+                t-call="toledo.report_invoice_document" t-lang="lang"/>
+        </xpath>
+    </template>
+
+    <template id="report_invoice_with_payments" inherit_id="diginesis_invoice.report_invoice_with_payments">
+        <xpath expr='//t[@t-call="account.report_invoice_document"]' position="after">
+            <t t-if="o._get_name_invoice_report() == 'toledo.report_invoice_document'"
+                t-call="toledo.report_invoice_document" t-lang="lang"/>
+        </xpath>
+    </template>
+	
+	<template id="report_invoice_signature" inherit_id="diginesis_invoice.external_layout_footer_invoice">
+		<!-- <xpath expr='//td[@name="supplier"]/p' position="after">
+			<img src="/toledo/static/src/img/semnatura_toledo.png" style="width: 120px; height:80px; position:absolute; top:20px; left:10px"/>
+		</xpath> -->
+		<xpath expr="//span[@id='footer_exped_name']" position="replace">
+			<span id="footer_exped_name">
+				<t t-if="o.move_type in ['out_invoice', 'out_refund']">
+					Delegate Name:<span t-field="o.delegate_id" />
+				</t>
+				<t t-else="">Name:</t>
+			</span><br/>
+		</xpath>
+	</template>
+
+</odoo>

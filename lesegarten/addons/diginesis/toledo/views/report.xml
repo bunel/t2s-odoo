@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+       <!-- QWeb Reports -->
+        <record id="toledo_conformity_certificate" model="ir.actions.report">
+            <field name="name">Conformity Certificate</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">toledo.report_conformitycertificate</field>
+            <field name="report_file">toledo.report_conformitycertificate</field>
+            <field name="print_report_name">'ConformityCertificate.pdf'</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="paperformat_label_repair" model="report.paperformat">
+            <field name="name">Label Repair</field>
+            <field name="default" eval="False" />
+            <field name="format">custom</field>
+            <field name="page_height">50</field>
+            <field name="page_width">70</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">0</field>
+            <field name="margin_bottom">0</field>
+            <field name="margin_left">0</field>
+            <field name="margin_right">0</field>
+            <field name="header_line" eval="False" />
+            <field name="header_spacing">5</field>
+            <field name="dpi">300</field>
+        </record>
+
+        <record id="toledo_repair_label" model="ir.actions.report">
+            <field name="name">Repair Label</field>
+            <field name="model">repair.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">toledo.report_repairlabel</field>
+            <field name="report_file">toledo.report_repairlabel</field>
+            <field name="print_report_name">'RepairLabel.pdf'</field>
+            <field name="binding_model_id" ref="model_repair_order"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="toledo.paperformat_label_repair" />
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+    <template id="report_repairlabel_document">
+        <div class="row">
+            <div class="col-12" style="text-align: center; height: 150px; ">
+                <div t-field="doc.serial_number_id.id" t-options="{'widget': 'barcode', 'height': 300, 'width': 1100}" style="margin-top: 10px; "/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" style="text-align: center; margin-top: 200px;">
+                <span t-field="doc.name" style="font-size: 30mm; line-height: 30mm;" />
+            </div>
+        </div>
+    </template>
+
+    <template id="report_repairlabel">
+        <t t-call="web.html_container">
+            <div class="page">
+            <t t-foreach="docs" t-as="doc">
+                <t t-set="lang" t-value="doc.partner_id.lang" />
+                <t t-call="toledo.report_repairlabel_document" t-lang="doc.partner_id.lang"/>
+                <t t-if="not doc_last">
+                    <p style="page-break-after: always;line-height:0;height:0;"/>
+                </t>
+            </t>
+            </div>
+        </t>
+    </template>
+</data>
+</odoo>

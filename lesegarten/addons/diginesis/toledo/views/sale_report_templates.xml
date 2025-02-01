@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="toledo_external_layout_standard_so">
+        <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+            <div class="row">
+                <div class="col-3 mb4">
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="max-height: 45px;" alt="Logo"/>
+                </div>
+                <div class="col-9 text-right" style="margin-top:22px;" t-field="company.report_header" name="moto"/>
+            </div>
+            <div t-if="company.logo or company.report_header" class="row zero_min_height">
+                <div class="col-12">
+                    <div style="border-bottom: 1px solid black;"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6" name="company_address">
+                    <span t-if="company.company_details" t-field="company.company_details"/>
+                </div>
+            </div>
+        </div>
+
+        <div t-attf-class="article o_report_layout_standard o_company_#{company.id}_layout {{  'o_layout_background' if company.layout_background in ['Geometric', 'Custom']  else  '' }}" t-attf-style="background-image: url({{ 'data:image/png;base64,%s' % company.layout_background_image.decode('utf-8') if company.layout_background_image and company.layout_background == 'Custom' else '/base/static/img/bg_background_template.jpg' if company.layout_background == 'Geometric' else ''}});" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+            <div class="pt-5">
+                <!-- This div ensures that the address is not cropped by the header. -->
+                <t t-call="web.address_layout"/>
+            </div>
+            <t t-out="0"/>
+        </div>
+
+        <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
+            <img src="/toledo/static/src/img/footer_so.png" style="width=100%"/>
+        </div>
+</template>
+
+<template id="toledo_external_layout_so">
+<t t-if="not o" t-set="o" t-value="doc"/>
+        <t t-if="not company">
+            <!-- Multicompany -->
+            <t t-if="company_id">
+                <t t-set="company" t-value="company_id"/>
+            </t>
+            <t t-elif="o and 'company_id' in o and o.company_id.sudo()">
+                <t t-set="company" t-value="o.company_id.sudo()"/>
+            </t>
+            <t t-else="else">
+                <t t-set="company" t-value="res_company"/>
+            </t>
+        </t>
+
+        <t t-if="company.external_report_layout_id" t-call="{{company.external_report_layout_id.key}}"><t t-out="0"/></t>
+        <t t-else="else" t-call="toledo.toledo_external_layout_standard_so"><t t-out="0"/></t>
+</template>
+
+
+<template id="report_saleorder_technical">
+    <t t-call="toledo.toledo_external_layout_so">
+        <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)" />
+        <div class="page">
+            <div class="oe_structure" />
+            <h3 class="text-center" style="margin-bottom: 30px;">Technical Description</h3>
+            
+            <div name="technical_description">
+            	<t t-foreach="doc.order_line.filtered(lambda x: x.product_id and x.product_id.categ_id and x.product_id.categ_id.has_technical_description)" t-as="line">
+            		<div class="row" style="margin-top: 20px;">
+	                    <div class="col-8" >
+	                    	<div style="font-size: 16px;">
+	                        	<t t-esc="line_index + 1" />. <span t-field="line.product_id.display_name" />
+	                        </div><br/>
+	                        <span t-field="line.product_id.description" />
+	                    </div>
+	                    <div class="col-4">
+	                    	<t t-if="line.product_id.image_1920">
+	                    		<img style="width:100%;" t-att-src="image_data_uri(line.product_id.image_1920)" /><br/>
+	                    		<small>The image is for presentation purposes only</small>
+	                    	</t>
+	                    </div>	                    
+	                </div>
+	            </t>
+            </div>
+		</div>
+    </t>
+</template>
+
+<template id="toledo_report_saleorder" inherit_id="sale.report_saleorder">
+	<xpath expr="//t[@t-foreach='docs']" position="inside">
+		<t t-if="any ([d for d in doc.mapped('order_line.product_id.categ_id.has_technical_description')])" t-call="toledo.report_saleorder_technical" t-lang="doc.partner_id.lang" />
+	</xpath> 
+</template>
+
+<template id="toledo_report_saleorder_pro_forma" inherit_id="sale.report_saleorder_pro_forma">
+	<xpath expr="//t[@t-foreach='docs']" position="inside">
+		<t t-if="any ([d for d in doc.mapped('order_line.product_id.categ_id.has_technical_description')])" t-call="toledo.report_saleorder_technical" t-lang="doc.partner_id.lang" />
+	</xpath>
+</template>
+
+
+<template id="report_saleorder_document_inherit_toledo" inherit_id="sale.report_saleorder_document">
+
+<xpath expr="//t[@t-call='web.external_layout']" position="attributes">	
+		<attribute name="t-call">toledo.toledo_external_layout_so</attribute>
+</xpath>
+
+ <!-- Used to remove set of address - this triggers address_layout - and inserts customer addres and information address - we do not need this for Toledo-->
+	<xpath expr="//t[@t-set='address']" position="replace"/>
+	
+	<xpath expr="//h2" position="before">
+	<div name="comany_data">
+	  
+		<t t-set="comp" t-value="doc.company_id.partner_id"/>
+		<table style="width:50%;">
+			<tr>
+				<td><strong><t t-esc="comp.name"/></strong><br></br>
+				<span>Calea Feldioarei 33</span><br></br>
+				<span>500471, Brasov / România</span>
+				</td>
+				<td><img src="/toledo/static/src/img/sigla1.jpg" style="position:absolute; top:20px; left:500px"/></td>
+			</tr>
+		</table>	
+		<table style="width:70%;">
+			<tr>
+				<td><strong>Nr. ord. Reg.</strong></td>
+				<td><span><t t-esc="comp.nrc"/></span></td>
+				<td><strong>Bank</strong></td>
+				<td><span/>Baca Comercială Română</td>
+			</tr>
+			<tr>
+				<td><strong>C.I.F.</strong></td>
+				<td><span><t t-esc="comp.vat"/></span></td>
+				<td><strong>Account</strong></td>
+				<td><span/>RO56RNCB0053048593950001</td>
+			</tr>
+			<tr>
+				<td><strong>Social Capital</strong></td>
+				<td><span>200 lei</span></td>
+				<td><strong>Email</strong></td>
+				<td><span><t t-esc="comp.email"/></span></td>
+			</tr>
+		</table>
+	</div>
+	<div name="spacer" style="margin: 50px;"/>  
+	</xpath>
+	<xpath expr="//div[@id='informations']" position="replace">
+		<div id="t_info" class="row">
+		  <div class="col-6">
+		    <div t-if="doc.date_order and doc.state in ['draft','sent']">
+				  <strong>In the attention of</strong>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent']">
+				  <strong>CLIENT</strong>
+				</div>
+				<span t-esc="doc.partner_id.name"/>
+				<div t-if="doc.partner_id != doc.partner_invoice_id">
+					<span><t t-esc="doc.partner_invoice_id.name"/></span>
+			  </div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent']">
+				  <span t-esc="doc.partner_id.contact_address"/>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent']">
+				  <strong>Nr. ord. Reg. Com.</strong> &amp;nbsp; <span t-field="doc.partner_id.nrc"/>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent']">
+				  <strong>C.I.F.</strong> &amp;nbsp;  <span t-field="doc.partner_id.vat"/>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent'] and doc.partner_id.bank_ids">
+					<strong>Bank</strong> &amp;nbsp;  <span t-field="doc.partner_id.bank_ids[0].bank_name"/>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent'] and doc.partner_id.bank_ids">
+				  <strong>Account</strong> &amp;nbsp;  <span t-field="doc.partner_id.bank_ids[0].acc_number"/>
+				</div>
+			  <br/>
+			  <div t-if="doc.date_order and doc.state not in ['draft','sent'] and doc.partner_shipping_id">
+				  <strong>Delivery address</strong> <br/>  <span t-field="doc.partner_shipping_id.contact_address"/>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent'] and doc.pricelist_id.currency_id">
+				  <strong>Currency</strong> &amp;nbsp; <span t-field="doc.pricelist_id.currency_id.full_name"/>
+				</div>		
+		  </div>
+		  
+			<div class="col-6">
+			  <div>
+				  <strong>Your reference</strong> &amp;nbsp; <span t-field="doc.client_order_ref"/>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent']">
+				  <strong>Release date</strong> &amp;nbsp; <span t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+				</div>
+				<div t-if="doc.date_order and doc.state in ['draft','sent']">
+					<strong>Offer date</strong> &amp;nbsp; <span t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+				</div>
+			  <div t-if="doc.date_order and doc.state in ['draft','sent']">
+				  <strong>Currency</strong>  &amp;nbsp; <span t-if="doc.pricelist_id.currency_id" t-field="doc.pricelist_id.currency_id.full_name"/>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent']">
+				  <strong>Delivery date requested</strong>  &amp;nbsp; <span t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+				</div>
+				<div t-if="doc.date_order and doc.state in ['draft','sent']">
+				  <strong>Offer validity</strong> &amp;nbsp; <span t-if="doc.offer_validity" t-field="doc.offer_validity"/>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent']">
+				  <t t-set="max_delivery" t-value="0"/>
+					<t t-foreach="doc.order_line" t-as="line">
+					  <t t-if="line.customer_lead&gt;max_delivery" t-set="max_delivery" t-value="line.customer_lead"/>
+					</t>
+				    <strong>Estimated delivery date</strong> &amp;nbsp; 	<t t-if="max_delivery&gt;0"><span t-esc="int(max_delivery)"/> <span> working days from confirmation</span>
+				  </t>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent']">
+						  <strong>C.I.F.</strong> &amp;nbsp; <span t-field="doc.partner_id.vat"/>
+				</div>
+				<div t-if="doc.date_order and doc.state in ['draft','sent']">
+				  <t t-set="max_delivery" t-value="0"/>
+					<t t-foreach="doc.order_line" t-as="line">
+					  <t t-if="line.customer_lead&gt;max_delivery" t-set="max_delivery" t-value="line.customer_lead"/>
+					</t>
+				    <strong>Estimated delivery date</strong> &amp;nbsp; 	<t t-if="max_delivery&gt;0"><span t-esc="int(max_delivery)"/> <span> working days from confirmation</span>
+				  </t>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent']">
+				  <strong>Delivery method</strong> &amp;nbsp; <span t-if="doc.incoterm" t-field="doc.incoterm.name"/>
+				</div>
+				<div t-if="doc.date_order and doc.state in ['draft','sent'] ">
+				  <strong>Payment terms</strong> &amp;nbsp; <span  t-if="doc.payment_term_id" t-field="doc.payment_term_id.name"/>
+				</div>
+				<div t-if="doc.date_order and doc.state in ['draft','sent']">
+				  <strong>Terms of delivery</strong> &amp;nbsp; <span t-if="doc.incoterm" t-field="doc.incoterm.name"/>
+				</div>
+				<br/>
+				<div t-if="doc.date_order and doc.state in ['draft','sent']">
+				  <strong>Drafterd by</strong> &amp;nbsp; <span t-if="doc.user_id" t-field="doc.user_id.partner_id.name"/>
+				</div>
+				<div t-if="doc.date_order and doc.state not in ['draft','sent']">
+				  <strong>Responsible</strong> &amp;nbsp; <span t-if="doc.user_id" t-field="doc.user_id.partner_id.name"/>
+				</div>
+				<div t-if="doc.user_id">
+				  <strong>Phone</strong> &amp;nbsp; <span t-field="doc.user_id.partner_id.phone"/>
+				</div>
+				<div t-if="doc.user_id">
+				  <strong>Email</strong> &amp;nbsp; <span t-field="doc.user_id.partner_id.email"/>
+				</div>
+			</div>
+    </div>
+	</xpath>
+	
+	<!--campul name_ref re pe res_currency nu exista -->
+	
+	<xpath expr="//div[@name='signature']" position="before">
+		<br/><br/>
+		<p> Thank you for your interest in the products sold by our company and we look forward to your decision.</p>
+	</xpath>
+</template>
+
+
+
+
+</odoo>

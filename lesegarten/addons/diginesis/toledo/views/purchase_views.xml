@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="toledo_purchase_order_form" model="ir.ui.view">
+            <field name="name">toledo.purchase.order.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='purchase_delivery_invoice']/group" position="inside">
+                    <group name="transport">
+                        <field name="transported_purchases" widget="many2many_tags" />
+                    </group>
+                </xpath>
+
+                <div name="button_box" position="inside">
+                    <button type="object"  name="action_view_transport_orders"
+                            class="oe_stat_button"
+                            icon="fa-pencil-square-o"
+                            attrs="{'invisible':[('transport_order_count', '&lt;=', 0)]}">
+                        <field name="transport_order_count" widget="statinfo" string="Transport" />
+                    </button>
+                    <button type="object"  name="action_view_transported_purchases"
+                            class="oe_stat_button"
+                            icon="fa-pencil-square-o"
+                            attrs="{'invisible':[('transported_purchases', '=', [])]}"
+                            string="Served Purchases" />
+                </div>
+            </field>
+        </record>
+
+</odoo>

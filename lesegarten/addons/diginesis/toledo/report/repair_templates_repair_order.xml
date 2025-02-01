@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+<template id="report_repairorder" inherit_id="repair.report_repairorder">
+     <xpath expr="//div[@id='informations']" position="inside">
+		<div t-if="o.user_id" class="col-2 bm-2">
+			<strong>Responsible:</strong>
+				<p t-field="o.user_id"/>
+        </div>
+	 </xpath>
+	 
+	 <xpath expr="//div[@id='informations']/div[3]" position="attributes">
+		<attribute name="class">col-2 bm-2</attribute>
+	 </xpath>
+	 
+	 <xpath expr="//div[@id='informations']/div[4]" position="attributes">
+		<attribute name="class">col-2 bm-2</attribute>
+	 </xpath>
+	 
+	 <xpath expr="//t[@t-set='information_block']" position="replace">
+	 	<t t-set="comp" t-value="o.company_id.partner_id"/>
+		<t t-set="comp_bank" t-value="comp.bank_ids" />
+		<div class="row">
+			<div class="col-6">
+			  <table>
+				<tr>
+					<td colspan="4"><strong><t t-esc="comp.name"/></strong><br/>
+					<span>Calea Feldioarei 33</span><br/>
+					<span>500471, Brasov / România</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><strong>Nr. ord. Reg.</strong> <span><t t-esc="comp.nrc"/></span></td>
+					<td><strong>Bank</strong> <span t-if="comp_bank" t-field="comp_bank[0].bank_name"/></td>
+				</tr>
+				<tr>
+					<td colspan="2"><strong>C.I.F.</strong> <span><t t-esc="comp.vat"/></span></td>
+					<td><strong>Account</strong> <span t-if="comp_bank" t-field="comp_bank[0].acc_number"/></td>
+				</tr>
+				<tr>
+					<td colspan="2"><strong>Social Capital</strong> <span>200 lei</span></td>
+					<td><strong>Email</strong> <span><t t-esc="comp.email"/></span></td>
+				</tr>
+				</table>
+			</div>
+			<div class="col-6">
+				<div><strong>Customer</strong></div>
+				<address t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+				<div t-if="o.partner_id.vat">
+					<t t-if="o.company_id.account_fiscal_country_id.vat_label" t-esc="o.company_id.account_fiscal_country_id.vat_label" id="inv_tax_id_label"/>
+					<t t-else="">Tax ID</t>: <span t-field="o.partner_id.vat"/>
+			  	</div>
+			  	<div name="client_bank_accounts">
+					<div t-foreach="o.partner_id.bank_ids" t-as="partner_bank">
+						<span t-field="partner_bank.bank_name"/> <span t-field="partner_bank.acc_number"/>
+					</div>
+				</div>
+				<div name="client_nrc" t-if="o.partner_id.nrc">NRC: <span t-field="o.partner_id.nrc"/></div>
+			</div>
+    	</div>
+	 </xpath>
+	 
+	 <xpath expr="//t[@t-set='address']" position="replace"/>
+	 
+	 
+	 
+</template>
+
+
+</data>
+</odoo>

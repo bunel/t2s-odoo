@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    <record id="toledo_product_category_form_view" model="ir.ui.view">
+        <field name="name">toledo.product.category.form</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="product.product_category_form_view"/>
+        <field name="arch" type="xml">
+	        <group name="first" position="after">
+	        	<group name="addition" col="2" groups="sales_team.group_sale_manager">
+	            	<field name="min_addition"  class="oe_inline" />
+	            	<field name="max_addition"  class="oe_inline"/>
+                    <field name="has_technical_description"/>
+	            </group>
+	        </group>
+        </field>
+    </record>
+
+    <record id="toledo_product_normal_form_view" model="ir.ui.view">
+        <field name="name">toledo.product.product.form</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button string="Valuation" type="object"
+                    name="action_view_stock_valuation_layers"
+                    class="oe_stat_button" icon="fa-dollar" />
+            </div>
+        </field>
+    </record>
+        
+    </data>
+</odoo>

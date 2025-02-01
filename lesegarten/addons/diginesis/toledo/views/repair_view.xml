@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="toledo_repair_order_form" model="ir.ui.view">
+            <field name="name">toledo.repair.order.form</field>
+            <field name="model">repair.order</field>
+            <field name="inherit_id" ref="repair.view_repair_order_form"/>
+            <field name="arch" type="xml">
+
+                <field name="operations" position="attributes">
+                    <attribute name="attrs">{'readonly':[('state', 'not in', ['draft'])]}</attribute>
+                </field>
+
+                <field name="fees_lines" position="attributes">
+                    <attribute name="attrs">{'readonly':[('state', 'not in', ['draft'])]}</attribute>
+                </field>
+
+                <xpath expr="//page[@name='parts']/field[@name='operations']/tree/field[@name='location_id']" position="after">
+                    <field name="product_qty_onhand" readonly="1"/>
+                </xpath>
+
+                <field name="pricelist_id"  position="attributes">
+                    <attribute name="class">oe_inline</attribute>
+                </field>
+                <field name="pricelist_id"  position="after">
+				  <button name="%(toledo.action_repair_change_currency)d" type="action"
+							 icon="fa-pencil-square-o" class="oe_link oe_inline"
+							attrs="{'invisible':[('state','!=','draft')]}" title="Change Currency" aria-label="Change Currency" />
+			    </field>
+
+                <div name="button_box" position="inside">
+                    <button name="action_view_po" type="object" class="oe_stat_button" string="Purchases" icon="fa-cube" />
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>

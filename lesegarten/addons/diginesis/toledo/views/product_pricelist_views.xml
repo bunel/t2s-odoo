@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="toledo_product_pricelist_item_form_view" model="ir.ui.view">
+            <field name="name">toledo.product.pricelist.item.form</field>
+            <field name="model">product.pricelist.item</field>
+             <field name="inherit_id" ref="product.product_pricelist_item_form_view"/>
+            <field name="arch" type="xml">
+                 <field name="price_surcharge" position="after">
+                     <label for="override_category_addition"  attrs="{'invisible':[('compute_price', '!=', 'formula')]}"/>
+                     <div class="o_row" attrs="{'invisible':[('compute_price', '!=', 'formula')]}">
+                        <field name="override_category_addition"/>
+                        <span>%%</span>
+                    </div>
+                 </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>

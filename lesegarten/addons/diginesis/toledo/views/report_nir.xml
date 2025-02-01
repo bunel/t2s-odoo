@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+    <template id="report_nir">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.internal_layout">
+                    <div class="page bonconsum">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h1>Notă de recepţie şi constatare diferenţe<span t-if="o.state in ['draft']">, CIORNĂ</span></h1>
+                                <h3>Numar: <span t-field="o.name"/> Data: <span t-field="o.invoice_date" /></h3>
+								<br/>
+								<div class="text-left">
+									<p>
+											Document:<span t-field="o.ref"/><br/>
+											Furnizor: <span t-field="o.partner_id"/><br/>
+										<t t-if="o.partner_id.vat">
+											CUI: <span t-field="o.partner_id.vat"/><br/>
+										</t>
+										<t t-if="o.partner_id.nrc">
+											NRC: <span t-field="o.partner_id.nrc"/>
+										</t>
+									</p>
+								</div>
+                                <p class="mt24">&amp;nbsp;</p>
+                                <table class="table table-sm o_main_table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:25pt;">Nr.</th>
+                                            <th style="width:305pt;">Denumire Produs</th>
+                                            <th style="width:40pt;">UM</th>
+                                            <th style="width:60pt;">Cantitate</th>
+                                            <th style="width:60pt;">Preț Intrare</th>
+                                            <th style="width:70pt;">Valoare</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <t t-foreach="o.invoice_line_ids" t-as="l">                                        	
+												<tr>
+	                                                <td><t t-esc="l_index+1"/></td>
+	                                                <td class="text-left">
+                                                        <span t-field='l.product_id'/>
+                                                    </td>
+	                                                <td class="text-center"><span t-field='l.product_uom_id' /></td>
+	                                                <td class="text-right"><span t-field='l.quantity' /></td>
+	                                                <td class="text-right"><span t-field='l.price_unit' /></td>
+	                                                <td class="text-right"><span t-field='l.price_subtotal' /></td>
+	                                            </tr>                                      
+                                        </t>                                        
+                                        <tr class="line_footer">                                        
+                                            <td colspan="5" class="text-right">Total:</td>
+                                            <td class="text-right"><span t-field='o.amount_untaxed' /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row signature mt32">
+                            <div class="footer_info">
+                                <div class="col-12">
+								<br/><br/>
+                                    Operator: <span t-field='o.invoice_user_id' /><br/>
+                                    Gestionar:<br/><br/>
+                                    ____________________________________
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</data>
+</openerp>

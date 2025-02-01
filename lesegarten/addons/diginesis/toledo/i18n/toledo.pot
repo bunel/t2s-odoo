@@ -1,0 +1,773 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2023-07-21 13:33+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "&amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model:ir.actions.report,print_report_name:toledo.toledo_conformity_certificate
+msgid "'ConformityCertificate.pdf'"
+msgstr ""
+
+#. module: toledo
+#: model:ir.actions.report,print_report_name:toledo.toledo_repair_label
+msgid "'RepairLabel.pdf'"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid ", C.I.:"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid ", CNP:"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid ", having its registered office in"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid ", registered at RC Brasov with no."
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid ", serial:"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid ""
+", through the legal representative CAMPEAN Ioana as administrator, we declare on our own responsibility,\n"
+"\t\t\t\tknowing the provisions of art. 292 of the Criminal Code regarding the false statements and the provisions of art. 5 of GD no. 1022/2002 regarding the regime\n"
+"\t\t\t\tproducts and services that may endanger life, health, safety at work and the environment,\n"
+"\t\t\t\tthe fact that the product (s) below which are the subject of this declaration of conformity are not life-threatening,\n"
+"\t\t\t\toccupational health and safety, does not produce negative impact on the environment and is\n"
+"\t\t\t\tin accordance with the \"European Community and International regulations\"."
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+msgid ""
+"<br/>\n"
+"\t\t\t\t\t<span>Calea Feldioarei 33</span><br/>\n"
+"\t\t\t\t\t<span>500471, Brasov / România</span>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid ""
+"<br/>\n"
+"\t\t\t\t<span>Calea Feldioarei 33</span><br/>\n"
+"\t\t\t\t<span>500471, Brasov / România</span>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid ""
+"<br/>\n"
+"\t\t\t\tBank: &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid ""
+"<br/>\n"
+"\t\t\t\tIBAN: &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid ""
+"<br/>\n"
+"\t\t\t\tthrough CAMPEAN, Ioana"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_technical
+msgid ""
+"<br/>\n"
+"\t                    \t\t<small>The image is for presentation purposes only</small>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<span/>Baca Comercială Română"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<span/>RO56RNCB0053048593950001"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<span> working days from confirmation</span>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_product_pricelist_item_form_view
+msgid "<span>%</span>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<span>200 lei</span>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "<span>Social Capital: 200 lei</span>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Account</strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Account</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Bank</strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Bank</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>C.I.F.</strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>C.I.F.</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>CLIENT</strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Currency</strong>  &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Currency</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+msgid "<strong>Customer</strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Delivery address</strong> <br/>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Delivery date requested</strong>  &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Delivery method</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Drafterd by</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Email</strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Email</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Estimated delivery date</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>In the attention of</strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Nr. ord. Reg. Com.</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Nr. ord. Reg.</strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Offer date</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Offer validity</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Payment terms</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Phone</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Release date</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+msgid "<strong>Responsible:</strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Responsible</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Social Capital</strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+msgid "<strong>Social Capital</strong> <span>200 lei</span>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Terms of delivery</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "<strong>The balance of due and uncollected invoices is: </strong>"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid "<strong>Your reference</strong> &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_product_category__max_addition
+msgid "Addition (%)"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "Bank: &amp;nbsp;"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_repair_barcode_scan___barcode_scanned
+msgid "Barcode Scanned"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,help:toledo.field_product_pricelist_item__base
+msgid ""
+"Base price for computation.\n"
+"Sales Price: The base price will be the Sales Price.\n"
+"Cost Price : The base price will be the cost price.\n"
+"Other Pricelist : Computation of the base price based on another Pricelist."
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_product_pricelist_item__base
+msgid "Based on"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid "CUI"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.view_repair_barcode_scan
+#: model_terms:ir.ui.view,arch_db:toledo.view_repair_change_currency
+#: model_terms:ir.ui.view,arch_db:toledo.view_sale_change_currency
+msgid "Cancel"
+msgstr ""
+
+#. module: toledo
+#: model:ir.actions.act_window,name:toledo.action_repair_change_currency
+#: model:ir.actions.act_window,name:toledo.action_sale_change_currency
+#: model:ir.model,name:toledo.model_repair_change_currency
+#: model:ir.model,name:toledo.model_sale_change_currency
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_repair_order_form
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_view_order_form1
+#: model_terms:ir.ui.view,arch_db:toledo.view_repair_change_currency
+#: model_terms:ir.ui.view,arch_db:toledo.view_sale_change_currency
+msgid "Change Currency"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: toledo
+#: model:ir.actions.report,name:toledo.toledo_conformity_certificate
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid "Conformity Certificate"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_repair_barcode_scan__create_uid
+#: model:ir.model.fields,field_description:toledo.field_repair_change_currency__create_uid
+#: model:ir.model.fields,field_description:toledo.field_sale_change_currency__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_repair_barcode_scan__create_date
+#: model:ir.model.fields,field_description:toledo.field_repair_change_currency__create_date
+#: model:ir.model.fields,field_description:toledo.field_sale_change_currency__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_res_currency
+msgid "Currency"
+msgstr ""
+
+#. module: toledo
+#: code:addons/toledo/wizard/repair_change_currency.py:0
+#: code:addons/toledo/wizard/sale_change_currency.py:0
+#, python-format
+msgid ""
+"Currency updated to company currency. Product prices have been recomputed "
+"accordingly."
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_res_company__company_currency_pricelist
+#: model:ir.model.fields,field_description:toledo.field_res_config_settings__company_currency_pricelist
+msgid "Default Pricelist"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_res_config_settings_view_form1
+msgid "Default Pricelist in Company Currency"
+msgstr ""
+
+#. module: toledo
+#: code:addons/toledo/wizard/repair_change_currency.py:0
+#: code:addons/toledo/wizard/sale_change_currency.py:0
+#, python-format
+msgid "Default Pricelist in Company Currency is not properly configured"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,help:toledo.field_res_company__company_currency_pricelist
+#: model:ir.model.fields,help:toledo.field_res_config_settings__company_currency_pricelist
+msgid "Default pricelist in company currency"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_res_config_settings_view_form1
+msgid ""
+"Default pricelist in company currency, used when converting quotation to "
+"company currency"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_account_bank_statement_line__delegate_id
+#: model:ir.model.fields,field_description:toledo.field_account_move__delegate_id
+#: model:ir.model.fields,field_description:toledo.field_account_payment__delegate_id
+msgid "Delegate"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_signature
+msgid "Delegate Name:"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_repair_barcode_scan__display_name
+#: model:ir.model.fields,field_description:toledo.field_repair_change_currency__display_name
+#: model:ir.model.fields,field_description:toledo.field_sale_change_currency__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_document
+msgid "Drafted by: Name:"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,help:toledo.field_sale_order__offer_validity
+msgid "How many working days this offer is valid for"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_repair_barcode_scan__id
+#: model:ir.model.fields,field_description:toledo.field_repair_change_currency__id
+#: model:ir.model.fields,field_description:toledo.field_sale_change_currency__id
+msgid "ID"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid "Index"
+msgstr ""
+
+#. module: toledo
+#: code:addons/toledo/wizard/sale_change_currency.py:0
+#, python-format
+msgid "Invalid quotation"
+msgstr ""
+
+#. module: toledo
+#: code:addons/toledo/wizard/repair_change_currency.py:0
+#, python-format
+msgid "Invalid repair order"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_res_company__invoice_drafter_partner_id
+#: model:ir.model.fields,field_description:toledo.field_res_config_settings__invoice_drafter_partner_id
+msgid "Invoice Drafter"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,help:toledo.field_res_company__invoice_drafter_partner_id
+#: model:ir.model.fields,help:toledo.field_res_config_settings__invoice_drafter_partner_id
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_res_config_settings_view_form
+msgid "Invoice drafter, it will appear in invoice print"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_repair_barcode_scan____last_update
+#: model:ir.model.fields,field_description:toledo.field_repair_change_currency____last_update
+#: model:ir.model.fields,field_description:toledo.field_sale_change_currency____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_repair_barcode_scan__write_uid
+#: model:ir.model.fields,field_description:toledo.field_repair_change_currency__write_uid
+#: model:ir.model.fields,field_description:toledo.field_sale_change_currency__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_repair_barcode_scan__write_date
+#: model:ir.model.fields,field_description:toledo.field_repair_change_currency__write_date
+#: model:ir.model.fields,field_description:toledo.field_sale_change_currency__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_external_layout_standard_so
+msgid "Logo"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_view_order_form1
+msgid "Max Disc.%"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_sale_order_line__max_discount
+msgid "Max Discount (%)"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_product_category__min_addition
+msgid "Minimum Addition (%)"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+msgid "NRC:"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_invoice_signature
+msgid "Name:"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_sale_order__offer_validity
+msgid "Offer validity"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_repair_line__product_qty_onhand
+msgid "On Hand"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_product_pricelist_item__override_category_addition
+msgid "Override Category Addition"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_view_order_form1
+msgid "Price with Disc."
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_product_pricelist
+msgid "Pricelist"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_product_pricelist_item
+msgid "Pricelist Rule"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_product_product
+msgid "Product"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_product_category
+msgid "Product Category"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid "Product Name"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_purchase_order
+msgid "Purchase Order"
+msgstr ""
+
+#. module: toledo
+#: model:ir.actions.act_window,name:toledo.action_repair_barcode
+#: model:ir.ui.menu,name:toledo.menu_action_repair_barcode
+msgid "Repair Barcode"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_repair_barcode_scan
+#: model_terms:ir.ui.view,arch_db:toledo.view_repair_barcode_scan
+msgid "Repair Barcode Scan"
+msgstr ""
+
+#. module: toledo
+#: model:ir.actions.report,name:toledo.toledo_repair_label
+msgid "Repair Label"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_repair_line
+msgid "Repair Line (parts)"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_repair_order
+msgid "Repair Order"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.view_repair_barcode_scan
+msgid "Scan Repair Label"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_repair_order__serial_number_id
+msgid "Serial Number"
+msgstr ""
+
+#. module: toledo
+#: code:addons/toledo/models/purchase.py:0
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_purchase_order_form
+#, python-format
+msgid "Served Purchases"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_res_currency__similar_currency_id
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_view_currency_form
+msgid "Similar Currency"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_stock_move
+msgid "Stock Move"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_repairorder
+msgid "Tax ID"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_product_category__has_technical_description
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_technical
+msgid "Technical Description"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_saleorder_document_inherit_toledo
+msgid ""
+"Thank you for your interest in the products sold by our company and we look "
+"forward to your decision."
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,help:toledo.field_product_pricelist_item__override_category_addition
+msgid "This addition will override category addition."
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.report_conformitycertificate_document
+msgid "This certificate has been issued for invoice:"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.view_sale_change_currency
+msgid ""
+"This wizard will change the pricelist of the quotation based on "
+"configuration for 'Default Pricelist in Company Currency'"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.view_repair_change_currency
+msgid ""
+"This wizard will change the pricelist of the repair order based on "
+"configuration for 'Default Pricelist in Company Currency'"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_res_partner__total_overdue_balance
+#: model:ir.model.fields,field_description:toledo.field_res_users__total_overdue_balance
+msgid "Total Overdue Balance"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model,name:toledo.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_purchase_order_form
+msgid "Transport"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_purchase_order__transport_order_count
+msgid "Transport Order Count"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_purchase_order__transported_purchases
+msgid "Transported Purchases"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.toledo_product_normal_form_view
+msgid "Valuation"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,help:toledo.field_repair_barcode_scan___barcode_scanned
+msgid "Value of the last barcode scanned."
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields.selection,name:toledo.selection__product_pricelist_item__base__vendor_price
+msgid "Vendor Price"
+msgstr ""
+
+#. module: toledo
+#: model:ir.model.fields,field_description:toledo.field_stock_picking__is_warranty
+msgid "Warranty"
+msgstr ""
+
+#. module: toledo
+#: model_terms:ir.ui.view,arch_db:toledo.view_repair_change_currency
+#: model_terms:ir.ui.view,arch_db:toledo.view_sale_change_currency
+msgid "or"
+msgstr ""

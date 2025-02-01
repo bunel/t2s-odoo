@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="report_conformitycertificate_document">
+    <t t-call="web.external_layout">
+        <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)" />
+       
+        <div class="page">
+            <div class="oe_structure"/>
+			
+			<h2 name="title" class=" mb32 text-center">Conformity Certificate</h2>
+			
+			<p name="body1">
+				<span t-field="doc.company_id.name" />, having its registered office in <span t-field = "doc.company_id.city" />, registered at RC Brasov with no. 
+				<span t-field = "doc.company_id.partner_id.nrc" />
+				CUI <span t-field = "doc.company_id.vat" />, through the legal representative CAMPEAN Ioana as administrator, we declare on our own responsibility,
+				knowing the provisions of art. 292 of the Criminal Code regarding the false statements and the provisions of art. 5 of GD no. 1022/2002 regarding the regime
+				products and services that may endanger life, health, safety at work and the environment,
+				the fact that the product (s) below which are the subject of this declaration of conformity are not life-threatening,
+				occupational health and safety, does not produce negative impact on the environment and is
+				in accordance with the "European Community and International regulations".
+			</p>
+			<p name="body2" class="mb16">
+				<span t-field="doc.company_id.name" /><br/>
+				through CAMPEAN, Ioana
+			</p>
+			<div name="products" class="mb16">
+				<table class="table table-sm o_main_table" name="invoice_line_table">
+					<thead>
+						<th>Index</th>
+						<th>Product Name</th>
+					</thead>
+					<tbody>
+					<tr t-foreach="doc.invoice_line_ids" t-as="line" t-if="line.product_id and line.product_id.type != 'service'">
+						<td><t t-esc="line_index" /></td>
+						<td><span t-field="line.product_id" /><t t-if="line.serial_number_id">, serial: <span t-field="line.serial_number_id" /></t></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<p name="body3">
+				This certificate has been issued for invoice: <span t-field="doc.name"/> / <span t-field="doc.invoice_date"/>
+			</p>
+        </div>
+    </t>
+</template>
+
+
+<template id="report_conformitycertificate">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+           	<t t-call="toledo.report_conformitycertificate_document" t-lang="doc.partner_id.lang"/>
+        </t>
+    </t>
+</template>
+
+</odoo>
