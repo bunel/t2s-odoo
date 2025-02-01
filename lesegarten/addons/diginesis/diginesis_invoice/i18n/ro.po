@@ -1,0 +1,620 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * diginesis_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220317\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-12 09:24+0000\n"
+"PO-Revision-Date: 2023-05-12 13:31+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#. module: diginesis_invoice
+#: model:ir.actions.report,print_report_name:diginesis_invoice.report_partner_bank_statement
+msgid "'Partner Bank Statement'"
+msgstr "'Extras de Cont Partener'"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid ""
+"<br/>\n"
+"\t\t\t\t\tAddress:"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t\tAdresă:"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid ""
+"<br/>\n"
+"\t\t\t\t\tE-Mail:"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t\tE-Mail:"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid ""
+"<br/>\n"
+"\t\t\t\t\tNRC:"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t\tNRC:"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid ""
+"<br/>\n"
+"\t\t\t\t\tPhone:"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t\tTelefon:"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid ""
+"<br/>\n"
+"\t\t\t\t\tVAT:"
+msgstr ""
+"<br/>\n"
+"\t\t\t\t\tTVA:"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.external_layout_footer_invoice
+msgid ""
+"<span id=\"footer_exped_name\">Name:</span><br/>\n"
+"\t\t\t\t\t\t\t\t<span id=\"footer_exped_ci\">I.C. Serial/Number:</span><br/>\n"
+"\t\t\t\t\t\t\t\t<span id=\"footer_exped_auto\">Auto:</span><br/>\n"
+"\t\t\t\t\t\t\t\t<span id=\"footer_exped_sign\">Signature:</span><br/>"
+msgstr ""
+"<span id=\"footer_exped_name\">Nume:</span><br/>\n"
+"\t\t\t\t\t\t\t\t<span id=\"footer_exped_ci\">C.I."
+" Serie/Număr:</span><br/>\n"
+"\t\t\t\t\t\t\t\t<span id=\"footer_exped_auto\">"
+"Auto:</span><br/>\n"
+"\t\t\t\t\t\t\t\t<span id=\"footer_exped_sign\">"
+"Semnătură:</span><br/>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_invoice_document
+msgid "<span>Amount</span>"
+msgstr "<span>Valoare</span>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_invoice_document
+msgid "<span>Tax Amount</span>"
+msgstr "<span>Valoare TVA</span>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_invoice_document
+msgid "<span>Total</span>"
+msgstr "<span>Total</span>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_invoice_document
+msgid "<span>UoM</span>"
+msgstr "<span>U.M.</span>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_invoice_document
+msgid "<span>VAT Rate</span>"
+msgstr "<span>Cota TVA</span>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "<strong>Amount Due:</strong>"
+msgstr "<strong>Scadent:</strong>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_invoice_document
+msgid "<strong>Customer</strong>"
+msgstr "<strong>Client</strong>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "<strong>Subtotal:</strong>"
+msgstr "<strong>Subtotal:</strong>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_invoice_document
+msgid "<strong>Supplier</strong>"
+msgstr "<strong>Furnizor</strong>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "<strong>This partner has no records in balance.</strong>"
+msgstr "<strong>Acest partener nu are înregistrări în sold.</strong>"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid ""
+"According to the provisions in force, we inform you that, in our accounting "
+"records, your unit appears with the following balances as of:"
+msgstr ""
+"Conform dispozițiilor în vigoare, vă înștiințăm că, în evidențele noastre "
+"contabile, unitățile dvc. figurează cu următoarele solduri la data de:"
+
+#. module: diginesis_invoice
+#: model:ir.model,name:diginesis_invoice.model_account_account
+msgid "Account"
+msgstr "Cont"
+
+#. module: diginesis_invoice
+#: model:ir.model,name:diginesis_invoice.model_account_account_functionality
+msgid "Account Functionality"
+msgstr "Funcționalitatea Contului"
+
+#. module: diginesis_invoice
+#: model:ir.model,name:diginesis_invoice.model_account_group
+msgid "Account Group"
+msgstr "Grup cont"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,help:diginesis_invoice.field_account_group__functionality_id
+msgid "Account Group functionality will influence the balance"
+msgstr "Funcționalitatea Cont Grup va influența soldul"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality__account_group_ids
+msgid "Account Groups"
+msgstr "Cont Grupuri"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,help:diginesis_invoice.field_account_account__functionality_id
+msgid "Account functionality will influence the balance"
+msgstr "Funcționalitatea contului va influența soldul"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality__account_ids
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement__account_ids
+msgid "Accounts"
+msgstr "Conturi"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_res_company__add_invoice_allocate_difference_line
+#: model:ir.model.fields,field_description:diginesis_invoice.field_res_config_settings__add_invoice_allocate_difference_line
+msgid "Add Difference Line at Invoice Allocate"
+msgstr "Adăugați Linie de Diferență la Alocare Factură"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.view_account_invoice_allocation
+msgid "Allocate"
+msgstr "Aloca"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.di_view_move_form
+msgid "Allocate Invoice"
+msgstr "Aloca suma"
+
+#. module: diginesis_invoice
+#: model:res.groups,name:diginesis_invoice.group_vendor_bill_allocate
+msgid "Allow sum allocation on vendor bills"
+msgstr "Permite alocare sume pe factura furnizor"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Amount"
+msgstr "Sumă"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Amount Due"
+msgstr "Sumă scadentă"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_allocation_wizard__amount
+msgid "Amount to Allocate"
+msgstr "Suma de alocat"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.di_res_config_settings_view_form
+msgid ""
+"An extra Difference Line will be added on allocation for the unallocable "
+"amount"
+msgstr ""
+"O linie de diferență suplimentară va fi adăugată la alocare pentru suma "
+"nealocată"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_bank_statement_line__approved_by_id
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_move__approved_by_id
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_payment__approved_by_id
+msgid "Approved by"
+msgstr "Aprobat de"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Balance"
+msgstr "Sold"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.diginesis_invoice_partner_bank_statement_view
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.view_account_invoice_allocation
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.view_invoice_change_currency
+msgid "Cancel"
+msgstr "Anulare"
+
+#. module: diginesis_invoice
+#: model:ir.actions.act_window,name:diginesis_invoice.action_invoice_change_currency
+#: model:ir.model,name:diginesis_invoice.model_invoice_change_currency
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.di_view_move_form
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.view_invoice_change_currency
+msgid "Change Currency"
+msgstr "Schimba moneda"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency__currency_id
+msgid "Change currency to"
+msgstr "Schimba moneda in"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Client Balance:"
+msgstr "Sold Client:"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality__code
+msgid "Code"
+msgstr "Cod"
+
+#. module: diginesis_invoice
+#: model:ir.model,name:diginesis_invoice.model_res_company
+msgid "Companies"
+msgstr "Companii"
+
+#. module: diginesis_invoice
+#: model:ir.model,name:diginesis_invoice.model_res_config_settings
+msgid "Config Settings"
+msgstr "Setări de configurare"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality__create_uid
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_allocation_wizard__create_uid
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency__create_uid
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement__create_uid
+msgid "Created by"
+msgstr "Creat de"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality__create_date
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_allocation_wizard__create_date
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency__create_date
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement__create_date
+msgid "Created on"
+msgstr "Creat in"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: diginesis_invoice
+#: code:addons/diginesis_invoice/wizard/invoice_change_currency.py:0
+#: code:addons/diginesis_invoice/wizard/invoice_change_currency.py:0
+#, python-format
+msgid "Current currency is not properly configured"
+msgstr "Moneda curenta nu este configurata corect"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency__custom_rate
+msgid "Custom Rate"
+msgstr "Curs valutar personalizat"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields.selection,name:diginesis_invoice.selection__partner_bank_statement__invoice_type__customer
+msgid "Customer"
+msgstr "Client"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement__date
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Date"
+msgstr "Data"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Description"
+msgstr "Descriere"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality__display_name
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_allocation_wizard__display_name
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency__display_name
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement__display_name
+msgid "Display Name"
+msgstr "Nume"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Due Date"
+msgstr "Data scadentă"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_bank_statement_line__last_exchange_rate
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_move__last_exchange_rate
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_payment__last_exchange_rate
+msgid "Exchange Rate"
+msgstr "Curs schimb"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_invoice_document
+msgid "Exchange Rate:"
+msgstr "Curs schimb:"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.external_layout_footer_invoice
+msgid "Expedition information"
+msgstr "Informatii despre expeditie"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Financial-accounting manager,"
+msgstr "Director financiar - contabil,"
+
+#. module: diginesis_invoice
+#: model:ir.model,name:diginesis_invoice.model_account_full_reconcile
+msgid "Full Reconcile"
+msgstr "Reconciliere completă"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account__functionality_id
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_group__functionality_id
+msgid "Functionality"
+msgstr "Funcționalitate"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality__id
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_allocation_wizard__id
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency__id
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement__id
+msgid "ID"
+msgstr "ID"
+
+#. module: diginesis_invoice
+#: code:addons/diginesis_invoice/wizard/invoice_change_currency.py:0
+#, python-format
+msgid "Invalid currency"
+msgstr "Moneda invalida"
+
+#. module: diginesis_invoice
+#: code:addons/diginesis_invoice/wizard/invoice_allocation.py:0
+#: code:addons/diginesis_invoice/wizard/invoice_change_currency.py:0
+#, python-format
+msgid "Invalid invoice"
+msgstr "Factură nevalidă"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency__invoice_ids
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.view_account_invoice_allocation
+msgid "Invoice Allocation"
+msgstr "Alocare suma"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement__invoice_type
+msgid "Invoice Type"
+msgstr "Tip Factură"
+
+#. module: diginesis_invoice
+#: model:ir.actions.act_window,name:diginesis_invoice.action_invoice_allocation_wizard
+#: model:ir.model,name:diginesis_invoice.model_invoice_allocation_wizard
+msgid "Invoice allocation"
+msgstr "Alocare suma"
+
+#. module: diginesis_invoice
+#: code:addons/diginesis_invoice/wizard/invoice_change_currency.py:0
+#, python-format
+msgid "Invoice currency already is {0}"
+msgstr "Moneda facturii este deja {0}"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,help:diginesis_invoice.field_account_bank_statement_line__last_exchange_rate
+#: model:ir.model.fields,help:diginesis_invoice.field_account_move__last_exchange_rate
+#: model:ir.model.fields,help:diginesis_invoice.field_account_payment__last_exchange_rate
+msgid ""
+"Invoice exchange rate. When invoice currency is changed this field stores "
+"the rate used."
+msgstr ""
+"Cursul de schimb al facturii. Când moneda facturii este schimbată, acest "
+"câmp stochează cursul folosit."
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,help:diginesis_invoice.field_account_bank_statement_line__rate
+#: model:ir.model.fields,help:diginesis_invoice.field_account_move__rate
+#: model:ir.model.fields,help:diginesis_invoice.field_account_payment__rate
+msgid "Invoice forced rate. Keep empty to use the currency from invoice date."
+msgstr "Curs valutar forțat pe factură. Păstrați necompletat pentru a utiliza moneda de la data facturii."
+
+#. module: diginesis_invoice
+#: model:ir.model,name:diginesis_invoice.model_account_move
+msgid "Journal Entry"
+msgstr "Notă contabilă"
+
+#. module: diginesis_invoice
+#: model:ir.model,name:diginesis_invoice.model_account_move_line
+msgid "Journal Item"
+msgstr "Element jurnal"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality____last_update
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_allocation_wizard____last_update
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency____last_update
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement____last_update
+msgid "Last Modified on"
+msgstr "Data ultimei modificari"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality__write_uid
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_allocation_wizard__write_uid
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency__write_uid
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement__write_uid
+msgid "Last Updated by"
+msgstr "Utilizator ultima modificare"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality__write_date
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_allocation_wizard__write_date
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency__write_date
+#: model:ir.model.fields,field_description:diginesis_invoice.field_partner_bank_statement__write_date
+msgid "Last Updated on"
+msgstr "Data ultimei modificari"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Lending Unit:"
+msgstr "Unitate Creditoare"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.external_layout_invoice_standard
+msgid "Logo"
+msgstr "Logo"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Manager,"
+msgstr "Director,"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,help:diginesis_invoice.field_account_full_reconcile__reconciled_lines_date
+msgid ""
+"Most recent (biggest) reconciliation date among all reconciled move lines"
+msgstr ""
+"Cea mai recentă (cea mai mare) dată de reconciliere dintre toate liniile "
+"miscărilor reconciliare"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_invoice_document
+msgid "NRC:"
+msgstr "NRC:"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_account_functionality__name
+msgid "Name"
+msgstr "Nume"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.external_layout_footer_invoice
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "Pagina: <span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: diginesis_invoice
+#: model:ir.actions.act_window,name:diginesis_invoice.action_diginesis_invoice_partner_bank_statement
+#: model:ir.actions.report,name:diginesis_invoice.report_partner_bank_statement
+#: model:ir.model,name:diginesis_invoice.model_partner_bank_statement
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.diginesis_invoice_partner_bank_statement_view
+msgid "Partner Bank Statement"
+msgstr "Extras de Cont Partener"
+
+#. module: diginesis_invoice
+#: model:ir.model,name:diginesis_invoice.model_report_diginesis_invoice_report_partnerbankstatement
+msgid "Partner statement report"
+msgstr "Raport Extras de Cont"
+
+#. module: diginesis_invoice
+#: code:addons/diginesis_invoice/wizard/invoice_allocation.py:0
+#, python-format
+msgid "Price Difference for allocated amount {0}"
+msgstr "Diferența de Preț pentru suma alocată {0}"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.diginesis_invoice_partner_bank_statement_view
+msgid "Print"
+msgstr "Print"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_bank_statement_line__rate
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_move__rate
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_payment__rate
+msgid "Rate"
+msgstr "Curs Valutar"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_account_full_reconcile__reconciled_lines_date
+msgid "Reconciled Lines Date"
+msgstr "Data Linii Reconciliate"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Reference"
+msgstr "Referință"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.external_layout_footer_invoice
+msgid "Signature of receipt"
+msgstr "Semnatura receptie"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields,field_description:diginesis_invoice.field_invoice_change_currency__specify_rate
+msgid "Specify Rate"
+msgstr "Specificați cursul valutar"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Statement"
+msgstr "Extras"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "Supplier Balance:"
+msgstr "Sold Furnizor:"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.external_layout_footer_invoice
+msgid "Supplier signature and stamp"
+msgstr "Semnatura si stampila furnizorului"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_invoice_document
+msgid "Tax ID"
+msgstr "CUI"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.view_invoice_change_currency
+msgid "This wizard will change the currency of the invoice"
+msgstr "Aceasta actiune va schimba moneda facturii"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid "To,<br/>"
+msgstr "Către,<br/>"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields.selection,name:diginesis_invoice.selection__partner_bank_statement__invoice_type__vendor
+msgid "Vendor Bill"
+msgstr "Factură furnizor"
+
+#. module: diginesis_invoice
+#: model:ir.model.fields.selection,name:diginesis_invoice.selection__partner_bank_statement__invoice_type__vendor_customer
+msgid "Vendor and Customer"
+msgstr "Furnizor și Client"
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.report_partnerbankstatement_document
+msgid ""
+"Within 5 days of receipt you must return this confirmed statement for the accepted amount,\n"
+"             \tand in case of finding differences, attach an explanatory note including your objections.<br/>\n"
+"\t\t\t\tThis statement of account takes place of conciliation according to the arbitration procedure."
+msgstr ""
+"În termen de 5 zile de la primire urmează să ne restituiți acest extras "
+"confirmat pentru suma acceptată,\n"
+"             \iar în cazul constatării de diferențe să anexați notă "
+"explicativă cuprinzând obiecțiile dumneavoastră.<br/>\n"
+"\t\t\t\tPrezentul extras de cont ține loc de conciliere conform "
+"procedurii arbitrare."
+
+#. module: diginesis_invoice
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.view_account_invoice_allocation
+#: model_terms:ir.ui.view,arch_db:diginesis_invoice.view_invoice_change_currency
+msgid "or"
+msgstr "sau"

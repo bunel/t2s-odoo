@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+    	<template id="external_layout_footer_invoice">
+    		<div class="row zero_min_height" style="line-height:1.2">
+				<table class="table table-bordered" style="margin-bottom: 10px !important; padding: 0;">
+					<tbody>
+						<tr>
+							<td width="15%" class="text-center" style="font-size: smaller;" name="supplier">
+								<p>Supplier signature and stamp</p>
+							</td>
+							<td class="text-left" style="font-size: smaller;">
+								<div class="text-center">Expedition information</div>
+								<span id="footer_exped_name">Name:</span><br/>
+								<span id="footer_exped_ci">I.C. Serial/Number:</span><br/>
+								<span id="footer_exped_auto">Auto:</span><br/>
+								<span id="footer_exped_sign">Signature:</span><br/>
+							</td>							
+							<td width="15%" class="text-center" style="font-size: smaller;">
+								<p>Signature of receipt</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="text-center">
+				<div class="text-muted">
+					Page: <span class="page"/> / <span class="topage"/>
+				</div>
+			</div>
+    	</template>
+    
+    	<template id="external_layout_invoice_standard">
+    		<t t-if="not company">
+	            <!-- Multicompany -->
+	            <t t-if="company_id">
+	                <t t-set="company" t-value="company_id"/>
+	            </t>
+	            <t t-elif="o and 'company_id' in o and o.company_id.sudo()">
+	                <t t-set="company" t-value="o.company_id.sudo()"/>
+	            </t>
+	            <t t-else="else">
+	                <t t-set="company" t-value="res_company"/>
+	            </t>
+	        </t>
+	        <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+	            <div class="row">
+	                <div class="col-3 mb4">
+	                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="max-height: 45px;" alt="Logo"/>
+	                </div>
+	                <div class="col-9 text-right" style="margin-top:22px;" t-field="company.report_header" name="moto"/>
+	            </div>
+	            <div t-if="company.logo or company.report_header" class="row zero_min_height">
+	                <div class="col-12">
+	                    <div style="border-bottom: 1px solid black;"/>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-6" name="company_address">
+	                    <span t-if="company.company_details" t-field="company.company_details"></span>
+	                </div>
+	            </div>
+	        </div>
+	
+	        <div t-attf-class="article o_report_layout_standard o_company_#{company.id}_layout {{  'o_layout_background' if company.layout_background in ['Geometric', 'Custom']  else  '' }}" t-attf-style="background-image: url({{ 'data:image/png;base64,%s' % company.layout_background_image.decode('utf-8') if company.layout_background_image and company.layout_background == 'Custom' else '/base/static/img/bg_background_template.jpg' if company.layout_background == 'Geometric' else ''}});" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+	            <div class="pt-5">
+	                <!-- This div ensures that the address is not cropped by the header. -->
+	                <t t-call="web.address_layout"/>
+	            </div>
+	            <t t-out="0"/>
+	        </div>
+	
+	        <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
+	            <t t-call="diginesis_invoice.external_layout_footer_invoice" />
+	        </div>
+	    </template>
+    	
+        <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+        	<xpath expr="//t[@t-call='web.external_layout']" position="attributes">
+        		<attribute name="t-call">diginesis_invoice.external_layout_invoice_standard</attribute>
+        	</xpath>
+        	
+        	<!-- we need addresses side by side -->
+           	<xpath expr="//t[@t-set='address']" position="replace"><t t-set="address"></t></xpath>
+           
+           	<xpath expr="//t[@t-set='address']" position="before">
+           		<t t-set="supplier" t-value="o.company_id.partner_id" />
+           		<t t-set="supplier_company" t-value="o.company_id" />
+           		<div class="row" style="margin-bottom: 30px;">
+           			<div class="col-6">
+						<div><strong>Supplier</strong></div>
+           				<address t-field="o.company_id.partner_id" t-options='{"widget": "contact", "fields": ["address", "name", "mobile", "email"], "no_marker": True}' />
+       					<div t-if="supplier.vat" name="supplier_vat">
+                    		<t>Tax ID</t>: <span t-field="supplier.vat"/>
+                		</div>
+       					<div t-if="supplier.nrc" name="supplier_nrc">
+                    		NRC: <span t-field="supplier.nrc"/>
+                		</div>
+                	</div>
+                	<div class="col-6">
+						<div><strong>Customer</strong></div>
+                		<address t-field="o.partner_id" t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' />
+                    	<div t-if="o.partner_id.vat">
+                        	<t t-if="o.company_id.account_fiscal_country_id.vat_label" t-esc="o.company_id.account_fiscal_country_id.vat_label" id="inv_tax_id_label"/>
+                        	<t t-else="">Tax ID</t>: <span t-field="o.partner_id.vat"/>
+                        </div>
+                        <div name="client_bank_accounts">
+		           			<div t-foreach="o.partner_id.bank_ids" t-as="partner_bank">
+		           				<span t-field="partner_bank.bank_name" /> <span t-field="partner_bank.acc_number" />
+		           			</div>
+		           		</div>
+		           		<div name="client_nrc" t-if="o.partner_id.nrc">NRC: <span t-field="o.partner_id.nrc" /></div>
+                	</div>
+                </div>
+           </xpath>
+           <xpath expr="//div[hasclass('page')]/div[@id='informations']" position="after">
+           		<div id="exchange_information" class="row" style="margin-top: 10px;margin-bottom:10px;" t-if="o.last_exchange_rate">
+           			<div class="col-auto" name="exchange_rate">
+           				Exchange Rate: <span t-field="o.last_exchange_rate" />
+           			</div>
+           		</div>
+           		<t t-set="sign" t-value="'-' if o.move_type == 'out_refund' else ''" />
+           </xpath>
+            
+           <xpath expr="//div[hasclass('page')]/table[@name='invoice_line_table']/thead//th[@name='th_quantity']" position="before">
+         		<th name="th_um" class="text-right"><span>UoM</span></th>
+           </xpath>
+           <xpath expr="//div[hasclass('page')]/table[@name='invoice_line_table']/thead//th[@name='th_taxes']/span" position="replace">
+         		<span>VAT Rate</span>
+           </xpath>
+           <xpath expr="//div[hasclass('page')]/table[@name='invoice_line_table']/thead//th[@name='th_subtotal']" position="replace">
+         		 <th name="th_subtotal" class="text-right"><span>Amount</span></th>
+         		 <th name="th_tax_amount" class="text-right"><span>Tax Amount</span></th>
+         		 <th name="th_total" class="text-right"><span>Total</span></th>
+           </xpath> 
+           <xpath expr="//div[hasclass('page')]/table[@name='invoice_line_table']/tbody/t[@t-foreach='lines']//t[@name='account_invoice_line_accountable']//td[@name='account_invoice_line_name']" position="after">
+           		<td name="tr_um"><span t-field="line.product_uom_id"  groups="uom.group_uom"/></td>
+           </xpath>
+           <xpath expr="//div[hasclass('page')]/table[@name='invoice_line_table']/tbody/t[@t-foreach='lines']//t[@name='account_invoice_line_accountable']//span[@t-field='line.quantity']/following-sibling::span" position="replace" />           		
+           <xpath expr="//div[hasclass('page')]/table[@name='invoice_line_table']/tbody/t[@t-foreach='lines']//t[@name='account_invoice_line_accountable']//span[@t-field='line.quantity']" position="before">
+           		<t t-esc="sign" t-if="line.quantity" />
+           </xpath>           		
+           <xpath expr="//div[hasclass('page')]/table[@name='invoice_line_table']/tbody/t[@t-foreach='lines']//t[@name='account_invoice_line_accountable']//span[@t-field='line.price_unit']" position="before">
+           		<t t-esc="sign" t-if="line.price_unit" />
+           </xpath>           		
+           <xpath expr="//div[hasclass('page')]/table[@name='invoice_line_table']/tbody/t[@t-foreach='lines']//t[@name='account_invoice_line_accountable']/td[hasclass('o_price_total')]" position="replace">
+           		<td class="text-right o_price_subtotal"><t t-esc="sign" t-if="line.price_subtotal" /><span class="text-nowrap" t-field="line.price_subtotal" /></td> 
+           		<td class="text-right o_tax_total"><t t-esc="sign" t-if="abs(line.price_total) - abs(line.price_subtotal)"  /><span class="text-nowrap" t-esc="abs(line.price_total) - abs(line.price_subtotal)" t-options='{"widget": "monetary", "display_currency": line.currency_id}' /></td>
+           		<td class="text-right o_price_total"><t t-esc="sign" t-if="line.price_total" /><span class="text-nowrap" t-field="line.price_total" /></td>
+           </xpath>   
+        </template>
+        
+        
+        <template id="document_tax_totals" inherit_id="account.document_tax_totals">
+        	<xpath expr="//*[hasclass('o_total')]//*[contains(@t-esc, 'formatted_amount_total')]" position="before">
+        		<t t-esc="sign" t-if="tax_totals['formatted_amount_total']" />
+        	</xpath>
+        </template>
+        
+        <template id="report_invoice" inherit_id="account.report_invoice">
+	        <xpath expr='//t[@t-call="account.report_invoice_document"]' position="after">
+	            <t t-if="o._get_name_invoice_report() == 'diginesis_invoice.report_invoice_document'"
+	                t-call="diginesis_invoice.report_invoice_document" t-lang="lang"/>
+	        </xpath>
+	    </template>
+	
+	    <template id="report_invoice_with_payments" inherit_id="account.report_invoice_with_payments">
+	        <xpath expr='//t[@t-call="account.report_invoice_document"]' position="after">
+	            <t t-if="o._get_name_invoice_report() == 'diginesis_invoice.report_invoice_document'"
+	                t-call="diginesis_invoice.report_invoice_document" t-lang="lang"/>
+	        </xpath>
+	    </template>
+	    
+	    
+
+    </data>
+</odoo>

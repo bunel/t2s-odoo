@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_invoice_change_currency_wizard,access.invoice.change.currency.wizard,model_invoice_change_currency,,1,1,1,0
+access_invoice_allocation_wizard,access.invoice.allocation.wizard,model_invoice_allocation_wizard,diginesis_invoice.group_vendor_bill_allocate,1,1,1,0
+access_partner_bank_statement_user,access.partner_bank_statement.user,model_partner_bank_statement,,1,1,1,0
+access_account_functionality_user,access.account.functionality.user,model_account_account_functionality,,1,1,1,0

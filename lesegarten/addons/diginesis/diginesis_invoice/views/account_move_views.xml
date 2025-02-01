@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="di_view_move_form" model="ir.ui.view">
+            <field name="name">di.account.move.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+            	<group name="sale_info_group" position="inside">
+            		<field name="last_exchange_rate" readonly="1" />
+            	</group>
+            	<field name="currency_id" position="after">					
+					<button name="%(diginesis_invoice.action_invoice_change_currency)d" type="action"
+							 icon="fa-pencil-square-o" class="oe_link"
+							attrs="{'invisible':[('state','!=','draft')]}" title="Change Currency" aria-label="Change Currency" />
+				</field>
+				<field name="currency_id" position="attributes">
+					<attribute name="readonly">1</attribute>
+					<attribute name="force_save">1</attribute>
+				</field>
+				
+				<xpath expr="//page[@id='invoice_tab']/field[@name='invoice_line_ids']" position="before">
+					<button name="%(diginesis_invoice.action_invoice_allocation_wizard)d" type="action"
+							attrs="{'invisible':['|',('state','!=','draft'), ('move_type', 'not in', ['in_invoice'])]}" groups="diginesis_invoice.group_vendor_bill_allocate" 
+							title="Allocate Invoice" string="Allocate Invoice" area-label="Allocate Invoice" />								
+				</xpath>
+				
+				<label for="journal_id" position="before">
+					<field name="rate" attrs="{'readonly': [('state', 'not in', ['draft'])], 'invisible': [('move_type', 'not in', ['in_invoice', 'in_refund'])]}" />
+				</label>
+
+				<field name="invoice_user_id" position="after">
+					<field name="approved_by_id"/>
+				</field>
+            </field>
+        </record>
+
+		<record id="di_view_in_invoice_bill_tree" model="ir.ui.view">
+            <field name="name">di.account.in.bill.tree</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_in_invoice_bill_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="optional">show</attribute>
+                </xpath>
+				<xpath expr="//field[@name='ref']" position="replace" />
+				<xpath expr="//field[@name='name']" position="before">
+                    <field name="ref" optional="show" string="Bill Number"/>
+                </xpath>
+            </field>
+        </record>
+
+		<record id="account.action_move_in_invoice_type" model="ir.actions.act_window">
+            <field name="view_id" ref="diginesis_invoice.di_view_in_invoice_bill_tree"/>
+        </record>
+
+		<record id="di_view_invoice_tree" model="ir.ui.view">
+            <field name="name">di.account.invoice.tree</field>
+            <field name="model">account.move</field>
+			<field name="inherit_id" ref="account.view_invoice_tree"/>
+			<field name="arch" type="xml">
+                <xpath expr="//field[@name='amount_residual_signed']" position="after">
+                    <field name="amount_residual" string="Amount Due in Currency" sum="Amount Due in Currency" optional="hide"/>
+                </xpath>
+                <xpath expr="//field[@name='company_id']" position="after">
+                    <field name="amount_untaxed_signed_abs" string="Tax Excluded" sum="Total" optional="show"/>
+                    <field name="amount_tax_signed_abs" string="Tax" sum="Total" optional="hide"/>
+                    <field name="amount_total_signed_abs" string="Total" sum="Total" decoration-bf="1" optional="show"/>
+                    <field name="amount_total_in_currency_signed_abs" string="Total in Currency" sum="Total in Currency" groups="base.group_multi_currency"  optional="show"/>
+                    <field name="amount_residual_signed_abs" string="Amount Due" sum="Amount Due" optional="hide"/>
+                </xpath>
+
+                <field name="amount_untaxed_signed" position="attributes">
+                    <attribute name="optional">hide</attribute>
+                </field>
+                <field name="amount_total_signed" position="attributes">
+                    <attribute name="optional">hide</attribute>
+                </field>
+                <field name="amount_total_in_currency_signed" position="attributes">
+                    <attribute name="optional">hide</attribute>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="report_partnerbankstatement_document">
+	<t t-set="o" t-value="o.with_context(lang=lang)" />
+    <div class="page">
+        <div class="row">
+        	<div class="col-12">
+				<p>
+					<strong>Lending Unit: <span t-esc="company.partner_id.name"/></strong><br/>
+					VAT: <span t-esc="company.partner_id.vat"/><br/>
+					NRC: <span t-esc="company.partner_id.nrc"/><br/>
+					Address:  <span t-raw="company.partner_id._display_address(without_company=True)" /><br/>
+					Phone: <span t-field="company.partner_id.mobile" /><br/>
+					E-Mail: <span t-field="company.partner_id.email" />
+				</p>
+			</div>
+		</div>
+		<h2 class="text-center">To,<br/> <strong><span t-field="o.name"/></strong></h2>
+		<div class="text-center">
+			<span t-raw="o._display_address(without_company=True)"/>
+           	<span t-field="o.vat"/>
+        </div>
+
+        <div id="memo" class="mt16">
+            According to the provisions in force, we inform you that, in our accounting records, your unit appears with the following balances as of:
+            <span t-esc="format_date(Date)" /><br/>
+        </div>
+        <h3 class="text-center mt32" style="text-transform: uppercase;">Statement</h3>
+        <t t-if="Lines[o.id]">
+			<t t-foreach="Lines[o.id]" t-as="acc_type">
+				<p><strong>
+					 <t t-if="acc_type=='receivable'">Client Balance:</t>
+					 <t t-if="acc_type=='payable'">Supplier Balance:</t>
+					  <span t-esc="formatLang(Totals[o.id][acc_type]['sold'], monetary=True, currency_obj=currency_id)"  />
+				</strong></p>
+					<table class="table table-bordered" style="font-size: 10pt; line-height: 10pt; margin-bottom: 0px !important;">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="min-width: 78px;">Date</th>
+                                <th class="text-center">Description</th>
+                                <th class="text-center">Reference</th>
+                                <th class="text-center" style="min-width: 78px;">Due Date</th>
+                                <th class="text-center" style="min-width: 100px;">Amount</th>
+                                <th class="text-center" style="min-width: 100px;">Balance</th>
+                                <th class="text-center" style="min-width: 100px;">Amount Due</th>
+                            </tr>
+                        </thead>
+                        <tr t-foreach="Lines[o.id][acc_type]" t-as="line">
+                            <td style="padding-left: 3px; padding-right: 3px;">
+                                <span t-esc="format_date(line['date'])"/>
+                            </td>
+                            <td>
+                                <span t-esc="line['move_name']"/>
+                            </td>
+                            <td>
+                                <t t-if="line['name'] != '/'"><span t-esc="line['name']"/></t>
+                                <span t-esc="line['ref']"/>
+                            </td>
+                            <td style="padding-left: 3px; padding-right: 3px;">
+                                <span t-esc="format_date(line['date_maturity'])"/>
+                            </td>
+                            <td class="text-right" style="padding-left: 3px; padding-right: 3px;">
+                                <span t-esc="formatLang(line['value'], digits=precision_account)" />
+                            </td>
+                            <td class="text-right" style="padding-left: 3px; padding-right: 3px;">
+                                <span t-esc="formatLang(line['sold'], digits=precision_account)" />
+                            </td>
+                            <td class="text-right" style="padding-left: 3px; padding-right: 3px;">
+                                <span t-esc="formatLang(line['mat'], digits=precision_account)" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="text-right"><strong>Subtotal:</strong></td>
+							<td class="text-right"><span t-esc="formatLang(Totals[o.id][acc_type]['sold'], monetary=True, currency_obj=currency_id)" /></td>
+                            <td class="text-right"><span t-esc="formatLang(Totals[o.id][acc_type]['mat'], monetary=True, currency_obj=currency_id)"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"  class="text-right"><strong>Amount Due:</strong></td>
+                            <td class="text-right">
+                                <span t-esc="formatLang(Totals[o.id][acc_type]['mat'], monetary=True, currency_obj=currency_id)" />
+                            </td>
+                        </tr>
+                    </table>
+			</t>
+            <div class="mt16" id="memo2">
+            	Within 5 days of receipt you must return this confirmed statement for the accepted amount,
+             	and in case of finding differences, attach an explanatory note including your objections.<br/>
+				This statement of account takes place of conciliation according to the arbitration procedure.
+			</div>
+			<table style="width:100%">
+				<tr>
+				<td style="width:50%"><p>Manager,</p></td>
+				<td style="width:50%"><p>Financial-accounting manager,</p></td>
+				</tr>
+				<tr>
+				<td>.....................</td>
+				<td>.....................</td>
+				</tr>
+			</table>
+        </t>
+        <p t-else="">
+            <strong>This partner has no records in balance.</strong>
+        </p>
+    </div>
+</template>
+
+<template id="report_partnerbankstatement">
+	<t t-call="web.html_container">
+		<t t-call="web.internal_layout">
+	    	<t t-foreach="docs" t-as="o">
+		    	<t t-set="lang" t-value="o.lang" />
+                <t t-set="company" t-value="user.company_id" />
+		        <t t-call="diginesis_invoice.report_partnerbankstatement_document" t-lang="lang" />
+		        <p style="page-break-before:always;"> </p>
+		   	</t>
+	    </t>
+	</t>	
+</template>
+
+</odoo>

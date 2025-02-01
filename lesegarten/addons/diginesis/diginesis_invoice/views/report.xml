@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="report_partner_bank_statement" model="ir.actions.report">
+            <field name="name">Partner Bank Statement</field>
+            <field name="model">res.partner</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">diginesis_invoice.report_partnerbankstatement</field>
+            <field name="report_file">diginesis_invoice.report_partnerbankstatement</field>
+            <field name="print_report_name">'Partner Bank Statement'</field>
+            <field name="binding_model_id" eval="False" />
+            <field name="binding_type">report</field>
+           <!-- <field name="paperformat_id" ref="l10n_ro_stock_report.paperformat_A4_stock_picking_report" /> -->
+        </record>
+
+    </data>
+</odoo>

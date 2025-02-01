@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="di_view_account_group_form" model="ir.ui.view">
+            <field name="name">di.account.group.form</field>
+            <field name="model">account.group</field>
+            <field name="inherit_id" ref="account.view_account_group_form"/>
+            <field name="arch" type="xml">
+                <field name="company_id"  position="before">
+                    <field name="functionality_id" required="1" options="{'no_create': True}"/>
+                    <field name="off_balancesheet" />
+                </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>

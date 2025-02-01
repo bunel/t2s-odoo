@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_account_invoice_allocation" model="ir.ui.view">
+            <field name="name">Invoice allocation</field>
+            <field name="model">invoice.allocation.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Invoice Allocation">
+                	<p class="oe_grey"></p>
+                    <group>
+                        <group>
+                        	<field name="amount"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="invoice_allocation" string="Allocate" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_invoice_allocation_wizard" model="ir.actions.act_window">
+            <field name="name">Invoice allocation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">invoice.allocation.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_invoice_allocation"/>
+            <field name="context">{}</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>
